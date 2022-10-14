@@ -20,8 +20,8 @@ De app is een dashboard/webapplicatie om inzicht te verkrijgen in de data uit de
 
 ## Path en environment variabelen zetten
 - Zet het PYTHONPATH voor Python in de virtual environment goed: 
-   - in Linux met `export PYTHONPATH=$PYTHONPATH:/<repository_parent_path>/brokwaliteitsservices/app`
-   - in Windows met `set PYTHONPATH=<repository_parent_path>/brokwaliteitsservices/app`
+   - in Linux met `export PYTHONPATH=$PYTHONPATH:/<repository_parent_path>/BROMonitor/app`
+   - in Windows met `set PYTHONPATH=<repository_parent_path>/BROMonitor/app`
 
 ## Dependencies installeren
 -  Installeer de benodigde python packages met `pip install -r ./app/backend/requirements.txt -r ./app/etl/requirements.txt -r ./app/bromonitorgenerator/requirements.txt`
