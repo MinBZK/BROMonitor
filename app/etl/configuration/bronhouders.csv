@@ -1,0 +1,614 @@
+id;kvk;naam;type;identifier
+0938596c-3b1e-4fbf-b506-4a3e9d49bd22;01059718;IJB Geotechniek B.V.;Overig;
+cdfbf5b2-d146-410f-b850-a56d1ec23d37;01064412;Bouwconsults Nadema;Overig;
+116a7ed8-eed3-40cd-b0a2-87919e2b839a;01088169;De Boer advies & Uitvoering;Overig;
+8a9fbb55-d1d6-45d7-8894-432c6710aafb;01108276;Timmermans Landmeetkunde B.V.;Overig;
+5c9447e5-98ec-4b94-a4d6-b210dcc95c77;01140749;Gemeente Aa en Hunze;Gemeente;GM1680
+8381cda0-c724-4dc3-af03-a8d01089bbbf;01160183;Gemeente De Wolden;Gemeente;GM1690
+02485b46-fd48-4e8c-b214-4b813bd599a9;01168951;Gemeente Franekeradeel;Overig;
+d8c72b64-3de5-4181-a435-688f05477bf1;01169292;Gemeente Tynaarlo;Gemeente;GM1730
+b7091fc7-2b1b-4147-98b2-4fbd0f3e6495;01169424;Gemeente Stadskanaal;Gemeente;GM0037
+a433b29d-83dc-4af3-956a-88252319a0bc;01169679;Gemeente Tytsjerksteradiel;Gemeente;GM0737
+616d1432-330a-44cd-ac88-1318c54e4187;01170341;Gemeente Winsum;Overig;
+635ff2af-d798-40de-a8a5-dc94c11cc0ce;01171824;Gemeente Groningen (tot 2020);Overig;
+820a2c00-e2d0-4c0b-aad8-0ea715211f0b;01172164;Gemeente Smallingerland;Gemeente;GM0090
+8f01a2c0-fc0d-43fb-a0a6-40352161dd85;01172406;Gemeente De Marne;Overig;
+da958673-4fd6-4a34-b01c-8b66233e6dc2;01172425;Gemeente Littenseradiel;Overig;
+bcb31aa5-b221-4f5e-bbb3-25ba03ab9244;01172480;Gemeente Westerveld;Gemeente;GM1701
+bf578dd6-6f41-43db-b6f7-0fe809234d90;01173197;Gemeente Coevorden;Gemeente;GM0109
+a8a76808-b2e9-40b4-880a-d3c852d80d39;01173214;Gemeente Dongeradeel;Overig;
+bcc451f9-78ff-451a-8793-4adc1c6edd37;01173230;Waterschap Hunze en Aa's;Waterschap;WS33
+b6e449eb-0835-4b68-90c4-ef9db1415b19;01173331;Gemeente Schiermonnikoog;Gemeente;GM0088
+9edf0dd8-1c54-47f8-a03b-46d4edbfa956;01173377;Gemeente Vlagtwedde;Overig;
+28fdb5f3-4f68-413d-b120-398ea9db3885;01173391;Gemeente Noordenveld;Gemeente;GM1699
+72f1fb3f-04a0-4b32-ac48-c35477db724d;01173414;Gemeente Bedum;Overig;
+0a2aa8ef-ef9f-4ff1-99d6-21dccf37ce0d;01173706;Gemeente Appingedam;Overig;
+aea52903-b52b-40df-a48b-2b63e3b884c9;01173925;Gemeente Leeuwarderadeel;Overig;
+65f6d224-2ceb-42a2-9d5b-d2dfc0bf72b1;01174741;Wetterskip Fryslân;Waterschap;WS02
+aa7ec1b7-3b9f-49bb-9e4a-2cb6ab428564;01175380;Gemeente Opsterland;Gemeente;GM0086
+e4e0af25-4baa-4974-8802-329a60877ae3;01175828;Gemeente Hoogeveen;Gemeente;GM0118
+9aba7e26-5336-4b41-aac8-9aed9dc6e658;01175851;Gemeente Delfzijl;Overig;
+422d4a3f-35de-493f-ae32-242033638559;01176243;Gemeente Marum;Overig;
+b35ff6e9-609b-4a64-bb6c-39fd881727a3;01176290;Gemeente Oldambt;Gemeente;GM1895
+7ada4472-1bf1-4abc-b6d1-5cc88557a938;01176356;Gemeente Achtkarspelen;Gemeente;GM0059
+591d4f11-b3f8-442b-920b-0645c6b3d22e;01176410;Gemeente Eemsmond;Overig;
+5f0bbf90-0eca-44ef-b0d9-b476a02a9d0b;01176459;Gemeente Hoogezand-Sappemeer;Overig;
+987184e3-7265-4cb4-a8ef-bd731afca772;01177267;Gemeente Leek;Overig;
+901bcd14-5204-4662-8451-130de54fc3f6;01177508;Gemeente Terschelling;Gemeente;GM0093
+341c9bc3-655d-4c58-8df8-d8ae1a0a0e06;01178692;Gemeente Meppel;Gemeente;GM0119
+c49e102f-2db9-4127-b35a-2e911b801f1b;01178978;Provincie Fryslân;Provincie;PV21
+273e3cb8-d3a1-4282-9e9f-0b29799026fd;01179514;Provincie Drenthe;Provincie;PV22
+a4c789c7-6d20-40c3-acf4-6bd381195944;01180264;Gemeente Ameland;Gemeente;GM0060
+458a607a-9cdb-4a7c-ac63-18d1804d9799;01180311;Gemeente Ooststellingwerf;Gemeente;GM0085
+7fb8e97d-77e8-4ed5-b385-327e23888ca7;01180449;Gemeente Loppersum;Overig;
+400091fe-3fb8-410d-ba10-4f909d1f713e;01180913;Gemeente Ferwerderadiel;Overig;
+b47553a7-5586-40b2-ae42-82917313124c;01181122;Gemeente Vlieland;Gemeente;GM0096
+64323505-bda8-443e-948d-a973abf0100f;01181378;Gemeente Kollumerland en Nieuwkruisland;Overig;
+984bac9c-2698-40c6-847e-cbf59815b775;01181973;Gemeente Emmen;Gemeente;GM0114
+201efe9c-702c-484c-bb75-41c76e316b65;01182023;Provincie Groningen;Provincie;PV20
+27f7e907-500f-4b66-bdb1-eca2ed5a6cb2;01182779;Gemeente Zuidhorn;Overig;
+4c785553-cab0-490e-a1ee-a371545cc6c6;01182848;Gemeente Midden-Drenthe;Gemeente;GM1731
+3204ab87-99f5-4850-80c4-c13728565d86;01183249;Gemeente Ten Boer;Overig;
+5fab27ea-f1bf-428b-8cb4-47040cb253e1;02008621;N.V. Waterbedrijf Groningen;Overig;
+1da4b865-8887-445d-aef9-4080eff07a39;02029700;N.V. Nederlandse Gasunie;Overig;
+51f12c19-5904-43c1-8654-1ce685347d17;02040355;MUG Ingenieursbureau B.V.;Overig;
+ec6642f1-21ef-4b61-af22-4f0b520dd8db;02044410;Bioclear earth B.V.;Overig;
+5147cfc7-5a5a-49a3-ac26-e807606286dc;02084889;Gasunie Transport Services B.V.;Overig;
+a87657e3-8028-4814-8bfc-1a4a6f8a696e;02095434;Raadgevend Ingenieursbureau Wiertsema & Partners B.V.;Overig;
+7e06dc95-a32c-4fa2-818f-2507fe3de49d;05029571;Tebezo Waterbouw & Nautische Dienstverlening B.V.;Overig;
+4631232b-d43e-4c7f-8b4c-700bd130419b;05033468;Grondbooronderneming J. Hormann B.V.;Overig;
+1c0bbb09-1df8-45d9-ab00-6a6e1ef7b284;05051184;Mateboer Milieu Techniek B.V.;Overig;
+09717635-74d0-4eac-aead-e5836fe4d1a3;05062469;KWS Infra B.V.;Overig;
+624d2e92-3acf-4e3f-85b3-5c454067a360;05069581;Vitens N.V.;Overig;
+282a1fc0-19be-4c80-8189-17a448420250;06056452;Geofox-Lexmond b.v.;Overig;
+96821a52-df37-4142-9b49-69a95a16dcd6;06068751;Kruse Milieu BV;Overig;
+bd41468e-bb24-4abe-a50b-ebc564134148;06070130;Koop Bronbemaling B.V.;Overig;
+25d137ad-07e9-4958-b4ce-b2b4f4ba88c2;08011909;Salverda Bouw B.V.;Overig;
+d4dfa2fd-6649-48f5-989b-1e3b35380af7;08043827;Inter Act B.V.;Overig;
+3de1ae74-daf3-4597-883e-ad84368a15ff;08081725;The Three Engineers B.V.;Overig;
+3005e6a7-6ba9-482d-a864-575cf9b92811;08103567;Inter Act industrial automation B.V.;Overig;
+fd4bf39f-1372-41db-84d7-d41d7c5a78a4;08109078;IMD B.V.;Overig;
+bfad1b09-c9e5-42f7-a24b-1399208c5d3e;08128785;BZ Ingenieurs en Managers BV;Overig;
+5a183eee-0426-4076-b891-7de69871d8be;08145500;Hoogveld Sonderingen B.V.;Overig;
+69a61a21-0c1c-4b62-93dc-61279ef935d7;08213234;Gemeente Heerde;Gemeente;GM0246
+2d5cae32-ca1f-4744-8d6f-d3f11eead4eb;08214418;Gemeente Deventer;Gemeente;GM0150
+ee54dea8-d037-4c5a-bc11-039ffa8d87e9;08214858;Gemeente Almelo;Gemeente;GM0141
+048d18c5-a570-4c07-a400-c4b81019fa04;08215191;Gemeente Raalte;Gemeente;GM0177
+5f313434-5be3-4b63-bfc7-347e18fd73ed;08215192;Gemeente Lochem;Gemeente;GM0262
+161c8ddd-725f-4803-bbc8-5a5d19893591;08215195;Gemeente Enschede;Gemeente;GM0153
+37f6d56c-32c9-4b9d-8676-52a6f401416e;08215207;Gemeente Twenterand;Gemeente;GM1700
+0b37c61a-1346-439e-b0ba-664ea5b65d80;08215304;Gemeente Hof van Twente;Gemeente;GM1735
+7b1fd78c-c0c0-448e-9458-386048c9ab50;08215340;Gemeente Dalfsen;Gemeente;GM0148
+0c12618b-4316-47f7-aa47-b723fc800fc8;08215565;Gemeente Tubbergen;Gemeente;GM0183
+ca11dfa1-2f33-48af-aa71-9d7b58e26c69;08216768;Gemeente Kampen;Gemeente;GM0166
+ccb02c62-283c-477e-b2b7-dc47b9efb32a;08216960;Gemeente Putten;Gemeente;GM0273
+6b7aea00-262f-4128-89bb-b008b6fbbcd6;08217014;Gemeente Ermelo;Overig;
+76fa139c-d296-4d01-b88f-7aff3373779a;08217553;Gemeente Hattem;Gemeente;GM0244
+6b539f8d-ff6b-434c-b055-9e4d0f30e43a;08218146;Gemeente Hengelo;Gemeente;GM0164
+d048fe75-ae3f-44ce-aec3-2c2fe4e5345a;08218153;Gemeente Voorst;Gemeente;GM0285
+618071bf-2ed1-4cf5-a140-0673e232c629;08218173;Gemeente Zwolle;Gemeente;GM0193
+8af0d208-0f65-4127-a7f6-1704c0b83f49;08218414;Gemeente Elburg;Gemeente;GM0230
+e50743ae-a421-4581-8895-5e2ca1a67b04;08221859;Gemeente Hellendoorn;Gemeente;GM0163
+d6139dd8-64f9-4b10-a328-3b2bf1e1119f;08222726;Gemeente Olst-Wijhe;Gemeente;GM1773
+e3bb1610-297c-4c65-a2d2-cd85064ba764;08223460;Gemeente Oldebroek;Gemeente;GM0269
+e3047df8-d2f8-4124-b415-da62281c6c42;08223882;Gemeente Apeldoorn;Gemeente;GM0200
+ff8bcb89-7fcb-4859-aa04-f14f535dbf15;08224234;Gemeente Oldenzaal;Gemeente;GM0173
+6fef83b2-0fb7-4a4c-99dd-298f87eb2aad;08226314;Gemeente Dinkelland;Gemeente;GM1774
+414d8e2d-789c-40db-aaed-9b8c1199deea;09036504;Arcadis Nederland B.V.;Overig;
+a5723159-6b89-4d00-84fd-60afd043cfa1;09043479;Eijkelkamp Soil & Water;Overig;
+040bb513-9dd7-45a1-b978-96f3016a0c15;09073590;Bam Infraconsult B.V.;Overig;
+78a7b5a4-19c6-4a83-94bf-f8855e5af3fe;09083617;Verbelco BV;Overig;
+ceacf0d3-f6d8-41cd-a89e-007b6a42a34f;09098104;Stichting Wageningen Research;Overig;
+c69089da-1e39-4df2-9fe9-be4c0155dba8;09122512;Ingenieursbureau Land B.V.;Overig;
+a0818d50-2191-4e3e-922a-a37c26a3aea2;09128573;VCMI NV;Overig;
+9ffbce48-b092-4a21-b46e-661846bbd82a;09131961;Aequator Groen & Ruimte bv;Overig;
+f1570a4c-0cdd-4fa4-9557-ed0bc50dbfdf;09132872;Coöperatie Bosgroep Midden Nederland U.A.;Overig;
+d24f53ad-4e56-46da-8676-4f225eb1d239;09182897;I-Real B.V.;Overig;
+115c8327-1aa6-4af6-a4a3-13cb85014792;09212462;Gemeente Berkelland;Gemeente;GM1859
+dcad95e8-65c8-4eb0-a417-fc344a4e1f19;09212509;Gemeente Westervoort;Gemeente;GM0293
+e1eda400-6dfc-4772-947b-1b128cfbc3ef;09212525;Gemeente Oost Gelre;Gemeente;GM1586
+1e61a40d-f0b0-4961-ace3-a6b40e62871d;09212548;Waterschap Rijn en IJssel;Waterschap;WS07
+e77e058a-bae0-4f42-ac7b-901d9215568b;09212602;Gemeente Wijchen;Gemeente;GM0296
+0164bffd-8958-429e-8fac-67cea5185d4f;09214908;Gemeente Arnhem;Gemeente;GM0202
+f3fd8e8b-3cda-4cce-8b14-f30660b280cf;09214922;Gemeente Rozendaal;Gemeente;GM0277
+5865ebcf-d7a8-4953-bb4f-4e4561a638f4;09215631;Gemeente Aalten;Gemeente;GM0197
+9186debb-8157-4645-b316-d5250210178e;09215639;Gemeente Rijnwaarden;Overig;
+ddacb1e3-4f73-47ec-9e52-ea200b917b24;09215646;Gemeente Ede;Gemeente;GM0228
+0cd36acb-dab4-4d99-80e0-2faa946390ad;09215649;Gemeente Renkum;Gemeente;GM0274
+79981492-c9ed-4cd8-8491-c2876e7550dd;09215668;Gemeente Doetinchem;Gemeente;GM0222
+92a36d7c-c1d3-4041-a367-ba7ce8c369d2;09215819;Gemeente Mook en Middelaar;Gemeente;GM0944
+0b1cd6b4-55f1-4194-9e1e-b3becac4baac;09216322;Gemeente Wageningen;Gemeente;GM0289
+5cad2594-e29e-4e36-b417-db5b4af083bd;09217727;Gemeente Duiven;Gemeente;GM0226
+06904594-a12e-48d1-9229-b9b7f88aa68a;09217772;Gemeente Montferland;Gemeente;GM1955
+a0c9d485-2927-4438-a831-f53df2882157;09218559;Gemeente Bronckhorst;Gemeente;GM1876
+c4f661db-54ef-43a5-b3da-0ffde436392e;09219446;Gemeente Winterswijk;Gemeente;GM0294
+f2223354-9c60-4550-ae62-177235c05378;09220932;Gemeente Nijmegen;Gemeente;GM0268
+de75d37f-9b5c-4333-96e9-b49a2191f7bc;09220971;Gemeente Oude IJsselstreek;Gemeente;GM1509
+ac5df767-e77a-4d10-a322-b20d89f5db32;09222121;Gemeente Doesburg;Gemeente;GM0221
+16648016-36d3-405b-b3c9-77b93136a937;11020958;Van de Beek kabels-Leidingen B.V.;Overig;
+cbf0c56a-7e07-48ef-b592-a742dea64f63;11067758;Gemeente Zederik;Overig;
+5ed2f093-ee7a-4346-9782-c2614a0b171b;13017175;Mourik Limburg B.V.;Overig;
+5aa35859-36d4-4b61-a965-4187643aa64b;13021491;Kragten;Overig;
+2266d98a-b6f2-47e0-b581-1aff388e4c29;13038286;Econsultancy B.V.;Overig;
+2d76183b-fa12-4701-b43a-2a31c9d1dc72;14048726;Geonius Geotechniek B.V.;Overig;
+db72c0aa-bf06-4189-85f0-08e3920396b4;14117104;Gemeente Roermond;Gemeente;GM0957
+92c684e5-74cd-4c88-9976-8ed6fa4f815d;14128451;Gemeente Heerlen;Gemeente;GM0917
+149cf3b9-f2ef-4dfa-9e9b-299c3d7e4fac;14129999;Gemeente Brunssum;Gemeente;GM0899
+2a37d2cb-4ad9-4106-83a0-2d66b0a054bc;14130475;Gemeente Sittard-Geleen;Gemeente;GM1883
+ca55728b-73f5-411b-8aaf-a5e3c7146ceb;14130612;Gemeente Horst aan de Maas;Gemeente;GM1507
+4b41d28e-6a89-47b9-b572-c78b24c7f59b;14130743;Gemeente Beesel;Gemeente;GM0889
+7af4df3f-b917-422a-baa1-a1f11afd1b98;14131481;Gemeente Gennep;Gemeente;GM0907
+2224a4ed-a7cc-4026-802a-2a5bbd23ce5f;14131528;Gemeente Landgraaf;Gemeente;GM0882
+bcc78183-834e-4e63-9ef4-1157f43ac0c4;14131668;Gemeente Venlo;Gemeente;GM0983
+d999914d-4df8-4b25-bb13-4cb0f68fb693;14131921;Gemeente Valkenburg aan de Geul;Gemeente;GM0994
+8ce8cbc7-2bdc-4760-a234-3b49d25198c5;14131922;Gemeente Vaals;Gemeente;GM0981
+c4c2ab47-5d10-4247-bf9b-e632f0a788c1;14132389;Gemeente Venray;Gemeente;GM0984
+a0bd5739-4879-48b8-9850-d778260f6335;14602038;N.V. Waterleiding Maatschappij Limburg;Overig;
+b66c89a8-ab96-49b7-a8c7-4d2ca829fc80;14635629;SPIE Nederland B.V.;Overig;
+78b44469-0790-4d2f-bc05-aa674bd86f2d;16005077;Brabant Water;Overig;
+ea86d4d7-bbea-407f-91f0-8b0a2d9e4d14;16055402;Vissers-Ploegmakers B.V.;Overig;
+7cb2d840-1cc4-46fa-bfe2-22ac280eb3a8;17052457;Ingenieursbureau Inpijn-Blokpoel Son B.V.;Overig;
+b6afd7eb-1cad-4bea-bfa0-f9f299ac07ec;17076128;Ingenieursbureau Inpijn-Blokpoel west B.V.;Overig;
+7fbf7e70-6c6a-46ca-9137-d9525386c397;17104126;Heijmans Infra B.V.;Overig;
+c6004ff5-64d2-476c-8666-e7bd395ae50e;17131641;Lankelma Geotechniek Zuid B.V.;Overig;
+c13ad3ef-cfff-4d79-8409-3b7d4b65c475;17185598;LWRO;Overig;
+40546624-ecd1-4e97-88d9-0bea54cf9fd2;17200060;DataScore Software B.V.;Overig;
+e47eb5e0-9a93-4964-bfe0-08d85fe3a985;17237737;Gemeente Sint-Michielsgestel;Gemeente;GM0845
+4b026399-e530-484c-b9f6-403742c3e989;17242249;Gemeente Sint Anthonis;Gemeente;GM1702
+e583c798-a1c6-437b-a0a1-9db03e84f2a9;17251019;Waterschap Aa en Maas;Waterschap;WS38
+cc8ce227-d41c-4e82-a514-aea21be91cbd;17268742;Gemeente Hilvarenbeek;Gemeente;GM0798
+1f154d65-e91f-4acd-b9e3-d5505a104006;17269410;Gemeente Waalre;Gemeente;GM0866
+3560b902-0c5b-41a9-95cb-5b0452fa86fb;17272342;Gemeente Valkenswaard;Gemeente;GM0858
+0c8693be-2725-4c26-a508-06e65c24de03;17272483;Gemeente Veldhoven;Gemeente;GM0861
+52562d88-9f1b-4a46-a111-d56d6f6eb4de;17272521;Gemeente Reusel-De Mierden;Gemeente;GM1667
+dff9646b-82b8-4eef-98a4-11620dfc6a2c;17272524;Gemeente Geldrop-Mierlo;Gemeente;GM1771
+1c058647-e297-4611-a6f5-9a2fa4a327c7;17272566;Gemeente Bladel;Gemeente;GM1728
+447dec3b-9407-4a3d-b952-72bd19a22478;17272622;Gemeente Woudrichem;Overig;
+b4c2a8e6-4b3e-4e5c-b00e-ca905c921f8c;17272669;Gemeente Helmond;Gemeente;GM0794
+b07c289d-be01-47b0-9702-177f1db9e997;17272690;Gemeente Goirle;Gemeente;GM0785
+14dec6fe-9a0e-449d-a652-b95f541fa786;17272738;Gemeente Eindhoven;Gemeente;GM0772
+ff473648-1962-41df-a001-b431dce2f81f;17272741;Gemeente Gilze en Rijen;Gemeente;GM0784
+504b9303-03dc-47b8-a4bb-30b6f51f74a8;17272760;Gemeente Oisterwijk;Gemeente;GM0824
+893ec9c1-2f4b-4d48-87ca-8d6ca62b3e23;17273055;Gemeente Best;Gemeente;GM0753
+c47687e3-22bd-4670-b8a4-3e85da833572;17273152;Gemeente Someren;Gemeente;GM0847
+000f6119-5a28-4344-8aaa-10929ec862dd;17273202;Gemeente Bergeijk;Gemeente;GM1724
+8e1f3cc2-708f-4810-9c09-d949aea3c87f;17273265;Gemeente Eersel;Gemeente;GM0770
+208930c7-b9ef-4002-b2b9-d69899447ad5;17274037;Gemeente Heeze-Leende;Gemeente;GM1658
+94845ff5-d9e7-4e6e-95ad-00b237b0772f;17274242;Gemeente Aalburg;Overig;
+9050ea21-e194-4d6d-89af-9a1bf2f462cc;17274669;Gemeente Dongen;Gemeente;GM0766
+dda7dde1-8155-4e31-9270-94688684ff42;17275949;Gemeente Landerd;Gemeente;GM1685
+908a84b6-d77b-4e3b-8181-e220a33d8b66;17277734;Waterschap De Dommel;Waterschap;WS27
+79b22141-410d-4f14-91fd-482405abd210;17278006;Gemeente Waalwijk;Gemeente;GM0867
+fde3aea9-344f-4a52-a009-167f4c7d4125;17278466;Gemeente Grave;Gemeente;GM0786
+d025a330-5352-4d44-b8ee-0145ca3bcc03;17278565;Gemeente Heusden;Gemeente;GM0797
+6553fda0-10af-4225-a4e0-4681313d9dd3;17278580;Gemeente Boxtel;Gemeente;GM0757
+def667fc-8635-44c8-91b7-3577d0e2b590;17278665;Gemeente Cuijk;Gemeente;GM1684
+ba401b84-ba7e-4589-b832-daace5f485f9;17278704;Gemeente 's-Hertogenbosch;Gemeente;GM0796
+8708e5c0-6c08-46f8-b532-5fc0dcd64610;17278718;Provincie Noord-Brabant;Provincie;PV30
+06d5ce38-9ed3-4e14-b8a7-178816c5adf8;17278721;Gemeente Boekel;Gemeente;GM0755
+de799661-2063-44bd-a3cb-abef5f6aab35;17279334;Gemeente Uden;Gemeente;GM0856
+a05d573a-6773-44cf-b7df-d02e46c577c8;17279582;Gemeente Laarbeek;Gemeente;GM1659
+8bdb313d-9da1-4121-b484-9158d5dcb4b7;17280777;Gemeente Loon op Zand;Gemeente;GM0809
+75fd8c1f-d8b1-4630-af5a-8229af42f527;17280818;Gemeente Son en Breugel;Gemeente;GM0848
+e73c96a6-ff25-4380-a014-a29138ff24c2;17281808;Gemeente Tilburg;Gemeente;GM0855
+e4a2f672-66d5-4a63-a26b-af7bfe05c917;17281823;Gemeente Deurne;Gemeente;GM0762
+30164c52-92eb-4196-81de-77be1da84536;17282376;Gemeente Cranendonck;Gemeente;GM1706
+22631c63-a61c-4d49-9959-919d76518943;17283654;Gemeente Nuenen, Gerwen en Nederwetten;Gemeente;GM0820
+d642e1e8-a689-447f-80aa-791e57c518de;17285344;Gemeente Oirschot;Gemeente;GM0823
+fa859593-2c42-4f51-92d7-0eaf95ed4659;18031929;F.L. Liebregts B.V.;Overig;
+dc584536-d381-4aa2-9311-02b8653c4124;18106742;Van Oord Nederland;Overig;
+8d22d27e-32c0-4214-a0f0-f1728d09fe53;18114401;Hakkers B.V.;Overig;
+57450d66-1cb4-4d6b-9f2d-437c20ad4af7;20015504;Van der Straaten Geotechniek B.V.;Overig;
+704f7061-8544-49fe-aba8-df98bf7216d9;20018251;Grondboorbedrijf gebrs. Konings B.V.;Overig;
+35758ddc-693f-4504-897d-867782f2afdd;20032947;Strukton Civiel Zuid B.V.;Overig;
+d8b2d09c-24fb-4e88-a0b1-2861ff05341c;20044878;Geo Infra B.V.;Overig;
+797c15d2-4553-415f-86ab-f7226773855b;20050564;Martens en Van Oord Aannemingsbedrijf B.V.;Overig;
+b2e99f86-d949-4ba8-a4a6-dec52f62fef7;20051141;AGEL adviseurs B.V.;Overig;
+45b32103-fa64-4931-aa59-725772793b95;20075240;Bouwservice Management Nederland B.V.;Overig;
+82c18385-589f-41a5-9605-151ac824b898;20151657;Gemeente Moerdijk;Gemeente;GM1709
+554c0c92-07c4-4fd8-8baf-70adf93214c3;20164138;Gemeente Borsele;Gemeente;GM0654
+9847c928-51df-4fec-9d84-d581f4398ad8;20164313;Gemeente Sluis;Gemeente;GM1714
+076fecf1-16cf-4200-8784-6b778434ab11;20164410;Gemeente Drimmelen;Gemeente;GM1719
+58aadc25-2fb3-4a05-ba9b-b1f75eaae122;20164480;Gemeente Halderberge;Gemeente;GM1655
+d834adbe-5df4-4cf1-be29-3bedfb5d9160;20164548;Gemeente Vlissingen;Gemeente;GM0718
+e668dbbf-1c06-4d6c-844a-afe0b5a34cb6;20164585;Gemeente Goes;Gemeente;GM0664
+7bb224bd-e60a-4361-b5f1-ec70716f83e0;20164788;Gemeente Roosendaal;Gemeente;GM1674
+3348e357-387b-4b06-bd7b-1335f23b7d07;20164797;Gemeente Woensdrecht;Gemeente;GM0873
+2f959e9c-344c-4a20-a3a9-6581c1916bb8;20164929;Gemeente Terneuzen;Gemeente;GM0715
+d791d76f-a57c-4212-957d-f2e52938630a;20164935;Gemeente Noord-Beveland;Gemeente;GM1695
+1ba82178-bdd4-46b3-817e-0408dbf7ef0c;20164965;Gemeente Oosterhout;Gemeente;GM0826
+e3c7a87e-c144-4745-b6e4-c01236130454;20164997;Gemeente Rucphen;Gemeente;GM0840
+b59f8455-baf4-4ac0-aec6-f370c8fe4e82;20165025;Gemeente Steenbergen;Gemeente;GM0851
+d95c80a7-6213-4ef5-a6d6-72c1b0dcb88b;20165080;Gemeente Hulst;Gemeente;GM0677
+70a7eb1b-aa48-4ffa-bae0-0a4cb4ea3199;20165117;Gemeente Baarle-Nassau;Gemeente;GM0744
+25f8449f-844c-4b59-b5c6-d42835cf8389;20165936;Gemeente Veere;Gemeente;GM0717
+54d857f6-d546-4544-95d5-98c96f1a35bf;20166109;Gemeente Tholen;Gemeente;GM0716
+84d4598f-84ba-4d21-a01d-2cc39c9e16a5;20168636;Provincie Zeeland;Provincie;PV29
+8349a67e-c3e0-4640-af7e-60c81bd4a648;20169091;Gemeente Bergen op Zoom;Gemeente;GM0748
+831b2a35-8d89-40dc-9748-213223d3d756;20169706;Gemeente Breda;Gemeente;GM0758
+20c4fcb6-0e64-4be9-ae0d-6a05f63fd3cf;20170062;Gemeente Schouwen-Duiveland;Gemeente;GM1676
+d4fcaa81-83ee-4aeb-bb54-bac370e54913;22063981;NU-adviesbureau;Overig;
+c9bd76cc-0a9f-4a3b-96e7-2aeab298d269;23039023;Kuipers Electronic Engineering B.V.;Overig;
+23691e7b-bdc9-46f6-94c6-fb0848c81ea3;23048358;Van den Herik Kust- en Oeverwerken B.V.;Overig;
+e988a0ef-6f7a-4b47-9357-b15f6fd83b46;23058363;bouwtechnisch adviesbuerau Ir T Stam;Overig;
+c7c569fe-e913-48a9-9887-ce5c9a69a795;23087854;Ingenieursbureau BT Geoconsult B.V.;Overig;
+445c2007-7716-4789-a570-1ce67a362590;24143025;Boskalis Nederland B.V.;Overig;
+6d96c546-0d24-4e80-b88e-8fc2b166391a;24161143;RPS Advies- en Ingenieursbureau B.V.;Overig;
+f17608f3-9f8e-4e31-a190-615f9b820486;24257098;Mos Grondmechanica B.V.;Overig;
+31cf7e2c-982e-4d61-98fc-aeeb34beaef2;24277837;DEME Infra Marine Contractors B.V.;Overig;
+ab279c6d-33f2-41f0-97f4-833b35df77d9;24289439;Mobilis B.V.;Overig;
+87e7c958-3d81-4074-9ae1-bef83e0076e6;24316426;Adviesbureau C.G.M. Schrijvers B.V.;Overig;
+3ac16009-18b7-4d14-99c4-4bc2880929be;24347782;BAM Infra B.V.;Overig;
+a363aaa0-9ab9-4edf-b7e0-0f970561a2dc;24428291;Acacia Water B.V.;Overig;
+89afd75b-522c-4284-8fcc-a0f28c19084c;24431723;Inventerra;Overig;
+466aedc9-1e6e-4d2d-8200-d65a4f9cd0ba;24450933;De Vries & Van de Wiel Kust- en Oeverwerken B.V.;Overig;
+63558712-df11-4fc7-bbdf-da37a2d65f8d;24482458;Gemeente Waddinxveen;Gemeente;GM0627
+e76fa97a-8f81-44e0-bb22-69b33daf5395;24483056;Gemeente Korendijk;Overig;
+0a205224-9b3e-43f6-90a5-3da77349fbbb;24483298;Gemeente Rotterdam;Gemeente;GM0599
+3d1cd776-ee43-4f1a-9109-25200e761816;24483621;Gemeente Papendrecht;Gemeente;GM0590
+219c9a22-1f5c-46a7-9a0e-fb1ec328c9a6;24483633;Gemeente Oud-Beijerland;Overig;
+e5ec05fb-60db-41d7-83a4-448b3254934f;24484110;Gemeente Maassluis;Gemeente;GM0556
+6fc1fe5e-3096-485c-b4ae-9f07f1a3d21d;24485270;Gemeente Vlaardingen;Gemeente;GM0622
+90e03b0f-abea-49ca-aad6-27a2895f2f13;24485569;Gemeente Strijen;Overig;
+c67b5f5b-fcb3-4129-a903-ecf5fac40982;24485644;Gemeente Binnenmaas;Overig;
+e9adf844-bcb2-4403-994a-619d2e70a97d;24487063;Gemeente Gouda;Gemeente;GM0513
+2776e4b9-f658-424c-9831-a2017b48676a;24488714;Gemeente Hendrik-Ido-Ambacht;Gemeente;GM0531
+36beac6e-2a0a-4ff6-af69-057b4bbd9279;24488726;Gemeente Sliedrecht;Gemeente;GM0610
+604c0b6e-8fce-4a51-961e-6c1f1f7c0e1e;24490491;Gemeente Zwijndrecht;Gemeente;GM0642
+0559fb81-c13c-4651-9b43-fe4a975ebda3;24493197;Gemeente Ridderkerk;Gemeente;GM0597
+843e7819-5702-4d4f-9fbb-2ac0dca4c33e;24494374;Gemeente Barendrecht;Gemeente;GM0489
+0b26c522-71d4-4294-ae1b-00efbbb56e13;24494625;Gemeente Cromstrijen;Overig;
+7989b199-f87f-406a-b57c-83de5dd4ae46;27114147;Fugro NL Land B.V;Overig;
+2b357d5c-2b46-4da5-b340-2de78baa5621;27122974;Dunea N.V.;Overig;
+96741a5e-cc63-4408-a83f-9c7a8ab7a334;27177140;ATKB B.V.;Overig;
+64071034-7b6b-4fd9-ba73-af2f3de2f96b;27184323;Stantec;Overig;
+f2c9a747-4278-40f6-a6f1-7078a8d3aa55;27184822;Geosonda BV;Overig;
+a8591ef5-b46d-49b2-bcf5-76c1e4720a20;27198742;Stichting ICTU;Overig;
+faefafd0-caec-4cd7-8867-279ba7f23c45;27227624;Van Essen Instruments B.V.;Overig;
+d923d17b-8572-4ac4-bff6-6c6da1bb6278;27239531;TerraIndex B.V.;Overig;
+6f5b50ce-2187-4441-89d7-449a7e4f51f1;27279653;KWR Water B.V.;Overig;
+60ddc4cc-0e90-4d96-951c-9a7054a63974;27313745;Munisense BV;Overig;
+d5c34441-3f00-4229-b090-ff8c87521911;27363529;Gemeente Zoeterwoude;Gemeente;GM0638
+22b51d1a-fed1-454d-8eba-e2623c3c1061;27363838;Gemeente Hillegom;Gemeente;GM0534
+3f90784d-d016-4e32-a5dc-bd137f46ad89;27364127;Gemeente Leiderdorp;Gemeente;GM0547
+26c888ea-9b01-41e6-94e8-17e84ce1afa4;27364167;Gemeente Teylingen;Gemeente;GM1525
+a95fa3e1-8c89-40b0-803f-1940684c24e6;27364178;Rijkswaterstaat;Overig;
+55c78c40-fe8c-4cee-a1eb-2ec03069bc5d;27364192;Gemeente Leiden;Gemeente;GM0546
+5fabd1a6-8377-4c47-b846-f9b41786eb4b;27364328;Gemeente Nieuwkoop;Gemeente;GM0569
+c14dcf9f-6e59-455b-9be3-3ac989486b3a;27365912;Gemeente Pijnacker-Nootdorp;Gemeente;GM1926
+210e9a92-06de-4aa5-b572-5bc7b5774b83;27366643;Gemeente Lansingerland;Gemeente;GM1621
+e7439a4c-0bcb-4584-910c-3948d2a0f9ad;27367348;Rijksdienst voor het Cultureel Erfgoed;Overig;
+0e9e69e8-cfc7-4012-b24f-384a23fdb167;27369098;Gemeente Kaag en Braassem;Gemeente;GM1884
+f0582b24-f3f6-4abc-91d1-2bc119cb930a;27370601;Gemeente Midden-Delfland;Gemeente;GM1842
+ec4d47f8-5891-47ea-9f01-718fbe3bddbf;27370927;Gemeente 's-Gravenhage;Gemeente;GM0518
+ee351c70-8899-4500-b4ee-d0ad2c48940c;27370940;Gemeente Leidschendam-Voorburg;Gemeente;GM1916
+d7352fe4-26d4-4eff-9148-23f24831a71b;27370956;Gemeente Katwijk;Gemeente;GM0537
+d7b6bf15-a5b1-4b3a-9c59-7d104df6b703;27370966;Gemeente Lisse;Gemeente;GM0553
+c88cb98c-9204-41f7-ac86-bf4f3785d437;27371717;Gemeente Westland;Gemeente;GM1783
+64eab849-c907-4c04-8375-fbce0215dc0b;27374588;Gemeente Delft;Gemeente;GM0503
+3d409eec-76f2-4d22-b2e9-f7dd3693cfb5;27375169;Provincie Zuid-Holland;Provincie;PV28
+7b3f37fa-9ade-40b1-a5f7-39f26783badf;27375186;Gemeente Alphen aan den Rijn;Gemeente;GM0484
+ce627910-59c8-43b6-8337-134b70a5cf6a;27376002;Gemeente Zoetermeer;Gemeente;GM0637
+cb605bc5-2c9d-4a1f-862e-7d6b5af79d60;27376655;TNO;Overig;
+b9a3628b-734a-4a06-b941-1591943b8b3c;27378529;Rijksdienst voor Ondernemend Nederland;Overig;
+b6870a51-65f5-46fc-a014-57423dd39f6a;27380612;Gemeente Wassenaar;Gemeente;GM0629
+70210218-9045-425d-87ed-fd52bb16ce54;27381083;Gemeente Voorschoten;Gemeente;GM0626
+2ad3bd13-5011-4b6c-9944-11e4268e912f;28047921;IDDS B.V.;Overig;
+94338fd7-d6d8-426f-877b-acb3c314a396;29010639;Oasen N.V.;Overig;
+b584a5c6-42a4-4858-a466-cc82f450b8c1;29021830;Antea Nederland B.V.;Overig;
+ddb9680f-a7cb-428c-9910-cd3a56d12c45;29032656;Ifco Funderingsexpertise B.V.;Overig;
+53e4bf1a-c646-469d-9f16-ccc300886ade;30101055;Grondslag B.V.;Overig;
+aed56285-05b7-43cf-a904-40d9561db9dd;30114487;Sialtech B.V.;Overig;
+82b63a9f-8a18-42c2-acda-4d3d24225d99;30124359;ProRail B.V.;Overig;
+caa69efc-5379-4e45-ae71-7bb8756806cc;30128364;Van Dijk Geo- en Milieutechniek;Overig;
+8ae2c75b-9366-47c6-8af7-9c7d1edc2c5d;30129769;Sweco Nederland B.V.;Overig;
+745c8d45-745a-426b-be23-030ff8325a71;30152124;LievenseCSO Milieu B.V.;Overig;
+03232e8b-f349-403f-8d8e-b102a8d795c7;30169759;Aveco de Bondt;Overig;
+dd8474b5-1f77-4243-a452-86a2d481a68a;30171797;GOconnectIT B.V.;Overig;
+422e9932-2f8f-49a5-9c7c-f308cb062f9f;30192532;Energeo B.V.;Overig;
+6ceb4603-d6e1-4a06-90b4-951b710ce320;30203750;Koenders & Partners adviseurs en procesmanagers B.V.;Overig;
+924ae556-13c4-408c-8da4-ad1c88abfbd6;30272405;Gemeente Maasdriel;Gemeente;GM0263
+17e92b4f-909a-492f-b6e8-f9fc921a50ac;30276311;Gemeente Neder-Betuwe;Gemeente;GM1740
+8b5b9566-70de-40a7-8c71-8178afad15f9;30276683;Rijksinstituut voor Volksgezondheid en Milieu;Overig;
+061fc1ee-3f3d-4ae1-8bc2-5afc7637de59;30276781;Gemeente Zaltbommel;Gemeente;GM0297
+91859dd9-45ef-4820-9140-b829e7bc61bf;30276831;Hoogheemraadschap De Stichtse Rijnlanden;Waterschap;WS14
+6e6d8a2a-b46b-44bf-a980-1f007977781a;30276854;Gemeente West Maas en Waal;Gemeente;GM0668
+dc1607b4-d6a4-4ce0-93c3-191f6bec9575;30276892;Gemeente Leerdam;Overig;
+37e08587-67f2-47a9-80ee-f62a8652feda;30277029;Gemeente Nieuwegein;Gemeente;GM0356
+59d15333-eb46-4fd6-8c51-a112d875647c;30277172;Provincie Utrecht;Provincie;PV26
+24436435-3b5f-4d40-b227-f34b0bd0f3ac;30277195;Gemeente Montfoort;Gemeente;GM0335
+094953eb-0bab-41fe-96be-10c875076e42;30278157;Gemeente Buren;Gemeente;GM0214
+ba06b8dc-a25f-4620-a36f-4552706a9e60;30278213;Gemeente Bunnik;Gemeente;GM0312
+00f4ccd5-d92b-48ce-a277-c38a3d1d5d4f;30278756;Gemeente Culemborg;Gemeente;GM0216
+786cdac9-7acc-4da8-8710-c6356daa4054;30279480;Gemeente Druten;Gemeente;GM0225
+56ccdecb-e30a-4074-9660-02d546b7a057;30279619;Gemeente Houten;Gemeente;GM0321
+e7d2f998-d2a2-4620-b6b7-33473626fbe5;30279625;Gemeente IJsselstein;Gemeente;GM0353
+70b37e65-e5a5-4965-a40d-dac647daec0d;30279669;Gemeente Wijk bij Duurstede;Gemeente;GM0352
+62f2b782-d75b-4db4-901d-66d290c80b32;30280353;Gemeente Utrecht;Gemeente;GM0344
+e2e6ba01-65c7-4364-bb34-12bae89b8a75;30280479;Gemeente Gorinchem;Gemeente;GM0512
+6dc37f45-76dc-4046-a275-dc8241352ca0;30280563;Gemeente Neerijnen;Overig;
+82ecc9eb-b3eb-41f6-9cf5-1107a2c718f2;30280709;Gemeente Giessenlanden;Overig;
+436b6376-2777-4bc0-952e-d52e2a91da4e;30281419;Waterschap Rivierenland;Waterschap;WS09
+a39fc680-75e5-406d-bf73-8196364a38a0;30282147;Gemeente Tiel;Gemeente;GM0281
+e6dfc990-eb25-4272-97d8-54d17ba39a6f;30282562;Gemeente De Ronde Venen;Gemeente;GM0736
+c74f0716-1516-4bdc-8778-3d9875de1c3b;30283218;Gemeente Rhenen;Gemeente;GM0340
+7b5d1296-2555-49e2-8108-93c043e80549;30286180;Gemeente Lingewaal;Overig;
+6441c6f9-0158-420d-9db6-fbc3413cf418;30286795;Gemeente De Bilt;Gemeente;GM0310
+1bc85d10-f011-4ea2-9269-d1687be5d35f;32068654;PJ Milieu B.V.;Overig;
+88b15d60-d2a6-43a5-8886-9cab9acf64ec;32160938;Gemeente Amersfoort;Gemeente;GM0307
+aea07479-4259-4699-8a55-de3f81e0cb3e;32163726;Gemeente Renswoude;Gemeente;GM0339
+236edc48-068e-484d-bd90-4d7202bc7099;32163787;Gemeente Soest;Gemeente;GM0342
+28701a59-3f83-4db8-9826-3a45527cca84;32164084;Waterschap Zuiderzeeland;Waterschap;WS37
+47bf453a-da82-4db1-b9fc-f121752449de;32164140;Provincie Flevoland;Provincie;PV24
+fca960ca-1a41-419b-8de3-6f267a1712bb;32164515;Gemeente Zeewolde;Gemeente;GM0050
+c1bba9c0-623b-4676-b92b-48bb1cd5ce6a;32164984;Gemeente Almere;Gemeente;GM0034
+1b961240-390c-4f9c-9e63-eae1314a46f8;32165063;Gemeente Wijdemeren;Gemeente;GM1696
+38abf2fc-8f24-4236-b72c-01e62f092c47;32165156;Gemeente Nijkerk;Gemeente;GM0267
+315fdc4b-9116-4ebe-81b5-d2fe37192039;32165160;Gemeente Bunschoten;Gemeente;GM0313
+60ff8776-1426-489f-8b20-0a3fb081c4a4;32165235;Gemeente Weesp;Gemeente;GM0457
+4240aabe-e6ae-4cb7-a21a-5d7063e78ab9;32165460;Gemeente Dronten;Gemeente;GM0303
+ec1a2b2a-c24c-4bd7-9ba6-e2e4f2976add;32166112;Gemeente Huizen;Gemeente;GM0406
+e951278b-842e-43aa-b7b4-76c2ee2c813b;32166227;Gemeente Urk;Gemeente;GM0184
+36ddc385-2b61-4408-94f4-074d3003532b;32167607;Gemeente Baarn;Gemeente;GM0308
+13076227-f1bf-46a7-9442-b77d726b5b81;32167695;Gemeente Leusden;Gemeente;GM0327
+4873062d-4737-4821-899f-4d829828059d;32168248;Gemeente Scherpenzeel;Gemeente;GM0279
+319338fa-c7c4-4388-a757-364b78e9081c;32168837;Gemeente Blaricum;Gemeente;GM0376
+e99d4f03-7dae-4ba7-88bc-7f2d64e8e306;32169164;Gemeente Laren;Gemeente;GM0417
+dc065199-32ff-4481-b96e-cb4eee79b953;32170038;Gemeente Eemnes;Gemeente;GM0317
+819cb674-b0a3-47c4-bf7f-b7731b2bfd86;32170205;Gemeente Noordoostpolder;Gemeente;GM0171
+d74cbd55-6562-4fcb-852f-95bfc5adf7d6;32170443;Gemeente Hilversum;Gemeente;GM0402
+969d4523-37ec-4182-b2c8-fbc5f2ff9742;33056888;Strukton Civiel Noord & Oost B.V.;Overig;
+26b9fc83-95ce-4bfc-afad-bc14f3e69dc4;33154028;Ballast Nedam Infra B.V.;Overig;
+4e08aed7-f414-4863-a5e6-18077ddbb68d;33223543;Wareco Amsterdam B.V.;Overig;
+8d64bb5f-bcbe-40f9-b5bf-045ebf96daab;34057287;Tjaden B.V.;Overig;
+1f396f7a-b5fc-4b6a-85db-5952e170d1f0;34072007;N.V. PWN Waterleidingbedrijf Noord-Holland;Overig;
+ddcd2bd6-32f5-498f-b01f-ea177113a172;34082755;BK Ingenieurs B.V.;Overig;
+6bf31622-6a8c-4781-b964-d6d11f364e5d;34171248;CRUX Engineering B.V.;Overig;
+95257381-90c6-47cf-9c8c-7fcc27c11e79;34182597;Van Harlingen Grondwater Management B.V.;Overig;
+63ac3e3a-3a8b-444d-a038-95810c4232af;34359301;Gemeente Haarlemmerliede en Spaarnwoude;Overig;
+599dbabf-e3e0-4d25-a337-c01b1b6fc23b;34359304;Gemeente Bloemendaal;Gemeente;GM0377
+56f6069c-6a33-4d70-8587-5c7c73407a9a;34359313;Gemeente Ouder-Amstel;Gemeente;GM0437
+4b51f201-3cb0-458b-917d-1e7e3efabbba;34360267;Waterschap Amstel, Gooi en Vecht;Waterschap;WS31
+146af3b4-257e-418f-bd81-af1b0b133fb1;34362237;Gemeente Aalsmeer;Gemeente;GM0358
+7379932c-39c5-4c94-89b1-b39b69dcf7fb;34362354;Provincie Noord-Holland;Provincie;PV27
+7fbdc2f8-17aa-4d26-9a40-c2538957021d;34363827;Gemeente Landsmeer;Gemeente;GM0415
+3b01a90c-e6d4-492a-9a0c-d81924ed62b3;34363838;Gemeente Uitgeest;Gemeente;GM0450
+215cb03a-dee6-4793-8217-fa00b4c0d969;34363858;Gemeente Zandvoort;Gemeente;GM0473
+58123de2-befd-4ecc-a3ef-9fc5aa72e63a;34365024;Gemeente Amstelveen;Gemeente;GM0362
+0b4604c1-766c-4371-b2e9-397e9117aaca;34366966;Gemeente Amsterdam;Gemeente;GM0363
+38ee67f9-fe84-4064-a14f-75707ea2231a;34367942;Gemeente Zaanstad;Gemeente;GM0479
+e7904b74-fbfb-49c6-b517-55bed2ff8bf0;34368749;Gemeente Heemskerk;Gemeente;GM0396
+9173b8a1-5f6e-4c07-8aa4-25b2b219916a;34369366;Gemeente Haarlem;Gemeente;GM0392
+f41382f1-8c10-4422-83c9-d07f985c07df;34371004;Gemeente Wormerland;Gemeente;GM0880
+c9bf24c9-0fff-4c8a-87eb-9c7ec19d0a88;34371033;Gemeente Oostzaan;Gemeente;GM0431
+5b23948a-33ff-40be-a003-3a49da23c56b;34371711;Gemeente Uithoorn;Gemeente;GM0451
+385623f5-fcc9-4694-81ab-582f6b09a0a6;34374815;Gemeente Diemen;Gemeente;GM0384
+b0623aef-648e-4597-8e89-18facf96e0dd;34379987;Gemeente Beverwijk;Gemeente;GM0375
+223f8cbc-78df-403d-a171-c9c823794fe1;34381346;Gemeente Heemstede;Gemeente;GM0397
+7dda2be1-c794-4bd0-9f32-cb753ead2942;36039833;Unihorn B.V.;Overig;
+3d13b7e3-1151-492b-9bab-9db9e47227ed;37061883;Aannemingsmaatschappij De Vries & Van de Wiel B.V.;Overig;
+82231989-3b70-4185-ab98-106e1b4a67a4;37104311;Duwabo B.V.;Overig;
+bc9f7042-63ce-4e79-ad40-fe8c95d1a044;37158345;Gemeente Waterland;Gemeente;GM0852
+478c02f0-8491-4956-af10-d9396d79596e;37158509;Gemeente Castricum;Gemeente;GM0383
+89a174c7-a869-4aac-ad9a-083626186bce;37159077;Gemeente Enkhuizen;Gemeente;GM0388
+cef05ec3-028a-4268-b631-5f3b9420958a;37159084;Gemeente Hoorn;Gemeente;GM0405
+6746caae-fb08-4353-acdd-eb89b20cb74b;37159104;Gemeente Texel;Gemeente;GM0448
+486a03f7-a178-4916-b38e-d756b57bd467;37159195;Gemeente Opmeer;Gemeente;GM0432
+1d32e10c-5ba7-4d43-8094-da24a5a9638a;37159339;Gemeente Heerhugowaard;Gemeente;GM0398
+8e017a33-37ef-467e-95f4-3fd9b82a719b;37159352;Gemeente Langedijk;Gemeente;GM0416
+0cefffa5-1b4a-4943-af63-7f70c0fce1c2;37159392;Gemeente Bergen (NH.);Gemeente;GM0373
+b4a059ca-617a-4b5f-a3fb-b59072ca04d8;37159550;Gemeente Stede Broec;Gemeente;GM0532
+683dd0e8-8542-4dda-9aa6-5068f12a2182;37159666;Gemeente Heiloo;Gemeente;GM0399
+2aa8d8bf-cd4b-4992-bd44-312db93f3729;37159672;Gemeente Medemblik;Gemeente;GM0420
+d4055609-bf6d-4c21-b458-5043b4708fa3;37159718;Gemeente Drechterland;Gemeente;GM0498
+8405120b-ec67-4571-be51-e3f9218bb37e;37160006;Gemeente Beemster;Gemeente;GM0370
+f12f06e7-d2e2-4047-ae63-dba8fa62f361;37160613;Gemeente Den Helder;Gemeente;GM0400
+a91d6128-98d2-41a4-8b8d-17d1cb64659f;37161516;Hoogheemraadschap Hollands Noorderkwartier;Waterschap;WS12
+dc06c43d-4f6e-4b1f-b034-ed97c77c7a6f;37162503;Gemeente Purmerend;Gemeente;GM0439
+b61b37d2-cdc5-471c-9276-75f9a495ea1d;38014985;Tauw b.v.;Overig;
+7a49a013-69ae-4334-9208-d540c42b1ccb;38020751;Witteveen+Bos Raadgevende ingenieurs B.V.;Overig;
+959086aa-be57-43d5-8537-68c740fb8ec2;39066679;Bedrijfsmilieudienst Flevoland B.V.;Overig;
+608cec04-ad4e-4a2f-b346-11941b17d50d;40516730;Vereniging tot Behoud van Natuurmonumenten in Nederland;Overig;
+c9481241-ca38-45c1-8d41-38686632c545;41146461;Stichting Deltares;Overig;
+05dfdfba-182a-421e-98bb-a8a291af1050;41216593;Stichting Waternet;Overig;
+f46785be-9c4e-46e6-bb9a-59b1c63e83fe;50000578;Gemeente Lelystad;Gemeente;GM0995
+89cd6085-3305-4316-9d11-b2ba50beac7f;50025929;Gemeente Oegstgeest;Gemeente;GM0579
+f2cc3076-de44-440b-be65-167606f98403;50029886;Gemeente Lopik;Gemeente;GM0331
+fc0e31d2-839a-415c-a26d-f89508ab5a17;50035452;Gemeente Roerdalen;Gemeente;GM1669
+1be52ced-91fb-4b33-9f82-2fdc86e9edaa;50047876;Gemeente Geldermalsen;Overig;
+299ea9db-5513-416b-8378-78a0da03fd0f;50052969;Provincie Limburg;Provincie;PV31
+0f8f5672-f8b4-415a-8413-78fefd516f7d;50070525;Gemeente Dordrecht;Gemeente;GM0505
+d8f96cd1-2f73-449a-bbbe-b48097733a3b;50092812;Gemeente Utrechtse Heuvelrug;Gemeente;GM1581
+56b65e91-ae0e-4ed3-a47f-19ec2917929b;50099604;Gemeente Zutphen;Gemeente;GM0301
+8fc32b12-6e5a-4653-b583-8ca85d4ac8df;50106236;Gemeente Haaren;Overig;
+73cafdc3-e736-456c-8135-c3baaa38ecf6;50115634;Gemeente Velsen;Gemeente;GM0453
+f870316a-19a6-47f1-998c-10a035fe6541;50130994;Waterschap Noorderzijlvest;Waterschap;WS34
+91b778aa-033e-4a58-9d2d-44b876e8533d;50132768;Gemeente Nuth;Overig;
+c44aa4cd-c6e0-4efe-b7a4-156c97d1cc06;50166727;Gemeente Alphen-Chaam;Gemeente;GM1723
+bb4a2321-ac91-44ff-9f47-443de5b6a613;50177214;Gemeente Woerden;Gemeente;GM0632
+6df944d8-5ac7-4f79-aa37-389b5fa5b836;50182544;Gemeente Veenendaal;Gemeente;GM0345
+7030063c-0448-4d87-a107-6d9ac2885a56;50197576;Gemeente Harderwijk;Gemeente;GM0243
+92b94b3f-95f4-4e2a-8f54-6f2fdf6d894e;50200097;Ministerie van Binnenlandse Zaken en Koninkrijksrelaties;Overig;
+bfa2be5c-0f83-4efd-9b91-883ee778ee9f;50210254;Gemeente Asten;Gemeente;GM0743
+682c6ecf-e5e0-4a87-afe7-cf00d24e3bd5;50232274;Gemeente Haaksbergen;Gemeente;GM0158
+4caa8308-035f-487a-ae63-dabcb211ffae;50277324;Gemeente Leudal;Gemeente;GM1640
+80c4014b-2c89-403b-affa-5f436b8569a6;50296140;Gemeente Staphorst;Gemeente;GM0180
+43d00d55-4905-4dd2-8deb-774bcf258b24;50313851;Gemeente Barneveld;Gemeente;GM0203
+a6eb17b0-47ec-447f-a802-e6e8c630e1fa;50320408;Gemeente Weert;Gemeente;GM0988
+4ee17975-0b0c-48da-ba5b-89c2346b7655;50358944;Gemeente Westvoorne;Gemeente;GM0614
+285f49b2-dcee-474b-9998-8720c708d247;50371746;Gemeente Gemert-Bakel;Gemeente;GM1652
+ca0f9208-7d60-4c60-8fdb-416503f49c5d;50397052;Gemeente Peel en Maas;Gemeente;GM1894
+3d446c9c-5c5f-4ff9-8b21-54f30f0b43ab;50413872;Gemeente Gulpen-Wittem;Gemeente;GM1729
+1b44203a-a9ec-479d-a48d-9d88a37d4c83;50443089;Gemeente Meerssen;Gemeente;GM0938
+a51ded5e-7d32-40c5-876b-46ab64c2b9ed;50450948;Gemeente Borne;Gemeente;GM0147
+0bd7f9ee-74c5-4c48-80ce-d74c5506a310;50466208;Gemeente Mill en Sint Hubert;Gemeente;GM0815
+8125306a-1dd3-44af-9b4e-7e4a178af756;50475266;Gemeente Bernheze;Gemeente;GM1721
+c67cc7c4-4b96-430a-b4cf-8cdaa8f2923a;50483714;Gemeente Epe;Gemeente;GM0232
+b0ce79d5-1509-47e3-aa01-a014719651db;50486349;Gemeente Noordwijkerhout;Overig;
+9028017c-70d5-454a-8e7c-e146982f9f8c;50530003;Gemeente Brummen;Gemeente;GM0213
+af0ba06c-fa88-45eb-9c4d-7dfb9496a1ff;50537806;Gemeente Haren;Overig;
+fec6a244-6710-419d-8cb7-715f6fb55a15;50539728;Gemeente Beek;Gemeente;GM0888
+c9afbc49-98ca-4671-8d7a-0818262101c2;50556649;veldapps.com;Overig;
+3fed51be-e127-4ecd-a7f9-1f3c1a997862;50582445;Gemeente Koggenland;Gemeente;GM1598
+fbf4a2bd-95e1-4df3-af9d-12ff1b687f2c;50595644;Gemeente Zuidplas;Gemeente;GM1892
+73331fa0-0f91-45ce-a833-b0f114d67f13;50601628;Gemeente Etten-Leur;Gemeente;GM0777
+d1a42fb9-e053-49d6-b451-34f3a1833b31;50616641;Gemeente Oss;Gemeente;GM0828
+7720547e-7163-4f33-8a79-621e8583c46c;50638874;Badus Bodem en Water;Overig;
+082e249d-86b8-4206-8ff8-52756634573a;50650068;Gemeente Boxmeer;Gemeente;GM0756
+65b2cc38-510a-4bed-a4a1-daee6d17bb4f;50651072;Gemeente Borger-Odoorn;Gemeente;GM1681
+59fa2064-62cc-4355-ae9d-e9d5a4d34380;50653466;Gemeente Vught;Gemeente;GM0865
+eef3ba03-8972-45ec-af5d-b38b7da5362b;50654993;Gemeente Pekela;Gemeente;GM0765
+96683fff-8c3d-4048-8d76-f13013476836;50656082;Gemeente Grootegast;Overig;
+45d1f854-a283-48a8-a3cc-4d9cc0f431f9;50656813;Gemeente Slochteren;Overig;
+66435e18-4e4e-4e53-95ae-e19580402c62;50676725;Gemeente Woudenberg;Gemeente;GM0351
+d57fba09-bc17-4665-b898-736de75e60c2;50677969;Hoogheemraadschap van Delfland;Waterschap;WS15
+38ccb19b-859b-4611-b1c6-4a0da1d6ff1a;50681044;Gemeente Rijswijk;Gemeente;GM0603
+bda4e567-7741-49ca-803a-eaf9e5785fb3;50684442;Compass Infrastructuur Nederland (CIN) B.V.;Overig;
+e035ec89-3ac0-4b96-a9fe-1d0a03f96457;50706969;Gemeente Menameradiel;Overig;
+5246818e-3378-4ac5-b5d4-ca667a130acf;50738631;Gemeente Weststellingwerf;Gemeente;GM0098
+fc4f115f-c8ff-4e3d-b6a8-e1bc534c6b3d;50771752;Gemeente Geertruidenberg;Gemeente;GM0779
+70841959-754c-4fd6-94a0-6370b2e5cea6;50778692;Gemeente Kerkrade;Gemeente;GM0928
+694a2573-3067-41b8-a433-b405b47151fb;50788590;Gemeente Assen;Gemeente;GM0106
+ea7a42bf-1cc6-4d71-8be9-6d1f5b0ce622;50810863;Gemeente Menterwolde;Overig;
+20f67ead-3ba6-4982-b6ec-f719ce4e0326;50820753;Gemeente Dantumadiel;Gemeente;GM1891
+e84c537e-0c68-4365-a106-ab00d4e3bb68;50839519;Gemeente Rijssen-Holten;Gemeente;GM1742
+1c6b30db-4a88-43eb-9dd8-d38563b6b3b6;50852736;Gemeente Veendam;Gemeente;GM0047
+ffbb9bc3-cbfe-485d-b12f-e46842d04786;50869744;Gemeente Losser;Gemeente;GM0168
+c4d1dd54-dada-4d5e-9d53-de744bce7bcc;50875825;Gemeente Albrandswaard;Gemeente;GM0613
+80f9b330-b357-4052-9ee3-a7a61cc6d8ea;50916769;Gemeente Heumen;Gemeente;GM0252
+9cc61ce3-b10e-4525-bd20-5b28c21a1771;50920154;Gemeente Werkendam;Overig;
+4c164df2-057f-4e95-92a4-8f94d9b2359e;50945149;Gemeente Harlingen;Gemeente;GM0072
+a53986c4-5cbc-4ca7-87c6-2a38669cd69c;50986767;Gemeente Lingewaard;Gemeente;GM1705
+ab8c9191-6d14-4702-98bb-d2d5bb6a6d85;50987496;North Sea Port Netherlands N.V.;Overig;
+78612a98-e623-4447-8065-598319a8366e;50991663;Gemeente Schiedam;Gemeente;GM0606
+1a3d70bc-ac75-4853-b17e-697b1b8edbfb;51041510;Gemeente Middelburg;Gemeente;GM0687
+8add97a1-63a1-4318-b5b7-358924d87ef2;51048329;Provincie Overijssel;Provincie;PV23
+5d6b0ecd-20a7-4a15-bf91-84830a17adb1;51102757;Gemeente Ommen;Gemeente;GM0175
+ed4b673b-69fb-474a-b6b1-fe5d9f249025;51137747;Hoogheemraadschap van Rijnland;Waterschap;WS13
+0e253778-d8b4-43c2-9ff9-163d5685bdc1;51143313;Gemeente Reimerswaal;Gemeente;GM0703
+c31f455e-314b-4dae-8402-ef0542194d0a;51178567;Gemeente Overbetuwe;Gemeente;GM1734
+9517267b-6743-437f-86cd-e45f4d1b1ad5;51181584;Waterschap Brabantse Delta;Waterschap;WS25
+0148058f-876a-4727-8f60-303f825ba967;51200570;Gemeente Hardinxveld-Giessendam;Gemeente;GM0523
+10a33dee-6c52-4bad-819a-0e7feef089fb;51302861;Gemeente het Bildt;Overig;
+f0e9aa73-7e35-4b75-b3a1-195e1c37ff46;51309971;Gemeente Kapelle;Gemeente;GM0678
+f864e83f-d5dd-49d6-8726-7976bcbc3007;51332493;Gemeente Capelle aan den IJssel;Gemeente;GM0502
+3a83a6be-4f07-4017-9d99-212944c80888;51332736;Gemeente Schinnen;Overig;
+80e35f5f-e725-452b-9fd0-f23766d00020;51350696;Gemeente Bergen (L.);Gemeente;GM0893
+834dfea5-2af4-4e5b-a9bd-765761210bdd;51378469;Gemeente Alblasserdam;Gemeente;GM0482
+2d90c519-e023-4b20-a43f-705ed4cdfcee;51392380;Gemeente Brielle;Gemeente;GM0501
+93cadb5d-da1c-49bc-bb1a-e4ea61ffcb62;51468751;Provincie Gelderland;Provincie;PV25
+8b261e49-61a6-4c42-8820-511476cde2d6;51486075;Gemeente Simpelveld;Gemeente;GM0965
+4399a7e1-eb55-4a99-a340-fd07a18b37b8;51487659;Gemeente Beuningen;Gemeente;GM0209
+3ee9ea07-d0f5-48a5-925a-e5d7593cb6f3;51488744;Gemeente Maastricht;Gemeente;GM0935
+c8c27c14-e698-459d-afce-1a4cab9114b7;51626268;Gemeente Zeist;Gemeente;GM0355
+02ef425c-080d-4c75-8d4e-4ae29c7bad55;51640813;Waterschap Scheldestromen;Waterschap;WS42
+4ecde900-fd6d-43a4-901f-314023129226;51643324;Gemeente Eijsden-Margraten;Gemeente;GM1903
+acfb3a3d-8518-4e47-a761-eb0f870180fa;51651866;Gemeente Echt-Susteren;Gemeente;GM1711
+8b4f45bc-dbbf-48b9-8116-adee20477499;51681897;Gemeente Stichtse Vecht;Gemeente;GM1904
+82184499-5b26-4ea9-b8b8-77824dd42408;51713942;Real 4 U B.V.;Overig;
+c6d0ba61-6471-41dd-9ff9-956cbed24bb1;51791811;Gemeente Súdwest-Fryslân;Gemeente;GM1900
+3533193f-df5f-4929-921f-c764c5752a1b;51853876;Gemeente Zundert;Gemeente;GM0879
+43410fd4-aa2a-4759-8437-62aa4629b667;51860015;Gemeente Hellevoetsluis;Gemeente;GM0530
+c24bfaab-e6d5-416a-98e1-8d9eedbf4dd6;51896125;Gemeente Voerendaal;Gemeente;GM0986
+bedecc8f-9736-40ab-abd7-ec279231174e;51984997;Gemeente Stein;Gemeente;GM0971
+e5232a33-a2b2-4608-8bb5-0035549da000;52047202;Wiha Grondmechanica;Overig;
+77bf7159-e5e9-4b0d-815f-4de874c738f9;52066169;Gemeente Rheden;Gemeente;GM0275
+436af2e2-3b08-448f-90bb-50ed017375a9;52188663;Gemeente Onderbanken;Overig;
+3aa38aeb-eb92-416a-9a2e-4c6155feea1e;52213463;Hoogheemraadschap van Schieland en de Krimpenerwaard;Waterschap;WS39
+0f4937f1-a265-4ffd-aed0-4c592b24254c;52395413;Gemeente Nederweert;Gemeente;GM0946
+006d806f-099e-4356-abb8-ae1b3c5f2aea;52505545;Gemeente Bodegraven-Reeuwijk;Gemeente;GM1901
+42bd20f0-0a97-40af-9a10-a1a6cae4c37f;52584372;Gemeente Nunspeet;Gemeente;GM0302
+501d92b3-a39c-44ed-9b83-451e34d5733b;52605825;Waterschap Hollandse Delta;Waterschap;WS40
+07b44a58-37c0-4695-ae47-ae725a7ceeab;52766179;Ministerie van Infrastructuur en Waterstaat;Overig;
+d5bd0854-21a7-40ed-aecb-8d33228f5745;52813150;Ministerie van Economische Zaken;Overig;
+235eea4a-923c-4bac-b626-a0abdafb215e;52861724;Avallo advies;Overig;
+d45f1a43-8556-4a4f-8763-871f0dc14188;52925811;Gemeente Maasgouw;Gemeente;GM1641
+b60ff9c1-5f2f-4c59-9645-f47f7249d73e;53009886;Gemeente Hardenberg;Gemeente;GM0160
+1be71a05-04e6-4dea-9385-18657658d638;53096096;Gemeente Vianen;Overig;
+a319efb8-4229-4e5d-b725-0ba4cfe04146;53309561;Gemeente Wierden;Gemeente;GM0189
+12459e51-d847-4986-8fa8-9a4f9b143e29;53418387;Gemeente Bellingwedde;Overig;
+b46477bf-83f7-4677-b6c5-0ec7fde0efe6;53878388;Gemeente Oudewater;Gemeente;GM0589
+d9331237-8767-4c0e-90e7-2211d8575c49;54137756;Gemeente Steenwijkerland;Gemeente;GM1708
+10502cd5-bb66-49d2-9047-b21170757bcd;54294959;Tjaden Adviesbureau voor Grondmechanica B.V.;Overig;
+bc7c167e-c139-40a6-ba0d-26af494cd068;54477506;Gemeente Hollands Kroon;Gemeente;GM1911
+69761c31-2f98-4eb1-91f7-7281fc086dc3;54521610;Lankelma Adviesbureau;Overig;
+2c729165-88a2-43e6-ab71-93c47e4844d3;54552907;Gemeente Zwartewaterland;Gemeente;GM1896
+fc8e0dc4-958f-45b0-a8c2-8d4ab300edd9;54596114;Gemeente Krimpen aan den IJssel;Gemeente;GM0542
+a9cc180a-d0d0-447d-86ef-3fd9de48ad33;55366643;Omgevingsdienst Midden-Holland;Overig;
+51b7bd3a-d8ae-404d-8a24-249d4e14d5e7;56093926;Omgevingsdienst Haaglanden;Overig;
+3537ab99-5e2f-43dd-80ef-d7be83ac93db;56515154;HaskoningDHV Nederland B.V.;Overig;
+6192534a-2bc3-4eef-bcfd-262a30702160;56679750;Omgevingsdienst Midden- en West-Brabant;Overig;
+dd9e533c-2581-43e6-a60c-70e021dc365f;56710240;Gemeente Goeree-Overflakkee;Gemeente;GM1924
+ca87869b-9e16-4fde-8f0c-d71f0f2de2d5;56804636;Waterschap Vallei en Veluwe;Waterschap;WS08
+f835de9d-9026-4341-b3fd-3e32008d5dab;56838328;Gemeente Schagen;Gemeente;GM0441
+c1d7d876-f950-450e-83c3-9b536600b32a;57030707;Gemeente Molenwaard;Overig;
+92b8420a-6c79-426f-9f4d-ebbce6599615;57304769;Syntrophos;Overig;
+b700e544-2322-4779-b98c-7b4b43045ed9;58545042;Kisters Nederland B.V.;Overig;
+515a683e-d15e-42ba-bd04-a59457935620;58972676;Waterschap Vechtstromen;Waterschap;WS44
+7315d4ba-1208-4a29-b235-f4a794165eb0;59317833;IntellinQ BV;Overig;
+70f6f8b2-9f24-4030-a4bf-b970ac4ceb75;59327626;KYL B.V.;Overig;
+da4bcff6-4c05-4a0f-b522-bc9960df76f0;59603925;Gemeente De Fryske Marren;Gemeente;GM1940
+a596856c-6630-44fb-88c4-f5ff2f0b6101;59707720;Gemeente Heerenveen;Gemeente;GM0074
+8cc1514c-b3c0-4484-b584-a37903496a67;59734817;Gemeente Leeuwarden;Gemeente;GM0080
+00476b23-529a-4264-80ff-5f80d710069b;60325674;Meerinzicht;Gemeente;GM0233
+eab907ee-1dcb-468b-bbe5-c0bc774b3a1d;61094803;Combinatie Dijkverbetering HOP;Overig;
+57528054-037c-4aa8-ad34-ccaf03847617;61469696;IXAS Gaasperdammerweg B.V.;Overig;
+b0eece09-c8cd-4fce-a562-643ae713fd3e;61574031;Koops Grondmechanica B.V.;Overig;
+232b5906-dc4d-4b16-b340-8051667fb62c;61948888;GSNED B.V.;Overig;
+1ddbeac9-55ad-464e-a68a-b4391cb06bc1;62092758;VWB Bodem B.V.;Overig;
+b1283fd5-98c3-4eb3-9dd0-a16f2dfa0fb7;62251686;Gemeente Krimpenerwaard;Gemeente;GM1931
+227b7648-a0e3-45a2-a96e-da57c5838130;62252046;Gemeente Nissewaard;Gemeente;GM1930
+b6dcc33f-0b25-4eb9-9c70-110e4def2e1a;62254944;Gemeente Berg en Dal;Gemeente;GM1945
+031af829-36f2-4c14-9e46-cbc76531f92e;62255398;Gemeente Alkmaar;Gemeente;GM0361
+d3bf08f9-fb67-45e7-9c66-e04808a8bed5;62696696;RB Geo B.V.;Overig;
+52353d71-ebae-4de9-bb16-9562e0f1d248;63669102;DDFK Gemeenten;Overig;
+0d1d06df-f8d1-496c-ab6c-f041175a3f32;64199053;Combinatie A1|A28 VOF;Overig;
+1f65599a-7d0d-44fb-a2eb-91866e67863e;64208338;Waterschap Drents Overijsselse Delta;Waterschap;WS59
+f44fdadb-c2ca-403d-8326-c286fca15e7e;64429571;4RISK B.V.;Overig;
+ddbb3288-32be-4aca-945d-6aae6e6d37b0;64931935;Xaxis Technologies B.V.;Overig;
+1eb5b2da-6c1a-4639-9a70-90536da33771;64935345;Gemeente Gooise Meren;Gemeente;GM1942
+8e3ab820-cb7a-4843-be83-acf57736d348;64973395;Gemeente Edam-Volendam;Gemeente;GM0385
+26e127db-095f-4df3-9d51-aa685fa1e709;65031954;Terra Practicus;Overig;
+e4592a77-a634-4a14-b53a-9d9ea092a12b;65067096;Sas van Vreeswijk VOF;Overig;
+99de2a25-a1f1-4f1c-898f-84d0bca31e97;65133382;Wiertsema-Inpijn-Blokpoel V.O.F.;Overig;
+6bf6e91f-de64-4fcf-af5b-2a54c533093c;66272688;VRM LevelLog B.V.;Overig;
+2f437cff-4dea-4693-9996-a4ba19240ccb;66346460;Ingenieursbureau Maters en De Koning B.V.;Overig;
+6406659d-5d27-4ddb-a6ee-db074c2b4000;66382971;Ortageo Nederland B.V.;Overig;
+a8a49c13-fad7-480e-8665-23969e510987;66723019;Gemeente Meierijstad;Gemeente;GM1948
+5cec9c26-47bb-412b-88df-9f7d76fdf085;67103375;CWG Ingenieurs b.v.;Overig;
+505925e4-fda7-4caa-914e-e20b4c5873a7;67288340;BUHA B.V.;Overig;
+c4865944-dff9-4781-b422-f843b10fa20b;67574009;GeoRisQ;Overig;
+33de747a-6f4e-4933-9fda-4b9af4219ca9;67682065;Waterschap Limburg;Waterschap;WS60
+5dadc4d4-1c1a-4771-8443-552b531cecef;67965431;Waterlabs B.V.;Overig;
+054623c2-23ea-4ebd-88e2-65d1d8fa22f3;68445326;Bureau Schmidt B.V.;Overig;
+b7b2f418-113d-4580-bb94-957204e41f58;70281335;Sassevaart V.O.F.;Overig;
+32f38930-0543-41d8-ad28-d9453774b666;70288623;Ballast Nedam Road Specialties B.V.;Overig;
+14510846-16a4-4578-8c36-e44d54762d1a;70476047;Gemeente Midden-Groningen;Gemeente;GM1952
+c408647a-2524-4fe0-aac9-acb61884e0e5;70485836;Gemeente Westerwolde;Gemeente;GM1950
+0d4eb1ff-9486-4e41-96f2-a2ec65dd5b43;70528586;Gemeente Waadhoeke;Gemeente;GM1949
+518d402d-a1ee-47de-9fcb-ccb5140030f7;70686149;Eijkelkamp GeoPoint SoilSolutions BV;Overig;
+5f9b2fa1-ea72-4336-ab1d-8e53cd9af6cf;71221875;Fellinga Bouw & Installatie;Overig;
+3e6bc124-86ba-4637-8430-5b31f0aaa9d0;71235426;Gemeente Zevenaar;Gemeente;GM0299
+9a143c48-551f-4080-a4fe-b9107d6c0ab5;71583440;Combinatie SaVe v.o.f.;Overig;
+1047cc3d-1d96-4749-a649-3bf7e9c1e3df;71979972;Lankelma Ingenieursbureau voor Geo Milieu en Funderingstechniek B.V.;Overig;
+b38e784d-510b-4bf5-a162-5aba56936fdf;73538469;Gemeente Noordwijk;Gemeente;GM0575
+e04e4a0f-6f3a-4dfc-a5a8-7534a258e9d1;73540374;Gemeente Haarlemmermeer;Gemeente;GM0394
+88477cce-c579-45b4-bba1-77128bb56622;73541532;Gemeente Beekdaelen;Gemeente;GM1954
+9f10fde5-7e47-4cb6-809e-72eabea6e4d5;73544086;Gemeente Hoeksche Waard;Gemeente;GM1963
+1e12d667-3941-4449-9af2-5344c32e6338;73547026;Gemeente Vijfheerenlanden;Gemeente;GM1961
+883e4580-1eb1-43d3-8671-8831a7d4936c;73549207;Gemeente West Betuwe;Gemeente;GM1960
+6b93a510-d5ac-4569-a0d4-30935fa3956f;73550728;Gemeente Het Hogeland;Gemeente;GM1966
+4677904a-6606-421c-877a-3440e436e700;73552208;Gemeente Westerkwartier;Gemeente;GM1969
+f8ba6e3e-685f-4125-b479-e0dfea9016ea;73552496;Gemeente Noardeast-Fryslân;Gemeente;GM1970
+1581309c-5245-4045-821e-ee3baf998b1c;73552739;Gemeente Molenlanden;Gemeente;GM1978
+235ab8b9-b638-4e0d-892e-531afac2b298;73578886;Gemeente Altena;Gemeente;GM1959
+f8c2cb1d-b9cf-49a5-9c92-6d889af24c8d;73790370;Prommenz Milieu B.V.;Overig;
+60c4a5ca-848a-4243-8a1f-fda5803dc8fb;73874817;Milieu Advies Noord-Nederland;Overig;
+a4c8d906-37d9-4d99-8d26-4624e334a1cc;74503812;Trefoil Hydrology;Overig;
+a4e33ecd-2693-4f91-9ea0-b80d1a14900b;76263851;Combinatie STIPT V.O.F.;Overig;
+ebfcb45e-4e95-11eb-ba1d-00155d3678f2;81425570;Gemeente Eemsdelta;Gemeente;GM1979
+23eae292-5cc3-11eb-be1b-00155d22a75e;65890604;Rijksvastgoedbedrijf;Overig;
+542c7af0-5cc7-11eb-8174-00155d22a75e;73558907;Gemeente Groningen;Gemeente;GM0014
+3aa76eea-fca9-44da-985d-b29967f147f1;85028827;Gemeente Dijk en Waard;Gemeente;GM1980
+4de97540-9b4c-4989-9704-91f574e41888;85031186;Gemeente Maashorst;Gemeente;GM1991
+6218a41d-dd96-479b-9a7b-7b43676d9223;85028037;Gemeente Land van Cuijk;Gemeente;GM1982;

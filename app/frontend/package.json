@@ -1,0 +1,52 @@
+{
+  "name": "kwaliteits-services-bro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "@quasar/app": "2.3.1",
+    "@quasar/extras": "1.9.16",
+    "@types/chart.js": "^2.9.31",
+    "@vue-a11y/announcer": "^2.1.0",
+    "@vue/composition-api": "0.4.0",
+    "axios": "^0.21.1",
+    "chart.js": "^2.9.3",
+    "chartjs-plugin-zoom": "^0.7.7",
+    "core-js": "3.6.4",
+    "csv-stringify": "^5.6.2",
+    "d3": "^6.6.0",
+    "ol": "6.2.1",
+    "quasar": "1.15.2",
+    "showdown": "1.9.1",
+    "vue": "2.6.11",
+    "vue-chartjs": "^3.5.0",
+    "vue-click-outside": "^1.1.0",
+    "vue-i18n": "^8.24.2",
+    "vue-router": "3.1.6"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.18.0",
+    "@typescript-eslint/parser": "2.18.0",
+    "@vue/cli-plugin-babel": "4.2.0",
+    "@vue/cli-plugin-eslint": "4.2.0",
+    "@vue/cli-plugin-router": "4.2.0",
+    "@vue/cli-plugin-typescript": "4.2.0",
+    "@vue/cli-service": "^3.3.1",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "5.0.1",
+    "babel-plugin-transform-imports": "1.5.0",
+    "eslint": "6.7.2",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-vue": "7.0.0-beta.4",
+    "prettier": "1.19.1",
+    "raw-loader": "4.0.1",
+    "typescript": "3.8.3",
+    "vue-cli-plugin-quasar": "~2.0.0",
+    "vue-template-compiler": "2.6.11",
+    "webpack": "4.45.0"
+  }
+}

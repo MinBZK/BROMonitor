@@ -1,0 +1,4 @@
+{
+    "vueAppBaseApi":"http://localhost:8000/api",
+    "timeoutTime":"15000"
+}

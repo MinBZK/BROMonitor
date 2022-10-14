@@ -1,0 +1,12 @@
+{
+    "map": {
+        "objecttypen": {
+            "header": "Adoptie bij BRONHOUDERTYPE",
+            "text": "U kunt zien of een BRONHOUDERTYPE grondwaterstandmetingen of alleen andere gegevens in de BRO heeft opgenomen."
+        },
+        "kwaliteitsregimes": {
+            "header": "Verhouding IMBRO en IMBRO/A bij BRONHOUDERTYPE",
+            "text": "Voor de aanlevering van gegevens volgens de strikte regels geldt het IMBRO-regime. Bij de aanlevering van historische gegevens wordt geaccepteerd dat een aantal formeel verplichte gegevens geen waarde heeft. Voor deze gegevens wordt het IMBRO/A-regime gehanteerd en dat kent dus minder strikte regels. Aan de kleur kunt u zien hoe ver de BRONHOUDERTYPE is."
+        }
+    }
+}

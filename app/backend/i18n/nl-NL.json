@@ -1,0 +1,464 @@
+{
+    "footer": {
+        "over": "Over deze site",
+        "kwetsbaarheid": "Kwetsbaarheid melden"
+    },
+    "voorpagina": {
+        "titel": "BRO Monitor",
+        "subtitel": "Doe mee en help de kwaliteit van de BRO te verbeteren",
+        "disclaimer_subtitel": "Disclaimer",
+        "disclaimer_tekst": "Deze website is gemaakt met open source software. De getoonde gegevens zijn open data. Wij slaan geen gegevens over u op."
+    },
+    "sectie_1": {
+        "id": 1,
+        "titel": "Monitor",
+        "subtitel": "De BRO in cijfers",
+        "icoon": "BRO_Monitor.png",
+        "route_naam": "bro-monitor",
+        "broodkruimel": "Monitor",
+        "tags": [
+            "Bro",
+            "Monitor"
+        ]
+    },
+    "sectie_2": {
+        "id": 2,
+        "titel": "Analyses",
+        "subtitel": "Verder de diepte in",
+        "icoon": "Analyses.png",
+        "route_naam": "analyses",
+        "broodkruimel": "Analyses",
+        "tags": [
+            "Analyses",
+            "Algemeen",
+            "Grondwatermonitoring",
+            "Duplicaten"
+        ]
+    },
+    "sectie_3": {
+        "id": 3,
+        "titel": "Tools",
+        "subtitel": "Handige hulpmiddelen",
+        "icoon": "Tools.png",
+        "route_naam": "tools",
+        "broodkruimel": "Tools",
+        "tags": [
+            "Algemeen"
+        ]
+    },
+    "sectie_4": {
+        "id": 4,
+        "titel": "Informatie",
+        "subtitel": "Tips en uitleg",
+        "icoon": "Informatie.png",
+        "route_naam": "hulp",
+        "broodkruimel": "Informatie",
+        "tags": [
+            "Handleiding",
+            "Over deze website",
+            "Begrippen"
+        ]
+    },
+    "analyse_1": {
+        "id": 1,
+        "titel": "Download gegevens per bronhouder",
+        "subtitel": "Hoeveel registratieobjecten van ieder type hebben de bronhouders?",
+        "uitleg": "Deze pagina geeft een overzicht van alle bronhouders en de hoeveelheid gegevens die door de bronhouder zijn aangeleverd tot dit moment.",
+        "route_naam": "gegevens-per-bronhouder",
+        "broodkruimel": "Download gegevens per bronhouder",
+        "tags": [
+            "Bronhouder",
+            "KvK",
+            "CPT",
+            "BHR",
+            "GMW",
+            "Tabel"
+        ]
+    },
+    "analyse_2": {
+        "id": 2,
+        "titel": "Mogelijke duplicaten in de BRO",
+        "subtitel": "Welke registratieobjecten zijn gebaseerd op locatie mogelijk een duplicaat?",
+        "uitleg": "Deze pagina laat zien op welke locaties er zich mogelijk duplicaten bevinden. Klik op een rij binnen de tabel om de BRO-ID's en bronhouders van deze registratieobjecten te inspecteren.",
+        "route_naam": "duplicaten-per-locatie",
+        "broodkruimel": "Mogelijke duplicaten",
+        "tags": [
+            "Duplicaten",
+            "Locatie",
+            "CPT",
+            "BHR",
+            "GMW",
+            "Tabel"
+        ]
+    },
+    "analyse_3": {
+        "id": 3,
+        "titel": "Mogelijke duplicaten in Nederland",
+        "subtitel": "Waar op de landkaart van Nederland bevinden zich mogelijke duplicaten?",
+        "uitleg": "Deze landkaart laat zien waar in Nederland zich mogelijke duplicaten bevinden en hoeveel dat er per locatie zijn.",
+        "route_naam": "duplicaten-per-locatie-kaart",
+        "broodkruimel": "Mogelijke duplicaten kaart",
+        "tags": [
+            "Duplicaten",
+            "Locatie",
+            "CPT",
+            "BHR",
+            "GMW",
+            "Kaart"
+        ]
+    },
+    "analyse_4": {
+        "id": 4,
+        "titel": "Gegevens in de BRO",
+        "subtitel": "Welke soorten gegevens staan in de BRO en in welke verhoudingen?",
+        "uitleg": "Schuif met de muis over de grafiek om de aantallen te zien. Klik op de legenda om te kiezen welke gegevenssoorten te tonen.",
+        "route_naam": "soorten-ondergrondgegevens",
+        "broodkruimel": "Gegevens in de BRO",
+        "tags": [
+            "CPT",
+            "BHR",
+            "GMW",
+            "Taartdiagram"
+        ]
+    },
+    "analyse_5": {
+        "id": 5,
+        "titel": "Kwaliteitsregimes",
+        "subtitel": "Welke kwaliteitsregimes kennen we en in welke verhoudingen staan deze in de BRO?",
+        "uitleg": "Schuif met de muis over de grafiek om de aantallen te zien.",
+        "route_naam": "kwaliteitsklassen",
+        "broodkruimel": "Kwaliteitsregimes",
+        "tags": [
+            "CPT",
+            "BHR",
+            "GMW",
+            "Staafdiagram"
+        ]
+    },
+    "analyse_6": {
+        "id": 6,
+        "titel": "Kwaliteitsregimes van sonderingen",
+        "subtitel": "Zijn er steeds meer sonderingen in het kwaliteitsregime IMBRO?",
+        "uitleg": "Schuif met de muis over de grafiek om de aantallen te zien. Klik op de legenda om te kiezen welke gegevenssoorten te tonen.",
+        "route_naam": "imbro-per-jaar",
+        "broodkruimel": "Sonderingskwaliteitsregime",
+        "tags": [
+            "CPT",
+            "Tijd",
+            "IMBRO",
+            "Staafdiagram"
+        ]
+    },
+    "analyse_7": {
+        "id": 7,
+        "titel": "Onderzoeksdoelen",
+        "subtitel": "Voor welke onderzoeksdoelen zijn gegevens in de BRO ingewonnen?",
+        "uitleg": "Schuif met de muis over de grafiek om de aantallen te zien.",
+        "route_naam": "onderzoeksdoelen",
+        "broodkruimel": "Onderzoeksdoelen",
+        "tags": [
+            "BHR",
+            "CPT",
+            "Staafdiagram"
+        ]
+    },
+    "analyse_8": {
+        "id": 8,
+        "titel": "Verhouding gespecificeerde putcodes",
+        "subtitel": "Wat is de verhouding tussen grondwatermonitoringputten met een gespecificeerde putcode en zonder",
+        "uitleg": "Schuif met de muis over de grafiek om de aantallen te zien. Klik op de legenda om te kiezen welke gegevenssoorten te tonen.",
+        "route_naam": "putcodes-verhouding",
+        "broodkruimel": "Putcodes verhouding",
+        "tags": [
+            "GMW",
+            " Taartdiagram"
+        ]
+    },
+    "analyse_9": {
+        "id": 9,
+        "titel": "Mogelijke duplicaten op locatie: ",
+        "subtitel": "Welke registratieobjecten op deze locatie zijn mogelijk duplicaten van elkaar?",
+        "uitleg": "Klik op een rij binnen de tabel om het specifieke registratieobject uit deze rij verder te inspecteren.",
+        "broodkruimel": "Mogelijke duplicaten op locatie",
+        "tags": [
+            "GMW",
+            "CPT",
+            "BHR",
+            "Tabel"
+        ]
+    },
+    "analyse_10": {
+        "id": 10,
+        "titel": "Registratieobject: ",
+        "subtitel": "Welke data staat er in dit registratieobject?",
+        "uitleg": "Gebruik deze pagina om een registratieobject tot in meer details te inspecteren.",
+        "broodkruimel": "Registratieobject inspecteren",
+        "tags": [
+            "GMW",
+            "CPT",
+            "BHR"
+        ]
+    },
+    "analyse_14": {
+        "id": 14,
+        "titel": "Gemeentes die objecten aan de BRO hebben geleverd",
+        "subtitel": "Welke gemeentes hebben objecten geleverd aan de BRO?",
+        "uitleg": "Deze kaart toont welke gemeenten objecten hebben aangeleverd.",
+        "broodkruimel": "Gemeentenkaart",
+        "tags": [
+            "GMW",
+            "CPT",
+            "Kaart"
+        ]
+    },
+    "analyse_15": {
+        "id": 15,
+        "titel": "Provincies die objecten aan de BRO hebben geleverd",
+        "subtitel": "Welke provincies hebben objecten geleverd aan de BRO?",
+        "uitleg": "Deze kaart toont welke provincies objecten hebben aangeleverd.",
+        "broodkruimel": "Provinciekaart",
+        "tags": [
+            "GMW",
+            "CPT",
+            "Kaart"
+        ]
+    },
+    "analyse_16": {
+        "id": 16,
+        "titel": "Waterschappen die objecten aan de BRO hebben geleverd",
+        "subtitel": "Welke waterschappen hebben objecten geleverd aan de BRO?",
+        "uitleg": "Deze kaart toont welke waterschappen objecten hebben aangeleverd.",
+        "broodkruimel": "Waterschappen",
+        "tags": [
+            "GMW",
+            "CPT",
+            "Kaart"
+        ]
+    },
+    "analyse_17": {
+        "id": 17,
+        "titel": "Registratieobjecten van gemeenten die niet meer bestaan",
+        "subtitel": "Welke registratieobjecten vallen onder bronhouderschap van gemeenten die niet meer bestaan?",
+        "uitleg": "Deze tabel toont registratieobjecten in de BRO die onder het bronhouderschap vallen van niet langer bestaande gemeenten.",
+        "broodkruimel": "Verloren objecten",
+        "tags": [
+            "GMW",
+            "CPT",
+            "BHR",
+            "Tabel"
+        ]
+    },
+    "analyse_18": {
+        "id": 18,
+        "titel": "Grondwatermonitoringputten met niet-plausibele buishoogten",
+        "subtitel": "Welke grondwatermonitoringputten in de BRO hebben buizen met niet-plausibele hoogten?",
+        "uitleg": "Onderstaande tabel toont grondwatermonitoringputten in de BRO met niet-plausibele buishoogten. Een buishoogte wordt als niet-plausibel beschouwd wanneer de bovenkant van de buis meer dan 1.5 meter boven het maaiveld ligt of wanneer deze meer dan 0.5 meter onder het maaiveld ligt. De kolom \"Aantal niet-plausibele buizen\" toont het aantal buizen, uit het totaal aantal buizen van de put, die buiten deze marge vallen. De kolom \"Grootste overschrijding\" toont het aantal meters dat de meest afwijkende buis buiten deze marge ligt.",
+        "broodkruimel": "Niet-plausibele buishoogten",
+        "tags": [
+            "GMW",
+            "Tabel"
+        ]
+    },
+    "tool_1": {
+        "id": 1,
+        "titel": "Grondwatermonitoringputten",
+        "subtitel": "Volledige lijst van alle in de BRO geregistreerde grondwatermonitoringputten",
+        "uitleg": "Gebruik de zoekbalk binnen de tabel om snel een specifieke putcode of BRO-ID te zoeken.",
+        "route_naam": "putcode-per-put",
+        "broodkruimel": "Grondwatermonitoringputten",
+        "tags": [
+            "Bronhouder",
+            "KvK",
+            "BRO-ID",
+            "Tabel"
+        ]
+    },
+    "tool_2": {
+        "id": 2,
+        "titel": "Mijn duplicaten",
+        "subtitel": "Welke van mijn registratieobjecten zijn mogelijk duplicaten?",
+        "uitleg": "Zoek hier aan de hand van de naam van een bronhouder naar mogelijke duplicaten. Gebruik de lijst om een selectie te maken. In de resulterende tabel ziet u een overzicht van objecten die mogelijk duplicaten van elkaar zijn. Door op het `open in browser` icoon te klikken kunt u een vergelijking openen tussen de twee objecten in een rij. Wanneer u de Ctrl-toets inhoudt bij het klikken wordt de vergelijking in een nieuw tabblad geopend.",
+        "route_naam": "my-duplicates",
+        "broodkruimel": "Mijn duplicaten",
+        "tags": [
+            "Bronhouder",
+            "KvK",
+            "BRO-ID",
+            "Tabel",
+            "Duplicaten"
+        ]
+    },
+    "tool_3": {
+        "id": 3,
+        "titel": "Polygoon coordinaten",
+        "subtitel": "Uit welke coordinaten bestaat mijn project?",
+        "uitleg": "Teken een polygoon op de kaart, om de coordinaten van dit gebied in te zamelen. Houdt 'shift-toets' ingedrukt om vrij te tekenen.",
+        "route_naam": "polygon-coordinates",
+        "broodkruimel": "Polygoon coordinaten",
+        "tags": [
+            "Kaart"
+        ]
+    },
+    "tool_4": {
+        "id": 4,
+        "titel": "Objectdichtheid",
+        "subtitel": "Met welke dichtheid worden objecten geplaatst?",
+        "uitleg": "Teken een polygoon op de kaart, om de dichtheid van dit gebied in kaart te brengen.",
+        "route_naam": "object-density",
+        "broodkruimel": "Objectdichtheid",
+        "tags": [
+            "Kaart"
+        ]
+    },
+    "tool_5": {
+        "id": 5,
+        "titel": "Objecten rond locatie",
+        "subtitel": "Welke objecten bevinden zich rond een gegeven locatie?",
+        "uitleg": "Selecteer een coordinaat op de kaart en een straal.",
+        "route_naam": "proximity-objects",
+        "broodkruimel": "Objecten rond locatie",
+        "tags": [
+            "Kaart"
+        ]
+    },
+    "tool_6": {
+        "id": 6,
+        "titel": "Grafiekenvergelijker",
+        "subtitel": "Toon grafieken van verschillende BRO-ID's",
+        "uitleg": "Met deze tool kunt u grafieken opvragen aan de hand van CPT- of GMW-BRO-ID's. Vul één tot drie kommagescheiden BRO-ID's van hetzelfde type in in de invoerbalk en selecteer vervolgens een grafiektype om de bijbehorende grafiek te tonen.",
+        "route_naam": "graphs-by-broid",
+        "broodkruimel": "Grafiekenvergelijker",
+        "tags": [
+            "Grafiek"
+        ]
+    },
+    "tool_7": {
+        "id": 7,
+        "titel": "Validatie",
+        "subtitel": "Zijn uw IMBRO- of IMBRO/A-XML-bestanden valide?",
+        "uitleg": "Hier kunt u uw IMBRO- of IMBRO/A-XML-bestanden uploaden om te valideren en controleren. Deze tool maakt gebruik van de validatieservice van de BRO. Visualisaties zijn beschikbaar voor CPT- en GLD-bestanden. Extra inhoudelijke beslisregels zijn op het moment enkel beschikbaar voor CPT-XML-bestanden.",
+        "route_naam": "validation",
+        "broodkruimel": "Validatie",
+        "tags": [
+            "Validatie"
+        ]
+    },
+    "tool_8": {
+        "id": 8,
+        "titel": "Inspectie",
+        "subtitel": "Hoe zien de sonderingen binnen een levering eruit?",
+        "uitleg": "Hier kunt u uw XML bestanden uploaden van sondering om de grafieken naast elkaar te tonen en eenvoudig te vergelijken",
+        "route_naam": "inspection",
+        "broodkruimel": "Inspectie",
+        "tags": [
+            "Inspectie"
+        ]
+    },
+    "tool_9": {
+        "id": 9,
+        "titel": "Beslisregels",
+        "subtitel": "Welke beslisregels gebruikt de expert-service?",
+        "uitleg": "Hier ziet u een overzicht van de beslisregels die gebruikt worden door de expert-service om een bestand te controleren.",
+        "route_naam": "decision-rules",
+        "broodkruimel": "Beslisregels",
+        "tags": [
+            "Validatie"
+        ]
+    },
+    "tool_10": {
+        "id": 10,
+        "titel": "Conversie naar Kaartbladcodes",
+        "subtitel": "Welke kaartbladcode hoort bij uw rijksdriehoekscoördinaten?",
+        "uitleg": "Converteer hier uw rijksdriehoekscoördinaten naar kaartbladcode. Elke regel dient een x en een y coördinaat te bevatten. Dit mag gescheiden worden door spaties en tabs. Decimaalteken is een punt, komma wordt niet herkend.\nVoorbeeld: 186182.00 568175.00",
+        "route_naam": "mapsheet-codes",
+        "broodkruimel": "Kaartbladcodes",
+        "tags": [
+            "Kaartbladcodes"
+        ]
+    },
+    "tool_11": {
+        "id": 11,
+        "titel": "Bronhouderkaart",
+        "subtitel": "Waar op de kaart bevinden zich de objecten van een bronhouder?",
+        "uitleg": "Gebruik deze kaart om de registratieobjecten van een bronhouder te visualiseren op de kaart van Nederland. U kunt filteren op bronhouder, type registratieobject en registratiedatum van de objecten die u wilt tonen. Deze kaart toont de registratieobjecten van een bronhouder, deze registratieobjecten kunnen zich buiten de administatieve grenzen van de bronhouder bevinden.",
+        "route_naam": "bronhouder-object-map",
+        "broodkruimel": "Bronhouderkaart",
+        "tags": [
+            "Kaart",
+            "Bronhouder"
+        ]
+    },
+    "tool_12": {
+        "id": 12,
+        "titel": "Bronhoudergrenzenkaart",
+        "subtitel": "Welke objecten bevinden zich binnen het gebied van een bronhouder?",
+        "uitleg": "Gebruik deze kaart om de registratieobjecten binnen het gebied van een bronhouder te visualiseren op de kaart van Nederland. U kunt filteren op bronhouder, type registratieobject en registratiedatum van de objecten die u wilt tonen.",
+        "route_naam": "bronhouder-area-object-map",
+        "broodkruimel": "Bronhoudergrenzenkaart",
+        "tags": [
+            "Kaart",
+            "Bronhouder"
+        ]
+    },
+    "tool_13": {
+        "id": 13,
+        "titel": "Grondwatermonitoringputten per bronhouder",
+        "subtitel": "Overzicht van grondwatermonitoringputten in de BRO per bronhouder.",
+        "uitleg": "Met deze tool kunt u een uitdraai maken van al uw putten geregistreerd in de BRO. Selecteer een bronhouder uit de lijst en klik op 'Haal gegevens op'. Vervolgens kunt u de data downloaden door op de 'Download csv' knop te klikken in de tabel.",
+        "route_naam": "gmw-export",
+        "broodkruimel": "Putten per bronhouder",
+        "tags": [
+            "Export",
+            "Bronhouder",
+            "Download",
+            "GMW"
+        ]
+    },
+    "tool_14": {
+        "id": 14,
+        "titel": "Duplicatenvergelijker",
+        "subtitel": "Vergelijk twee registratieobjecten.",
+        "uitleg": "Met deze tool kunt u twee registratieobjecten vergelijken.",
+        "route_naam": "duplicate-comparison",
+        "broodkruimel": "Duplicatenvergelijker",
+        "tags": []
+    },
+    "tool_15": {
+        "id": 15,
+        "titel": "Grondwatermonitoringputten met grondwatermetingen",
+        "subtitel": "Waar op de kaart bevinden zich putten met watermetingen?",
+        "uitleg": "Met deze tool kunt u per bronhouder zien waar grondwatermetingen zijn aangeleverd. Als u doorklikt op het object of via de onderstaande lijst, kunt u per put zien hoeveel watermetingen zijn aangeleverd.",
+        "route_naam": "gld-map",
+        "broodkruimel": "Grondwatermonitoringputten met grondwatermetingen",
+        "tags": [
+            "Kaart",
+            "GLD"
+        ]
+    },
+    "bromonitor_1": {
+        "id": 1,
+        "titel": "Monitor",
+        "subtitel": "Wat is de huidige status van de basisregistratie ondergrond?",
+        "uitleg": "De huidige status van de basisregistratie ondergrond.",
+        "route_naam": "bro-monitor",
+        "broodkruimel": "Monitor",
+        "tags": [
+            "BRO"
+        ]
+    },
+    "bromonitor_archief": {
+        "id": 1,
+        "titel": "Monitor archief",
+        "subtitel": "Wat was de status van de basisregistratie ondergrond in het verleden?",
+        "uitleg": "U kunt hier de status in het verleden bekijken door te klikken op een datum. U ziet dan een momentopname op die dag. De kaartjes zijn niet interactief.",
+        "route_naam": "bro-monitor-archive",
+        "broodkruimel": "Archief",
+        "tags": [
+            "BRO"
+        ]
+    },
+    "zoekpagina": {
+        "lege_invoer": "Voer hierboven een trefwoord in.",
+        "geen_resultaat": "Geen resultaat gevonden. Probeer een ander trefwoord."
+    }
+}

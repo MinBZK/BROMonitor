@@ -1,0 +1,869 @@
+<html>
+  <!-- Stylesheet for the bromonitor, ignore this if you just want to reorder bromonitor elements or remove/add -->
+
+  <head>
+    <style>
+      body {
+        background: #f3f3f3;
+      }
+
+      table {
+        border-spacing: 0px;
+        border-collapse: collapse;
+      }
+
+      table td,
+      table th {
+        background: #eef7fb80;
+        /* light shade */
+        border: 3px solid white;
+        font-size: 80% !important;
+        padding: 5px 10px;
+      }
+
+      @media (min-width: 768px) {
+        table td,
+        table th {
+          font-size: 90% !important;
+        }
+      }
+
+      table th {
+        padding: 5px 10px;
+        background-color: #ddeff8cc;
+        /* dark shade */
+        text-align: left;
+        font-weight: bold;
+      }
+
+      /* Right aligning numbers in acc tables. */
+      .table-acc .dataframe > thead > tr > th,
+      .table-acc .dataframe > tbody > tr > td {
+        text-align: right;
+      }
+
+      .table-acc .dataframe > thead > tr > th:first-child,
+      .table-acc .dataframe > tbody > tr > td:first-child {
+        text-align: left;
+      }
+
+      .glds-week .dataframe > thead > tr > th,
+      .glds-week.dataframe > tbody > tr > td,
+      .glds-top-20 .dataframe > thead > tr > th,
+      .glds-top-20 .dataframe > tbody > tr > td {
+        text-align: right;
+      }
+
+      .glds-week .dataframe > thead > tr > th:first-child,
+      .glds-week .dataframe > tbody > tr > td:first-child,
+      .glds-top-20 .dataframe > thead > tr > th:first-child,
+      .glds-top-20 .dataframe > tbody > tr > td:first-child {
+        text-align: left;
+      }
+
+      .type-table-container table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      .type-table-container table td,
+      .type-table-container table th {
+        padding: 0 0 0 0;
+        background-color: white;
+        text-align: left;
+      }
+
+      .type-table-container table th {
+        font-weight: bold;
+      }
+
+      /* Ellipsis for bronhouder names and type names in weekly top20 table */
+      .top20-week .dataframe > tbody > tr > td:nth-child(-n + 2) {
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      /* Right aligning numbers in generated tables. */
+      .type-table-container .dataframe > tbody > tr > td:last-child,
+      .type-table-container .dataframe > thead > tr > th:last-child,
+      .top20-container .dataframe > tbody > tr > td:last-child,
+      .top20-container .dataframe > thead > tr > th:last-child,
+      .top20-week .dataframe > thead > tr > th:nth-last-child(-n + 2),
+      .top20-week .dataframe > tbody > tr > td:nth-last-child(-n + 2) {
+        text-align: right;
+      }
+
+      .top20-container .dataframe > tbody > tr > td:first-child {
+        text-align: center;
+      }
+
+      .top20-container .dataframe,
+      .top20-week .dataframe {
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .top20-week .dataframe td,
+      .top20-week .dataframe th {
+        font-size: 60% !important;
+        padding: 2px;
+      }
+
+      @media (min-width: 768px) {
+        .top20-week .dataframe td,
+        .top20-week .dataframe th {
+          font-size: 90% !important;
+        }
+      }
+
+      .top20-week .dataframe > thead > tr > th:nth-child(2),
+      .top20-week .dataframe > tbody > tr > td:nth-child(2) {
+        text-align: center;
+      }
+
+      .top20-container .dataframe tr td:nth-child(1) {
+        width: 5%;
+      }
+
+      .top20-container .dataframe tr td:nth-child(2) {
+        width: 80%;
+      }
+
+      .top20-container .dataframe tr td:nth-child(3) {
+        width: 15%;
+      }
+
+      #documentYearTable > tbody > tr:last-child {
+        font-weight: bold;
+      }
+
+      .bromonitor-graph {
+        text-decoration: none !important;
+      }
+
+      .bromonitor-element {
+        width: 100%;
+        padding: 2rem 2rem 1rem;
+        background: white;
+        border: 1px solid rgb(229, 229, 229);
+        border-radius: 5px;
+        margin-bottom: 2rem;
+      }
+
+      .main-svg {
+        height: auto;
+        max-width: 500px;
+        width: 100%;
+      }
+
+      .bromonitor-title {
+        color: #01689b !important;
+        font-size: 3rem !important;
+        line-height: 3rem !important;
+        margin-top: 0rem !important;
+        margin-top: 0rem !important;
+      }
+
+      .bromonitor-subtitle {
+        color: #01689b;
+        font-size: 1.8rem;
+        font-style: italic;
+        margin-top: 1rem;
+      }
+      .bromonitor-sub-subtitle {
+        color: #01689b;
+        font-size: 1.4rem;
+        font-style: none;
+        margin-top: 0.5rem;
+      }
+
+      .bromonitor-date {
+        color: red;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .bromonitor-leader {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 3rem;
+      }
+
+      .bromonitor-sources {
+        font-style: italic;
+        font-size: 0.9rem;
+      }
+
+      .bromonitor-map {
+        width: 100%;
+      }
+
+      button {
+        background-color: #01689b; /* Primary */
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 12px;
+        box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 2px 2px rgb(0 0 0 / 14%),
+          0 3px 1px -2px rgb(0 0 0 / 12%);
+        outline: none;
+        background-position: center;
+        transition: background 0.4s;
+      }
+      button:hover {
+        background: #257ca8 radial-gradient(circle, transparent 1%, #0177b2 1%)
+          center/15000%;
+      }
+      button:active {
+        background-color: #01689b;
+        background-size: 100%;
+        transition: background 0s;
+      }
+
+      img {
+        image-rendering: -o-crisp-edges;
+        /* Opera          */
+        image-rendering: -webkit-optimize-contrast;
+        /* Safari         */
+        image-rendering: optimize-contrast;
+        /* CSS3 Proposed  */
+        -ms-interpolation-mode: nearest-neighbor;
+        /* IE8+           */
+        width: 100%;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <!-- The body contains all the content of the bromonitor, which can be reordered,extended below -->
+
+  <body>
+    <h1 style="color: red">{{ datumstempel }}</h1>
+    <p class="sr-only">Klik op een regel voor meer informatie.</p>
+
+    <div class="bromonitor-element" id="actieve-bronhouders">
+      <h2 class="bromonitor-subtitle">Actieve bronhouders</h2>
+      <div class="scrape-element" id="animatie-graph-bronhouders">
+        <p>
+          Deze grafiek geeft aan hoeveel bronhouders gegevens aanleveren in de
+          loop van de tijd.
+        </p>
+        <div class="bromonitor-map">
+          <img
+            class="animatie-graph-bronhouders"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die het aantal bronhouders per maand aangeeft."
+            src="data:image/gif;base64,{{bewegend_bronhouders}}"
+          />
+        </div>
+        <br />
+        <button
+          class="button-table-bronhouder-per-maand assistive-button"
+          id="button-table-bronhouder-per-maand"
+          alt="Tabel met aantal registreerde gegevens afgelopen week per type"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-bronhouder-per-maand assistive hidden"
+          id="table-bronhouder-per-maand"
+        >
+          {{maandlijkse_bronhouder_table}}
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="aantal-registraties">
+      <h2 class="bromonitor-subtitle">Aantal registraties</h2>
+      <div class="scrape-element" id="registratieobjecten-afgelopenweek-staaf">
+        <p>
+          Onderstaande grafiek geeft een beeld van de tussen
+          <b>{{startdatum}}</b> en <b>{{startdatum_nieuw}}</b> in de BRO
+          geregistreerde gegevens, uitgesplitst per type:
+        </p>
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Staafgrafiek die een overzicht geeft van gegevens geregistreerd in de afgelopen week verdeeld per type."
+            src="data:image/png;base64,{{wekelijkse_delta}}"
+          />
+        </div>
+        <button
+          class="button-table-registratieobjecten-afgelopenweek-staaf assistive-button"
+          id="button-table-registratieobjecten-afgelopenweek-staaf"
+          alt="Tabel met aantal registreerde gegevens afgelopen week per type"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-registratieobjecten-afgelopenweek-staaf assistive hidden"
+          id="table-registratieobjecten-afgelopenweek-staaf"
+        >
+          {{wekelijkse_delta_tabel}}
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element glds-week" id="waarvan-gld-1">
+      <h2 class="bromonitor-subtitle">
+        Waarvan GLD - Aantal peilbuizen met grondwatermetingen
+      </h2>
+      <div class="scrape-element" id="glds-week">
+        <p>
+          De onderstaande tabel geeft per bronhouder aan hoeveel peilbuizen
+          nieuwe grondwatermetingen hebben aangeleverd tussen
+          <b>{{startdatum}}</b> en <b>{{startdatum_nieuw}}</b>.
+        </p>
+        <div class="bromonitor-graph glds-week">{{gld_delta}}</div>
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element glds-top-20" id="waarvan-gld-2">
+      <h2 class="bromonitor-subtitle">
+        Waarvan GLD - Bronhouders met de meeste geregistreerde
+        grondwaterstandonderzoeken
+      </h2>
+      <div class="scrape-element" id="glds-top-20">
+        <p>
+          De onderstaande tabel geeft de top-20 weer van bronhouders met actieve
+          peilbuizen. Een peilbuis is actief als er minimaal een startbericht
+          is. Daarnaast wordt weergegeven hoeveel peilbuizen grondwatermetingen
+          hebben.
+        </p>
+        <br />
+        <div class="bromonitor-graph glds-top-20">{{gld_top_20}}</div>
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="registratieobjecten-gemeenten">
+      <h2 class="bromonitor-subtitle">Gemeenten - registratiegegevens</h2>
+      <div class="row">
+        <div class="col-xs-12 col-lg-5">
+          <div class="column">
+            <p class="col-xs-12 col-lg-6">
+              U kunt zien of een gemeente watermetingen of alleen andere
+              gegevens in de BRO heeft opgenomen.
+            </p>
+            <div class="bromonitor-sub-subtitle col-xs-12 col-lg-6">
+              Legenda
+            </div>
+            <div class="col-lg-12 col-xs-12">{{documenttypen_legenda}}</div>
+          </div>
+          <br />
+        </div>
+        <div class="bromonitor-graph col-lg-7 col-xs-12">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze landkaart is direct na deze afbeelding te vinden onder de knop Toon datatabel. Landkaart die inzicht geeft of gemeentes al sonderingen en/of putten hebben geregistreerd."
+            src="data:image/png;base64,{{documenttypen_gemeentekaart}}"
+          />
+        </div>
+        <br />
+      </div>
+      <br />
+      <button
+        class="button-table-types-gemeente assistive-button"
+        id="button-table-types-gemeente"
+        alt="Tabel met aantal registreerde gegevens per gemeente"
+      >
+        Toon datatabel
+      </button>
+      <br />
+      <div
+        class="row table-acc table-types-gemeente assistive hidden"
+        id="table-types-gemeente"
+      >
+        {{documenttypen_gemeentetabel}}
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="kwaliteitsregimes-gemeenten">
+      <h2 class="bromonitor-subtitle">Gemeenten - kwaliteitsregimes</h2>
+      <div class="row">
+        <div class="col-xs-12 col-lg-5">
+          <div class="column">
+            <p class="col-xs-12 col-lg-6">
+              Voor de aanlevering van gegevens volgens de strikte regels geldt
+              het IMBRO-regime. Bij de aanlevering van historische gegevens
+              wordt geaccepteerd dat een aantal formeel verplichte gegevens geen
+              waarde heeft. Voor deze gegevens wordt het IMBRO/A-regime
+              gehanteerd en dat kent dus minder strikte regels. Aan de kleur
+              kunt u zien hoe ver de gemeente is.
+            </p>
+            <div class="bromonitor-sub-subtitle col-xs-12 col-lg-6">
+              Legenda
+            </div>
+            <div class="col-lg-4 col-xs-12">{{kwaliteitsregimes_legenda}}</div>
+            <br />
+          </div>
+        </div>
+        <div class="bromonitor-graph col-lg-7 col-xs-12">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze landkaart is direct na deze afbeelding te vinden onder de knop Toon datatabel. Landkaart die inzicht geeft of gemeentes al gegevens volgens IMBRO-regime hebben geregistreerd"
+            src="data:image/png;base64,{{kwaliteitsregimes_gemeentekaart}}"
+          />
+        </div>
+      </div>
+      <br />
+      <button
+        class="button-table-kwaliteitsregimes-gemeente assistive-button"
+        id="button-table-kwaliteitsregimes-gemeente"
+        alt="Tabel met aantal registreerde gegevens per gemeente"
+      >
+        Toon datatabel
+      </button>
+      <br />
+      <div
+        class="row table-acc table-kwaliteitsregimes-gemeente assistive hidden"
+        id="table-kwaliteitsregimes-gemeente"
+      >
+        {{kwaliteitsregimes_gemeentetabel}}
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="registratieobjecten-provincies">
+      <h2 class="bromonitor-subtitle">Provincies - registratiegegevens</h2>
+      <div class="row">
+        <div class="col-xs-12 col-lg-5">
+          <div class="column">
+            <p class="col-xs-12 col-lg-6">
+              U kunt zien of een provincie watermetingen of alleen andere
+              gegevens in de BRO heeft opgenomen.
+            </p>
+            <div class="bromonitor-sub-subtitle col-xs-12 col-lg-6">
+              Legenda
+            </div>
+            <div class="col-lg-12 col-xs-12">{{documenttypen_legenda}}</div>
+          </div>
+          <br />
+        </div>
+        <div class="bromonitor-graph col-lg-7 col-xs-12">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze landkaart is direct na deze afbeelding te vinden onder de knop Toon datatabel. Landkaart die inzicht geeft of provincies al sonderingen en/of putten hebben geregistreerd"
+            src="data:image/png;base64,{{documenttypen_provinciekaart}}"
+          />
+        </div>
+        <br />
+      </div>
+      <br />
+      <button
+        class="button-table-types-provincie assistive-button"
+        id="button-table-types-provincie"
+        alt="Tabel met aantal registreerde gegevens per provincie"
+      >
+        Toon datatabel
+      </button>
+      <br />
+      <div
+        class="row table-acc table-types-provincie assistive hidden"
+        id="table-types-provincie"
+      >
+        {{documenttypen_provincietabel}}
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="kwaliteitsregimes-provincies">
+      <h2 class="bromonitor-subtitle">Provincies - kwaliteitsregimes</h2>
+      <div class="row">
+        <div class="col-xs-12 col-lg-5">
+          <div class="column">
+            <p class="col-xs-12 col-lg-6">
+              Voor de aanlevering van gegevens volgens de strikte regels geldt
+              het IMBRO-regime. Bij de aanlevering van historische gegevens
+              wordt geaccepteerd dat een aantal formeel verplichte gegevens geen
+              waarde heeft. Voor deze gegevens wordt het IMBRO/A-regime
+              gehanteerd en dat kent dus minder strikte regels. Aan de kleur
+              kunt u zien hoe ver de provincie is.
+            </p>
+            <div class="bromonitor-sub-subtitle col-xs-12 col-lg-6">
+              Legenda
+            </div>
+            <div class="col-lg-4 col-xs-12">{{kwaliteitsregimes_legenda}}</div>
+            <br />
+          </div>
+        </div>
+        <div class="bromonitor-graph col-lg-7 col-xs-12">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze landkaart is direct na deze afbeelding te vinden onder de knop Toon datatabel. Landkaart die inzicht geeft of provincies al gegevens volgens IMBRO-regime hebben geregistreerd"
+            src="data:image/png;base64,{{kwaliteitsregimes_provinciekaart}}"
+          />
+        </div>
+      </div>
+      <br />
+      <button
+        class="button-table-kwaliteitsregimes-province assistive-button"
+        id="button-table-kwaliteitsregimes-province"
+        alt="Tabel met aantal registreerde gegevens per provincie"
+      >
+        Toon datatabel
+      </button>
+      <br />
+      <div
+        class="row table-acc table-kwaliteitsregimes-provincie assistive hidden"
+        id="table-kwaliteitsregimes-provincie"
+      >
+        {{kwaliteitsregimes_provincietabel}}
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="registratieobjecten-waterschappen">
+      <h2 class="bromonitor-subtitle">Waterschappen - registratiegegevens</h2>
+      <div class="row">
+        <div class="col-xs-12 col-lg-5">
+          <div class="column">
+            <p class="col-xs-12 col-lg-6">
+              U kunt zien of een waterschap watermetingen of alleen andere
+              gegevens in de BRO heeft opgenomen.
+            </p>
+            <div class="bromonitor-sub-subtitle col-xs-12 col-lg-6">
+              Legenda
+            </div>
+            <div class="col-lg-12 col-xs-12">{{documenttypen_legenda}}</div>
+          </div>
+          <br />
+        </div>
+        <div class="bromonitor-graph col-lg-7 col-xs-12">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze landkaart is direct na deze afbeelding te vinden onder de knop Toon datatabel. Landkaart die inzicht geeft of waterschappen al sonderingen en/of putten hebben geregistreerd"
+            src="data:image/png;base64,{{documenttypen_waterschapkaart}}"
+          />
+        </div>
+        <br />
+      </div>
+      <br />
+      <button
+        class="button-table-types-waterschap assistive-button"
+        id="button-table-types-waterschap"
+        alt="Tabel met aantal registreerde gegevens per waterschap"
+      >
+        Toon datatabel
+      </button>
+      <br />
+      <div
+        class="row table-acc table-types-waterschap assistive hidden"
+        id="table-types-waterschap"
+      >
+        {{documenttypen_waterschaptabel}}
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="kwaliteitsregimes-waterschappen">
+      <h2 class="bromonitor-subtitle">Waterschappen - kwaliteitsregimes</h2>
+      <div class="row">
+        <div class="col-xs-12 col-lg-5">
+          <div class="column">
+            <p class="col-xs-12 col-lg-6">
+              Voor de aanlevering van gegevens volgens de strikte regels geldt
+              het IMBRO-regime. Bij de aanlevering van historische gegevens
+              wordt geaccepteerd dat een aantal formeel verplichte gegevens geen
+              waarde heeft. Voor deze gegevens wordt het IMBRO/A-regime
+              gehanteerd en dat kent dus minder strikte regels. Aan de kleur
+              kunt u zien hoe ver het waterschap is.
+            </p>
+            <div class="bromonitor-sub-subtitle col-xs-12 col-lg-6">
+              Legenda
+            </div>
+            <div class="col-lg-4 col-xs-12">{{kwaliteitsregimes_legenda}}</div>
+            <br />
+          </div>
+        </div>
+        <div class="bromonitor-graph col-lg-7 col-xs-12">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze landkaart is direct na deze afbeelding te vinden onder de knop Toon datatabel. Landkaart die inzicht geeft of waterschappen al gegevens volgens IMBRO-regime hebben geregistreerd"
+            src="data:image/png;base64,{{kwaliteitsregimes_waterschapkaart}}"
+          />
+        </div>
+      </div>
+      <br />
+      <button
+        class="button-table-kwaliteitsregimes-waterschap assistive-button"
+        id="button-table-kwaliteitsregimes-waterschap"
+        alt="Tabel met aantal registreerde gegevens per waterschap"
+      >
+        Toon datatabel
+      </button>
+      <br />
+      <div
+        class="row table-acc table-kwaliteitsregimes-waterschap assistive hidden"
+        id="table-kwaliteitsregimes-waterschap"
+      >
+        {{kwaliteitsregimes_waterschaptabel}}
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="top20">
+      <h2 class="bromonitor-subtitle">Top-20</h2>
+      <div class="scrape-element" id="top20-registratieobjecten">
+        <p>
+          Onderstaande tabel geeft de top 20 bronhouders aan, gebaseerd op het
+          aantal door hen geregistreerde registratiegegevens in de BRO.
+        </p>
+        <div class="bromonitor-graph top20-container">
+          {{registratieobjecten_top20}}
+        </div>
+      </div>
+    </div>
+
+    <div class="bromonitor-element" id="trends">
+      <h2 class="bromonitor-subtitle">Trends</h2>
+      <p>
+        Onderstaande grafieken geven de aantallen per geregistreerd objecttype
+        in de BRO weer.
+      </p>
+      <h3 class="bromonitor-sub-subtitle">Bodemkundige booronderzoeken</h3>
+      <div class="scrape-element" id="bhrp-per-jaar-lijn">
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die een overzicht geeft van het aantal bodemkundige booronderzoeken per jaar"
+            src="data:image/png;base64,{{bhrp_jaren}}"
+          />
+        </div>
+        <button
+          class="button-table-linegraph-bhrp assistive-button"
+          id="button-table-linegraph-bhrp"
+          alt="Tabel met aantal registreerde bodemkundige booronderzoeken per jaar"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-linegraph-bhrp assistive hidden"
+          id="table-linegraph-bhrp"
+        >
+          {{bhrp_jaren_tabel}}
+        </div>
+      </div>
+      <hr />
+      <h3 class="bromonitor-sub-subtitle">Geotechnische sondeeronderzoeken</h3>
+      <div class="scrape-element" id="cpt-per-jaar-lijn">
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die een overzicht geeft van het aantal geotechnisch sondeeronderzoeken per jaar"
+            src="data:image/png;base64,{{cpt_jaren}}"
+          />
+        </div>
+        <button
+          class="button-table-linegraph-cpt assistive-button"
+          id="button-table-linegraph-cpt"
+          alt="Tabel met aantal registreerde sondeeronderzoeken per jaar"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-linegraph-cpt assistive hidden"
+          id="table-linegraph-cpt"
+        >
+          {{cpt_jaren_tabel}}
+        </div>
+      </div>
+      <hr />
+      <h3 class="bromonitor-sub-subtitle">Grondwatermonitoringputten</h3>
+      <div class="scrape-element" id="gmw-per-jaar-lijn">
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die een overzicht geeft van het aantal grondwatermonitoringputten per jaar"
+            src="data:image/png;base64,{{gmw_jaren}}"
+          />
+        </div>
+        <button
+          class="button-table-linegraph-gmw assistive-button"
+          id="button-table-linegraph-gmw"
+          alt="Tabel met aantal registreerde waterputten per jaar"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-linegraph-gmw assistive hidden"
+          id="table-linegraph-gmw"
+        >
+          {{gmw_jaren_tabel}}
+        </div>
+      </div>
+      <hr />
+      <h3 class="bromonitor-sub-subtitle">Bodemkundige wandonderzoeken</h3>
+      <div class="scrape-element" id="sfr-per-jaar-lijn">
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die een overzicht geeft van het aantal bodemkundige wandonderzoeken per jaar"
+            src="data:image/png;base64,{{sfr_jaren}}"
+          />
+        </div>
+        <button
+          class="button-table-linegraph-sfr assistive-button"
+          id="button-table-linegraph-sfr"
+          alt="Tabel met aantal registreerde wandonderzoeken per jaar"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-linegraph-sfr assistive hidden"
+          id="table-linegraph-sfr"
+        >
+          {{sfr_jaren_tabel}}
+        </div>
+      </div>
+      <hr />
+      <h3 class="bromonitor-sub-subtitle">Geotechnische booronderzoeken</h3>
+      <div class="scrape-element" id="bhrgt-per-jaar-lijn">
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die een overzicht geeft van het aantal geotechnisch booronderzoeken per jaar"
+            src="data:image/png;base64,{{bhrgt_jaren}}"
+          />
+        </div>
+        <button
+          class="button-table-linegraph-bhrgt assistive-button"
+          id="button-table-linegraph-bhrgt"
+          alt="Tabel met aantal registreerde geotechnische booronderzoeken per jaar"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-linegraph-bhrgt assistive hidden"
+          id="table-linegraph-bhrgt"
+        >
+          {{bhrgt_jaren_tabel}}
+        </div>
+      </div>
+      <hr />
+      <h3 class="bromonitor-sub-subtitle">Grondwatermonitoringnetten</h3>
+      <div class="scrape-element" id="gmn-per-jaar-lijn">
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die een overzicht geeft van het aantal grondwatermonitoringnetten per jaar"
+            src="data:image/png;base64,{{gmn_jaren}}"
+          />
+        </div>
+        <button
+          class="button-table-linegraph-gmn assistive-button"
+          id="button-table-linegraph-gmn"
+          alt="Tabel met aantal registreerde grondwatermonitoringnetten per jaar"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-linegraph-gmn assistive hidden"
+          id="table-linegraph-gmn"
+        >
+          {{gmn_jaren_tabel}}
+        </div>
+      </div>
+      <hr />
+      <h3 class="bromonitor-sub-subtitle">Grondwaterstand onderzoeken</h3>
+      <div class="scrape-element" id="gld-per-jaar-lijn">
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Lijngrafiek die een overzicht geeft van het aantal grondwaterstand onderzoeken per jaar"
+            src="data:image/png;base64,{{gld_jaren}}"
+          />
+        </div>
+        <button
+          class="button-table-linegraph-gld assistive-button"
+          id="button-table-linegraph-gld"
+          alt="Tabel met aantal registreerde grondwaterstand onderzoeken per jaar"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-linegraph-gld assistive hidden"
+          id="table-linegraph-gld"
+        >
+          {{gld_jaren_tabel}}
+        </div>
+      </div>
+    </div>
+
+    <div class="bromonitor-element" id="stand">
+      <h2 class="bromonitor-subtitle">Stand</h2>
+      <div class="scrape-element" id="registratieobjecten-staaf">
+        <p>
+          Onderstaande grafiek geeft een beeld van de in de BRO geregistreerde
+          gegevens, uitgesplitst per type:
+        </p>
+        <div class="bromonitor-graph">
+          <img
+            class="bromonitor-map"
+            alt="Een toegankelijke versie van deze grafiek is direct na deze afbeelding te vinden onder de knop Toon datatabel. Staafgrafiek die een overzicht geeft van gegevens geregistreerd verdeeld per type"
+            src="data:image/png;base64,{{documenttypen_staafgrafiek}}"
+          />
+        </div>
+        <button
+          class="button-table-bartypes assistive-button"
+          id="button-table-bartypes"
+          alt="Tabel met aantal registreerde gegevens per type"
+        >
+          Toon datatabel
+        </button>
+        <br />
+        <div
+          class="row table-acc table-bartypes assistive hidden"
+          id="table-bartypes"
+        >
+          {{documenttypen_tabel}}
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <div class="bromonitor-element" id="actualiteit-element">
+      <h2 class="bromonitor-subtitle">Actualiteit van de gegevens</h2>
+      <div class="scrape-element" id="actualiteit">
+        <p>Deze monitor rapporteert over de volgende gegevens:</p>
+        <div class="row">
+          <div class="col-xs-12 col-lg-6 col-sm-8 type-table-container">
+            <table style="table-layout: fixed; width: 50%">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="1">Objecttype</th>
+                  <th scope="col" style="text-align: right">Peildatum</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for type in typenoverzicht %}
+                <tr>
+                  <td>{{ type.abbreviation }}</td>
+                  <td style="text-align: right">{{ type.date}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

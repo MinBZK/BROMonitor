@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="icon" type="image/png" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="apple-touch-icon" type="image/png" href="<%= BASE_URL %>favicon.ico" />
+    <link href="/app.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/markdown.css" />
+  </head>
+  <body>
+    <noscript>
+      <strong>
+        Het spijt ons, maar <%= htmlWebpackPlugin.options.title %> werkt niet
+        goed als JavaScript is uitgeschakeld. Schakel het in om door te gaan.
+      </strong>
+    </noscript>
+    <div id="app"></div>
+  </body>
+</html>
