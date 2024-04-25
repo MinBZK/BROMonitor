@@ -14,7 +14,8 @@
     "baseUrl": ".",
     "resolveJsonModule": true,
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "vue-i18n"
     ],
     "paths": {
       "@/*": [

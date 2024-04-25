@@ -46,7 +46,7 @@
         options-dense
         :aria-label="`records per pagina: ${scope.pagination.rowsPerPage}`"
         :options="[5, 10, 15, 20, 25, 50, 0]"
-        :option-label="item => (item === 0 ? 'Alle' : item)"
+        :option-label="(item) => (item === 0 ? 'Alle' : item)"
       />
       <span>
         {{
@@ -59,7 +59,7 @@
         {{
           Math.min(
             scope.pagination.page * scope.pagination.rowsPerPage,
-            filter ? filteredRowCount : tableData.length
+            filter ? filteredRowCount : tableData.length,
           ).toLocaleString("nl-NL")
         }}
         van
@@ -121,10 +121,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import { downloadTable } from "@/services/downloadService";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+interface BmTableRef {
+  filteredSortedRows: unknown[];
+}
+
+export default defineComponent({
   data() {
     const filter = "";
     const pagination = {};
@@ -140,39 +144,43 @@ export default Vue.extend({
     downloadable: { default: true, type: Boolean },
     downloadFileName: { default: "table-export", type: String },
     searchable: { default: true, type: Boolean },
-    rowClickHandler: Function
+    rowClickHandler: Function,
   },
   watch: {
-    tableFilter: function(newVal, oldVal) {
+    tableFilter: function () {
       this.initiateFilter();
-    }
+    },
   },
   methods: {
-    download(data: any, columns: any) {
+    download(data: unknown, columns: unknown) {
       downloadTable(
-        (this.$refs.bmTable as any).filteredSortedRows,
+        (this.$refs.bmTable as BmTableRef).filteredSortedRows,
         columns,
-        this.$props.downloadFileName
+        this.$props.downloadFileName,
       );
     },
     initiateFilter() {
-      this.$data.filter = this.$props.tableFilter;
+      this.$data.filter = this.$props.tableFilter || "";
     },
     filterMethod(rows, terms) {
       // Checks if any of the columns of a row contain the filtered term.
       const lowerTerms = terms ? terms.toLowerCase() : "";
-      const columns = this.$props.tableColumns.map(x => x.field);
-      const filteredRows = rows.filter(row =>
-        columns.some(col => (row[col] + "").toLowerCase().includes(lowerTerms))
+      const columns = this.$props.tableColumns
+        ? (this.$props.tableColumns as { field: string }[]).map((x) => x.field)
+        : [];
+      const filteredRows = rows.filter((row) =>
+        columns.some((col) =>
+          (row[col] + "").toLowerCase().includes(lowerTerms),
+        ),
       );
       this.$data.filteredRowCount = filteredRows.length;
       return filteredRows;
-    }
+    },
   },
   beforeMount() {
     if (this.$props.tableFilter) {
       this.initiateFilter();
     }
-  }
+  },
 });
 </script>

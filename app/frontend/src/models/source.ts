@@ -1,9 +1,9 @@
-export interface SourceModel{
-    name: string;
-    types: SourceTypeModel[];
-  }
+export interface SourceModel {
+  name: string;
+  types: SourceTypeModel[];
+}
 
-export interface SourceTypeModel{
-    type: string;
-    updated: Date;
+export interface SourceTypeModel {
+  type: string;
+  updated: Date;
 }
