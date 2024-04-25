@@ -18,11 +18,12 @@
         @change="redirectToDateMonitor()"
       >
         <option
-          v-for="opt in this.$data.selectOptions"
-          :key="opt.value"
+          v-for="opt in selectOptions"
+          :key="opt.value as string"
           :value="opt.value"
-          >{{ opt.label }}</option
         >
+          {{ opt.label }}
+        </option>
       </select>
     </div>
     <div class="row">
@@ -55,19 +56,19 @@
 
 <script lang="ts">
 import { getBromonitorDates } from "@/api/bromonitor";
-import Vue from "vue";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
   data() {
-    const dates = [];
+    const dates: { label: string; value: Date }[] = [];
     let date;
-    const selectOptions = [];
-    const loaded = false;
+    const selectOptions: { label: string; value: unknown }[] = [];
+    // const loaded = false;
     return { dates, selectOptions, date };
   },
   methods: {
     getDates() {
-      const dateOptions = {
+      const dateOptions: Intl.DateTimeFormatOptions = {
         timeZone: "Europe/Amsterdam",
         year: "numeric",
         month: "long",
@@ -78,7 +79,7 @@ export default Vue.extend({
           (d: Date) => ({
             label: new Date(d).toLocaleString("nl-NL", dateOptions),
             value: d,
-          })
+          }),
         );
         this.$data.date = this.$data.dates[0];
         this.$data.selectOptions = this.$data.dates.map((x) => ({

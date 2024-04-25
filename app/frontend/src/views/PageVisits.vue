@@ -43,9 +43,9 @@
 <script lang="ts">
 import { getPageVisits } from "@/api/pageVisits";
 import { CountAggregate } from "@/models/aggregate";
-import Vue from "vue";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
   data() {
     const dataWeek: CountAggregate[] = [];
     const dataMonth: CountAggregate[] = [];
