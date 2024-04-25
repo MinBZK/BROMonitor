@@ -46,19 +46,21 @@ def init_registration_types():
     gmw = RegistrationTypeConfig(
         type_name="gmw",
         full_name="Grondwatermonitoringput",
-        main_table="gmw_monitoring_well",
-        pk_col="monitoring_well_id",
+        main_table="groundwater_monitoring_well",
+        pk_col="groundwater_monitoring_well_pk",
         mongo_collection="specificGMW",
         sourceKey="sourceGMW",
     )
+    gmw.set_registration_history_table("registrationHistoryCollection")
     gmw.set_join_tables(
         [
+            JoinTableDefinition("registration_history_collection", []),
             JoinTableDefinition(
-                "gmw_monitoring_tube_collection",
+                "monitoring_tube_collection",
                 [
                     JoinTableDefinition(
-                        "gmw_geo_ohm_cable_collection",
-                        [JoinTableDefinition("gmw_electrode_collection", [])],
+                        "geo_ohm_cable_collection",
+                        [JoinTableDefinition("electrode_collection", [])],
                     )
                 ],
             )
@@ -89,16 +91,18 @@ def init_registration_types():
     cpt = RegistrationTypeConfig(
         type_name="cpt",
         full_name="GeotechnischSondeeronderzoek",
-        main_table="cpt_geotechnical_survey",
-        pk_col="geotechnical_survey_id",
+        main_table="geotechnical_cpt_survey",
+        pk_col="geotechnical_cpt_survey_pk",
         mongo_collection="specificCPT",
         sourceKey="sourceCPT",
     )
+    cpt.set_registration_history_table("registrationHistoryCollection")
     cpt.set_join_tables(
         [
+            JoinTableDefinition("registration_history_collection", []),
             JoinTableDefinition(
-                "cpt_cone_penetrometer_survey_collection",
-                [JoinTableDefinition("cpt_cone_penetration_test_collection", [])],
+                "cone_penetrometer_survey_collection",
+                [JoinTableDefinition("cone_penetration_test_collection", [])],
             )
         ]
     )

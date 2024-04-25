@@ -13,7 +13,6 @@ from etl.load.serializing.base_schemas.common_schema import Common_Schema
 from etl.transform.transform_common import transform_common
 from etl.transform.transform_specific import transformer_mapping
 
-
 class GeopackageProcessor:
     def __init__(self, db, doc_type):
         logging.basicConfig(
@@ -56,7 +55,7 @@ class GeopackageProcessor:
             metadata = MetaData()
 
             # Relevant DB tables 'usually' start with their prefix, unless the type is sfr (for now)
-            if type_name not in ["sfr", "gmn", "bhr-p", "bhr-gt"]:
+            if type_name not in ["sfr", "gmn", "bhr-p", "bhr-gt", "gmw", "cpt"]:
                 metadata.reflect(
                     engine,
                     only=lambda name, _: name.startswith(type_name.replace("-", "")),
@@ -73,7 +72,6 @@ class GeopackageProcessor:
 
             # Get the python classes reflected from the database
             classes = Base.classes
-
             # Serialize and load the registration objects
             common_schema = Common_Schema()
             specific_schema = get_serializer(type_name, classes)
@@ -91,7 +89,7 @@ class GeopackageProcessor:
 
             while True:
                 # Construct iterator step-wise using the reflected classes and collections
-                iterator = session.query(c).filter(pk > lastPK).limit(1000)
+                iterator = session.query(c).filter(pk > lastPK).limit(1000)   
                 for load in self.doc_type.join_tables:
                     opts = joinedload(load.table_name)
                     parent_type = classes[load.table_name[:-11]]
@@ -146,8 +144,8 @@ class GeopackageProcessor:
                         json_specific = specific_transformer(json_specific)
 
                     # Write to temporary/buffer collections
-                    specific_result = self.db.tempSpecific.insert_one(json_specific)
-                    common_result = self.db.tempCommon.insert_one(
+                    self.db.tempSpecific.insert_one(json_specific)
+                    self.db.tempCommon.insert_one(
                         json_common_transformed
                     )
 
@@ -192,13 +190,14 @@ class GeopackageProcessor:
             [
                 {
                     "$merge": {
-                        "into": {"db": "bro", "coll": "common"},
+                        "into": {"db": "bro2", "coll": "common"},
                         "on": "_id",
                         "whenMatched": "replace",
                         "whenNotMatched": "insert",
                     }
                 }
-            ]
+            ],
+            allowDiskUse=True
         )
         self.db.tempCommon.drop()
         self.log.info(f"Done overwriting common documents for {common_type}")
