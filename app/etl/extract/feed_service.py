@@ -11,7 +11,6 @@ feed_ns = {'a': 'http://www.w3.org/2005/Atom',
 
 
 def fetch_geopackage_feed(url):
-    print(url)
     response = requests.get(url)
     if response.status_code == 200:
         root = etree.fromstring(response.content)

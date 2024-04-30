@@ -29,6 +29,7 @@ class GeopackageProcessor:
     def process(self):
         type_name = self.doc_type.type_name
         self.log.info(f"Start with load process for {type_name}")
+        
         source = self.db.source.find_one({"type": type_name})
         self.log.info(f"{source['last_loaded']} , {source['updated']}")
         # Break if we have loaded already
@@ -55,7 +56,7 @@ class GeopackageProcessor:
             metadata = MetaData()
 
             # Relevant DB tables 'usually' start with their prefix, unless the type is sfr (for now)
-            if type_name not in ["sfr", "gmn", "bhr-p", "bhr-gt", "gmw", "cpt"]:
+            if type_name not in ["sfr", "gmn", "bhr-p", "bhr-gt", "gmw", "cpt", "gld"]:
                 metadata.reflect(
                     engine,
                     only=lambda name, _: name.startswith(type_name.replace("-", "")),
@@ -190,7 +191,7 @@ class GeopackageProcessor:
             [
                 {
                     "$merge": {
-                        "into": {"db": "bro2", "coll": "common"},
+                        "into": {"db": "bro", "coll": "common"},
                         "on": "_id",
                         "whenMatched": "replace",
                         "whenNotMatched": "insert",
