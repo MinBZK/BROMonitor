@@ -22,7 +22,6 @@ def serializer_sfr(classes):
             model = classes["soil_face_research"]
             include_relationships = True
             load_instance = True
-            exclude = ["standardized_location"]
         delivered_location_collection = Nested(
             SFR_Delivered_Location_Schema, many=True)
         registration_history_collection = Nested(

@@ -33,7 +33,6 @@ def serializer_cpt(classes):
             model = classes["geotechnical_cpt_survey"]
             include_relationships = True
             load_instance = True
-            exclude = ["standardized_location"]
         cone_penetrometer_survey_collection = Nested(
             CPT_Cone_Penetrometer_Survey, many=True)
         registration_history_collection = Nested(

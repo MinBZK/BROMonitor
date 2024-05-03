@@ -1,10 +1,11 @@
 import os
 import logging
 from datetime import datetime
-from sqlalchemy import create_engine, MetaData
+from sqlalchemy import create_engine, MetaData, Table, select, Column, ForeignKey
 from sqlalchemy.engine.base import Engine
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import sessionmaker, joinedload
+from sqlalchemy import text
 
 from common.config import date_format, logging_format
 from etl.configuration.config import registration_types
@@ -12,6 +13,7 @@ from etl.load.serializing.get_serializer import get_serializer
 from etl.load.serializing.base_schemas.common_schema import Common_Schema
 from etl.transform.transform_common import transform_common
 from etl.transform.transform_specific import transformer_mapping
+from gmw_gmn_gld_processing import adjust_geopackage
 
 class GeopackageProcessor:
     def __init__(self, db, doc_type):
@@ -43,26 +45,26 @@ class GeopackageProcessor:
             # Start by clearing the temp collections (safety precaution)
             self.__clear_temp_collections()
 
-            file_name = source["zip_filename"].replace("zip", "gpkg")
+            # file_name = source["zip_filename"].replace("zip", "gpkg")
+            file_name = source["zip_filename"]
 
             # Change the name till pdok name zip and geopackage the same
             if type_name == "bhr-gt":
                 file_name = "brobhrgtvolledigeset.gpkg"
+            
 
             # Create database engine from the specified geopackage file
             engine = create_engine("sqlite:///" + self.unzip_location + file_name)
 
             # Reflect the desired database tables
             metadata = MetaData()
+            metadata.reflect(engine)
+            
+            if type_name in ["gmn", "gmw", "gld"]:
+                adjust_geopackage(engine)
 
-            # Relevant DB tables 'usually' start with their prefix, unless the type is sfr (for now)
-            if type_name not in ["sfr", "gmn", "bhr-p", "bhr-gt", "gmw", "cpt", "gld"]:
-                metadata.reflect(
-                    engine,
-                    only=lambda name, _: name.startswith(type_name.replace("-", "")),
-                )
-            else:
-                metadata.reflect(engine)
+            metadata.clear()
+            metadata.reflect(engine)
 
             Base = automap_base(metadata=metadata)
             Base.prepare()

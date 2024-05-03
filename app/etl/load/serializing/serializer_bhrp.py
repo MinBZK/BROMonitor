@@ -24,7 +24,6 @@ def serializer_bhrp(classes):
             model = classes["borehole_research"]
             include_relationships = False
             load_instance = True
-            exclude = ["standardized_location"]
         delivered_location_collection = Nested(
             BHR_Delivered_Location_Schema, many=True)
         registration_history_collection = Nested(

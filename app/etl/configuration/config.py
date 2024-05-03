@@ -149,10 +149,7 @@ def init_registration_types():
     gmn.set_join_tables(
         [
             JoinTableDefinition(
-                "gm_gmn_measuringpoint_collection",
-                [
-                    JoinTableDefinition("gm_gmw_monitoringtube_collection", [])
-                ],
+                "gm_gmn_measuringpoint_collection",[]
             ),
         ]
     )
@@ -166,10 +163,5 @@ def init_registration_types():
         pk_col="gm_gld_pk",
         mongo_collection="specificGLD",
         sourceKey="source_GMW_GMN_GLD",
-    )
-    gld.set_join_tables(
-        [
-            JoinTableDefinition("gm_gmw_monitoringtube_collection", []),
-        ]
     )
     registration_types.append(gld)
