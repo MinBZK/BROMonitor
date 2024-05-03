@@ -18,8 +18,8 @@ export interface BromonitorModel extends Aggregate {
 }
 
 export interface BromonitorModelRecent extends BromonitorModel {
-  static: Object;
-  static_data: Object;
+  static: Record<string, any>;
+  static_data: Record<string, any>;
 }
 
 export interface CountAggregate extends Aggregate {
@@ -62,24 +62,4 @@ export interface QualityRegimeAggregate extends Aggregate {
   bronhouder: string;
   identifier?: string;
   quality_regimes: CountAggregate[];
-}
-
-interface MapContent {
-  bronhouderType: string;
-  headerVariabele: string;
-  geojsonFile: string;
-  staticContent: string;
-  dataTypen: string;
-  dataRegimes: string;
-  className?: string;
-}
-
-
-export interface BroMonitorItemModel {
-  id: string;
-  iconName: string;
-  title: string;
-  sectionSideValue: string;
-  contentSelectors?: string[];
-  mapContent?: MapContent;
 }

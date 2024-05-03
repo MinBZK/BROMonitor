@@ -1,11 +1,7 @@
-import Vue from "vue";
-
-import "quasar/dist/quasar.min.css";
-import "quasar/dist/quasar.addon.min.css";
-import lang from "./quasar-lang-nl";
+import "quasar/dist/quasar.css";
+import { lang } from "./quasar-lang-nl";
 import "@quasar/extras/material-icons/material-icons.css";
 import {
-  Quasar,
   QBanner,
   QBreadcrumbs,
   QBreadcrumbsEl,
@@ -73,7 +69,7 @@ if (window.location.host.startsWith("acc.")) {
   brand["secondary"] = "#42145f";
 }
 
-Vue.use(Quasar, {
+export const quasarOptions = {
   config: {
     brand: brand,
   },
@@ -119,7 +115,7 @@ Vue.use(Quasar, {
     QToolbar,
     QToolbarTitle,
   },
-  directives: {},
-  plugins: {},
+  // directives: {},
+  // plugins: {},
   lang: lang,
-});
+};

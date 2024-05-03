@@ -8,15 +8,17 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   props: {
     loaded: Boolean,
     loadingText: {
       type: String,
-      default: "Pagina wordt geladen..."
-    }
-  }
-};
+      default: "Pagina wordt geladen...",
+    },
+  },
+});
 </script>
 <style scoped>
 .spinner {

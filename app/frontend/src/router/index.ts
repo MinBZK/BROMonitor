@@ -5,14 +5,11 @@ import Markdown from "@/components/Markdown.vue";
 import PageVisits from "@/views/PageVisits.vue";
 import NotFound from "@/views/NotFound.vue";
 import Sitemap from "@/views/Sitemap.vue";
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import qs from "qs";
 import { logPageVisit } from "@/api/pageVisits";
 
-Vue.use(VueRouter);
-
-const routes: RouteConfig[] = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: "",
     name: "bro-monitor",
@@ -38,14 +35,14 @@ const routes: RouteConfig[] = [
     path: "/cookies-en-privacy",
     name: "cookies_privacy",
     component: Markdown,
-    props: { data: require("@/assets/markdown/cookies_privacy.md").default },
+    props: { data: require("@/assets/markdown/cookies_privacy.md") },
   },
   {
     path: "/kwetsbaarheid-melden",
     name: "kwetsbaarheid-melden",
     component: Markdown,
     props: {
-      data: require("@/assets/markdown/Kwetsbaarheid melden.md").default,
+      data: require("@/assets/markdown/Kwetsbaarheid melden.md"),
     },
   },
   {
@@ -53,7 +50,7 @@ const routes: RouteConfig[] = [
     name: "overdebromonitor",
     component: Markdown,
     props: {
-      data: require("@/assets/markdown/informatie.md").default,
+      data: require("@/assets/markdown/informatie.md"),
     },
   },
   {
@@ -61,7 +58,7 @@ const routes: RouteConfig[] = [
     name: "toegankelijkheid",
     component: Markdown,
     props: {
-      data: require("@/assets/markdown/Toegankelijkheid.md").default,
+      data: require("@/assets/markdown/Toegankelijkheid.md"),
     },
   },
   {
@@ -79,9 +76,13 @@ const routes: RouteConfig[] = [
   },
   {
     path: "/niet-gevonden",
-    alias: "*",
     name: "not-found",
     meta: { breadCrumb: "Niet gevonden" },
+    component: NotFound,
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "catch-all",
     component: NotFound,
   },
   {
@@ -92,9 +93,8 @@ const routes: RouteConfig[] = [
   },
 ];
 
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   stringifyQuery: (query) => {
     const result = qs.stringify(query, { format: "RFC1738" });
     return result ? "?" + result : "";

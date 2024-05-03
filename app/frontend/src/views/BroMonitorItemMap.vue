@@ -14,8 +14,9 @@
 <script lang="ts">
 import BaseMapSvg from "@/views/reports/bronhoudermaps/BaseMapSvg.vue";
 
-import Vue from "vue";
-export default Vue.extend({
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "BroMonitorItemMap",
   components: {
     BaseMapSvg,
