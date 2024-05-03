@@ -6,6 +6,8 @@ log = logging.getLogger(__name__)
 
 
 def initiliaze_source_document(db, doc_type, name="pdok"):
+    # if doc_type == "gmw" or doc_type == "gmn" or doc_type == "gld":
+    #     doc_type = "gmw_gmn_gld"
     
     source_doc = db.source.find_one({"type": doc_type})
     required_keys = ['updated', 'name']

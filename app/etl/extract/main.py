@@ -2,6 +2,9 @@ import os
 import logging
 from pymongo import MongoClient
 
+import sys 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+
 from etl.extract.gld_extractor import GLDExtractor
 from etl.extract.source_processor import process_geopackage
 from common.config import date_format, logging_format
@@ -24,11 +27,11 @@ db = client.bro
 init_registration_types()
 
 for reg_type in registration_types:
-    initiliaze_source_document(db, doc_type=reg_type.type_name)        
+    initiliaze_source_document(db, doc_type=reg_type.type_name)   
     process_geopackage(reg_type)
 
 log.info("Recreating the bronhouder collection")
 db.bronhouder.drop()
 index_bronhouders()
-gld_extractor = GLDExtractor()
-gld_extractor.extract()
+# gld_extractor = GLDExtractor()
+# gld_extractor.extract()

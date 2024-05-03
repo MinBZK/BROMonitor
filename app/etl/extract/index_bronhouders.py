@@ -21,7 +21,7 @@ def index_bronhouders():
     client = MongoClient(mongoUrl)
     db = client.bro
     csv_path = os.path.join(os.path.dirname(__file__), '../configuration/bronhouders.csv')
-    with open(csv_path, encoding="UTF8") as csv_file:
+    with open(csv_path) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=';')
         line_count = 0
         for row in csv_reader:
@@ -33,8 +33,10 @@ def index_bronhouders():
                     {
                         "kvk": row[1],
                         "naam": row[2],
-                        "type": row[3],
-                        "identifier": row[4],
+                        "type": "-",
+                        "identifier": "-",
+                        # "type": row[3],
+                        # "identifier": row[4],
                         "isBronhouder": row[1] in bronhouders_set
                     })
                 line_count += 1
