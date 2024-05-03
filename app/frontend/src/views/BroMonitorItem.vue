@@ -8,7 +8,7 @@
         <h3>
           <button
             class="button-text-only"
-            :aria-expanded="expanded.toString()"
+            :aria-expanded="expanded"
             aria-role="button"
             :id="id"
             @keyup.enter="(e) => e.preventDefault()"
@@ -26,11 +26,11 @@
       <q-card-section>
         <div
           v-for="(cS, index) in contentSelectors"
-          :key="cS"
+          :key="cS as string"
           style="padding: 0; margin: 0"
         >
-          <br v-if="index > 0" :key="cS" />
-          <div v-html="model.static[cS]"></div>
+          <br v-if="index > 0" :key="typeof cS === 'string' ? cS : undefined" />
+          <div v-if="model && 'static' in model" v-html="model.static[cS as string]"></div>
         </div>
         <bro-monitor-item-map
           v-if="mapContent"
@@ -53,8 +53,9 @@
 import BroMonitorItemMap from "@/views/BroMonitorItemMap.vue";
 import BaseMapSvg from "@/views/reports/bronhoudermaps/BaseMapSvg.vue";
 
-import Vue from "vue";
-export default Vue.extend({
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "BroMonitorItem",
   components: {
     BroMonitorItemMap,

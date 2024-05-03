@@ -9,12 +9,14 @@
 
 <script lang="ts">
 import { Layout } from "@/layouts/layout";
-import { computed, defineComponent } from "@vue/composition-api";
+import { computed, defineComponent } from "vue";
+import { useRoute } from "vue-router";
 
 export default defineComponent({
-  setup(props, context) {
+  setup() {
+    const route = useRoute();
     const layout = computed(
-      (): Layout => context.root.$route.meta.layout || Layout.Default
+      (): Layout => (route.meta.layout as Layout) || Layout.Default,
     );
     return {
       layout,
