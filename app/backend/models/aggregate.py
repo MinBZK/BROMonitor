@@ -21,6 +21,7 @@ class BromonitorModelRecent(BromonitorModel):
 
 class CountAggregate(BaseModel):
     key: str
+    # key: int
     count: int
 
 
@@ -35,7 +36,7 @@ class BronhouderAndType(BaseModel):
     naam: Optional[str]
     identifier: Optional[str]
     type: Optional[str]
-    status: Optional[str]
+    status: Optional[str] = None
 
 
 class PerBronhouderCountAggregate(BaseModel):
