@@ -29,15 +29,25 @@ def index_bronhouders():
                 log.info(f'Column names are {",".join(row)}')
                 line_count += 1
             else:
+                if "Gemeente" in row[2]:
+                    type = "Gemeente"
+                    identifier = "GM00"
+                elif "Provincie" in row[2]:
+                    type = "Provincie"
+                    identifier = "PV00"
+                elif "Water" in row[2]:
+                    type = "Waterschap"
+                    identifier = "WS00"
+                else:
+                    type = "Overig"
+                    identifier = ""
                 db.bronhouder.insert_one(
                     {
-                        "kvk": row[1],
-                        "naam": row[2],
-                        "type": "-",
-                        "identifier": "-",
-                        # "type": row[3],
-                        # "identifier": row[4],
-                        "isBronhouder": row[1] in bronhouders_set
+                        "kvk": row[4],
+                        "naam": row[0],
+                        "type": type,
+                        "identifier": identifier,
+                        "isBronhouder": row[4] in bronhouders_set
                     })
                 line_count += 1
         log.info(f'Loaded {line_count} bronhouders to mongoDb.')
