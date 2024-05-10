@@ -29,6 +29,7 @@ def serializer_bhrgt(classes):
             model = classes["borehole_research"]
             include_relationships = False
             load_instance = True
+            exclude = ["standardized_location"]
         boring_collection = Nested(
             BHRGT_Boring_Schema, many=True)
         delivered_location_collection = Nested(

@@ -1,7 +1,7 @@
 
 from sqlalchemy import text
 
-def adjust_geopackage(engine):
+def adjust_geopackage(metadata,engine):
     # drop column
     with engine.begin() as connection:
         # get all trigger names
@@ -60,3 +60,6 @@ def adjust_geopackage(engine):
                 connection.execute(f"INSERT INTO {layer}_new SELECT {', '.join(name for name, type in columns)} FROM {layer};")
                 connection.execute(f"DROP TABLE {layer};")
                 connection.execute(f"ALTER TABLE {layer}_new RENAME TO {layer};")
+    
+    metadata.clear()
+    metadata.reflect(engine)
