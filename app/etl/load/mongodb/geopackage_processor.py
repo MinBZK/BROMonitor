@@ -47,6 +47,9 @@ class GeopackageProcessor:
             # Change the name till pdok name zip and geopackage the same
             if type_name == "bhr-gt":
                 file_name = "brobhrgtvolledigeset.gpkg"
+            
+            if "zip" in file_name:
+                file_name = file_name.replace("zip", "gpkg")
 
             # Create database engine from the specified geopackage file
             engine = create_engine("sqlite:///" + self.unzip_location + file_name)
@@ -199,6 +202,11 @@ class GeopackageProcessor:
             ],
             allowDiskUse=True
         )
+        
+        query = { 'common.qualityRegime': None }
+        # Delete rows with NaN values
+        self.db.common.delete_many(query)
+
         self.db.tempCommon.drop()
         self.log.info(f"Done overwriting common documents for {common_type}")
 
