@@ -42,7 +42,7 @@ def index_bronhouders():
                     "kvk": row.iloc[4],
                     "naam": row.iloc[0],
                     "type": type,
-                    "identifier": row.iloc[5],
+                    "identifier": "" if pd.isna(row.iloc[5]) else row.iloc[5],
                     "isBronhouder": row.iloc[4] in bronhouders_set
                 })
         log.info(f'Loaded {index} bronhouders to mongoDb.')
