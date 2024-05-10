@@ -53,7 +53,7 @@
 import BroMonitorItemMap from "@/views/BroMonitorItemMap.vue";
 import BaseMapSvg from "@/views/reports/bronhoudermaps/BaseMapSvg.vue";
 
-import { defineComponent } from "vue";
+import { defineComponent, onMounted, ref, nextTick } from "vue";
 
 export default defineComponent({
   name: "BroMonitorItem",
@@ -71,21 +71,25 @@ export default defineComponent({
     tabIndex: Number,
     mapContent: Object,
   },
-  data() {
-    return {
-      expanded: false,
-    };
-  },
-  mounted() {
-    // q-expansion-item introduces nested divs with a tabindex.
-    // For accessability, the tab should be directly on the element that has an interaction, in this case <button>.
-    // Therefore, the tabindex on nested divs should be removed.
-    const expansionItem: any = this.$refs.expansion;
-    expansionItem.$children.map((c) => {
-      if (c.$el.tabIndex == 0) {
-        c.$el.setAttribute("tabIndex", -1);
+  setup() {
+    const expanded = ref(false);
+    const expansion = ref(null);
+
+    onMounted(async () => {
+      await nextTick();
+      if (expansion.value) {
+        const expansionElement = (expansion.value as HTMLElement);
+        const nestedDivs = expansionElement.querySelectorAll('div[tabindex="0"]');
+        nestedDivs.forEach((div) => {
+          div.setAttribute("tabIndex", "-1");
+        });
       }
     });
+
+    return {
+      expanded,
+      expansion
+    };
   },
 });
 </script>
