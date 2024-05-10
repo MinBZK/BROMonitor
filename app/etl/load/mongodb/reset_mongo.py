@@ -12,6 +12,6 @@ def reset_mongo():
     mongoUrl = os.environ.get('mongodbUrl')
     client = MongoClient(mongoUrl)
     db = client.bro
-    for c in db.collection_names():
+    for c in db.list_collection_names():
         if c not in IGNORE_LIST:
             db[c].drop()

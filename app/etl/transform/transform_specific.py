@@ -8,21 +8,20 @@ import json
 def transform_cpt_nesteds(json_input):
     penetrometer_survey = {}
     penetration_test = {}
-
     for key, value in (
-        json_input["cptConePenetrometerSurveyCollection"][0][
-            "cptConePenetrationTestCollection"
+        json_input["conePenetrometerSurveyCollection"][0][
+            "conePenetrationTestCollection"
         ][0]
     ).items():
         penetration_test[key] = value
 
-    for key, value in (json_input["cptConePenetrometerSurveyCollection"][0]).items():
+    for key, value in (json_input["conePenetrometerSurveyCollection"][0]).items():
         penetrometer_survey[key] = value
 
-    penetrometer_survey.pop("cptConePenetrationTestCollection")
+    penetrometer_survey.pop("conePenetrationTestCollection")
     penetrometer_survey["conePenetrationTest"] = penetration_test
 
-    json_input.pop("cptConePenetrometerSurveyCollection")
+    json_input.pop("conePenetrometerSurveyCollection")
     json_input["conePenetrometerSurvey"] = penetrometer_survey
 
     return json_input

@@ -4,6 +4,7 @@ from etl.load.serializing.serializer_sfr import serializer_sfr
 from etl.load.serializing.serializer_cpt import serializer_cpt
 from etl.load.serializing.serializer_bhrp import serializer_bhrp
 from etl.load.serializing.serializer_gmn import serializer_gmn
+from etl.load.serializing.serializer_gld import serializer_gld
 
 serializer_mapping = {
     "gmw": serializer_gmw,
@@ -12,6 +13,7 @@ serializer_mapping = {
     "cpt": serializer_cpt,
     "bhr-p": serializer_bhrp,
     "gmn": serializer_gmn,
+    "gld": serializer_gld,
 }
 
 

@@ -4,6 +4,7 @@ from pymongo import MongoClient
 import os
 import logging
 import pytz
+import shutil
 
 from etl.extract.feed_service import fetch_geopackage_feed
 from etl.extract.feed_service import download_zip
@@ -50,18 +51,21 @@ def process_geopackage(reg_type):
         download_data = feed.updated > pytz.utc.localize(source['updated'])
 
         if download_data:
-            
             download_location = os.environ.get('downloadLocation', '/mnt/brodata/')
             path = download_location + feed.filename
 
             log.info("Start download van %s naar %s" % (feed.zip_url, path))
             if download_zip(feed.zip_url, path):
-                unzip_filename = feed.filename.replace('zip', 'gpkg')
+                if not (reg_type.sourceKey == "source_GMW_GMN_GLD"):
+                    unzip_filename = feed.filename.replace('zip', 'gpkg')
                 log.info("Unzipping %s" % path)
                 if doc_type == "bhr-gt":
                     unzip_filename = "brobhrgtvolledigeset.gpkg"
                 unzip_location = os.environ.get('unzipLocation', '/mnt/brodata/')                
-                unzip(path, unzip_location, unzip_filename)
+                if reg_type.sourceKey == "source_GMW_GMN_GLD":
+                    shutil.copy2(path, unzip_location)
+                else:
+                    unzip(path, unzip_location, unzip_filename)
 
                 db.source.update_one({"type": doc_type},
                                      {"$set": {"updated": feed.updated,

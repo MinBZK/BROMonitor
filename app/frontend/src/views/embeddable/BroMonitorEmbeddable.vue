@@ -1,6 +1,11 @@
 <template>
   <q-page>
-    <div v-if="loaded" class="bromonitor row" v-html="model.html" @click="handleClick"></div>
+    <div
+      v-if="loaded"
+      class="bromonitor row"
+      v-html="model.html"
+      @click="handleClick"
+    ></div>
     <q-page-sticky position="bottom-right" :offset="[18, 18]">
       <q-btn @click="toTop()" fab icon="keyboard_arrow_up" color="primary" />
     </q-page-sticky>
@@ -9,9 +14,9 @@
 
 <script lang="ts">
 import { getBromonitorEmbedded } from "@/api/bromonitor";
-import Vue from "vue";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
   data() {
     const loaded = false;
     const model = {};
@@ -42,11 +47,10 @@ export default Vue.extend({
           }
         }
       }
-    }
+    },
   },
   beforeMount() {
     this.loadBroMonitor();
   },
-  
 });
 </script>
