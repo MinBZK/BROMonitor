@@ -30,7 +30,10 @@
           style="padding: 0; margin: 0"
         >
           <br v-if="index > 0" :key="typeof cS === 'string' ? cS : undefined" />
-          <div v-if="model && 'static' in model" v-html="model.static[cS as string]"></div>
+          <div
+            v-if="model && 'static' in model"
+            v-html="model.static[cS as string]"
+          ></div>
         </div>
         <bro-monitor-item-map
           v-if="mapContent"
@@ -48,8 +51,8 @@
     </q-card>
   </q-expansion-item>
 </template>
-  
-  <script lang="ts">
+
+<script lang="ts">
 import BroMonitorItemMap from "@/views/BroMonitorItemMap.vue";
 import BaseMapSvg from "@/views/reports/bronhoudermaps/BaseMapSvg.vue";
 
@@ -78,8 +81,9 @@ export default defineComponent({
     onMounted(async () => {
       await nextTick();
       if (expansion.value) {
-        const expansionElement = (expansion.value as HTMLElement);
-        const nestedDivs = expansionElement.querySelectorAll('div[tabindex="0"]');
+        const expansionElement = expansion.value as HTMLElement;
+        const nestedDivs =
+          expansionElement.querySelectorAll('div[tabindex="0"]');
         nestedDivs.forEach((div) => {
           div.setAttribute("tabIndex", "-1");
         });
@@ -88,13 +92,13 @@ export default defineComponent({
 
     return {
       expanded,
-      expansion
+      expansion,
     };
   },
 });
 </script>
-  
-  <style scoped>
+
+<style scoped>
 .button-text-only {
   background: none !important;
   border: none;
