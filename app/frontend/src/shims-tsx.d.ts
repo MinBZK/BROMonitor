@@ -1,4 +1,4 @@
-import { DefineComponent } from 'vue';
+import { DefineComponent } from "vue";
 
 declare global {
   namespace JSX {

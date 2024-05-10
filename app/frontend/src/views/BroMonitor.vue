@@ -319,7 +319,10 @@
               </select>
             </div>
 
-            <div v-if="model && 'static' in model && model.static[optionSelected]" v-html="model.static[optionSelected]"></div>
+            <div
+              v-if="model && 'static' in model && model.static[optionSelected]"
+              v-html="model.static[optionSelected]"
+            ></div>
           </q-card-section>
           <hr role="presentation" />
         </q-card>
