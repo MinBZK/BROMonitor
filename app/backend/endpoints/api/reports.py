@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append("C:/Users/fesscher/Documents/GitHub/BROMonitor/app")
+
 from backend.queries.bronhouders import (
     get_quality_regimes_by_bronhouder,
     get_brondocumenten_count_by_bronhouder,
@@ -36,6 +40,8 @@ async def document_count_by_bronhouder(
     only_bronhouders: bool = True,
     db: AsyncIOMotorClient = Depends(get_database),
 ):
+    # print(bronhoudertype, gldstatus, only_bronhouders, db)
+    
     return await get_brondocumenten_count_by_bronhouder(
         bronhoudertype, gldstatus, db, only_bronhouders=only_bronhouders
     )

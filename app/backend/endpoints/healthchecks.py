@@ -3,6 +3,8 @@ from fastapi import APIRouter, Depends, Response
 from motor.motor_asyncio import AsyncIOMotorClient
 import logging
 from pymongo import MongoClient
+import sys
+sys.path.append("C:/Users/fesscher/Documents/GitHub/BROMonitor/app")
 from backend.utils.documentTypes import document_type_registry
 from common.mongodb_utils import get_database
 from backend.utils.pingdom import generate_pingdom_xml

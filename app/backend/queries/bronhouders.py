@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append("C:/Users/fesscher/Documents/GitHub/BROMonitor/app")
+
 from backend.utils.documentTypes import document_type_registry
 from backend.queries.metadata import get_source_model_by_types
 from backend.models.bronhouder import Bronhouder
@@ -32,6 +36,7 @@ async def get_bronhouders_kvk_dic(
         cursorBronhouders = conn.bro.bronhouder.find(bh_filter)
     else:
         cursorBronhouders = conn.bro.bronhouder.find()
+    # print("cursorBronhouders: ", cursorBronhouders)
     bronhoudersDict = {}
     async for row in cursorBronhouders:
         if withIdentifier:
@@ -55,13 +60,19 @@ async def get_brondocumenten_count_by_bronhouder(
         bh_filter = {"type": bronhoudertype}
     else:
         bh_filter = {}
+    
+    
+
 
     bronhoudersDict = await get_bronhouders_kvk_dic(conn, bh_filter, True)
 
     # add the bronhouders with documents
     cursorDocumentCounts = conn.bro.documentCountsByBronhouder.find()
+    
     async for row in cursorDocumentCounts:
+        #print("row:", type(row["_id"]))
         if row["_id"]["kvk"] in bronhoudersDict:
+            
             kvk = row["_id"]["kvk"]
             data.append(
                 PerBronhouderCountAggregate(

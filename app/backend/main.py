@@ -7,6 +7,10 @@ import logging
 import os
 import sys
 
+
+sys.path.append("C:/Users/fesscher/Documents/GitHub/BROMonitor/app")
+
+from backend.models.aggregate import BronhouderAndType
 from common.config import date_format, logging_format
 from common.mongodb_utils import disconnect_mongo, connect_mongo
 from backend.routers.api import router as api_router
@@ -54,3 +58,5 @@ async def set_secure_headers(request, call_next):
     response = await call_next(request)
     secure_headers.framework.fastapi(response)
     return response
+
+

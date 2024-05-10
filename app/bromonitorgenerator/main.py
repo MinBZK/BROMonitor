@@ -4,6 +4,10 @@ import os
 from pymongo import MongoClient
 from bs4 import BeautifulSoup
 
+import sys
+
+sys.path.append("C:/Users/fesscher/Documents/GitHub/BROMonitor/app")
+
 from bromonitorgenerator.templates.figure_mapping import figure_mapping, data
 from bromonitorgenerator.utils.start_date import set_start_date
 from bromonitorgenerator.utils.utils import today

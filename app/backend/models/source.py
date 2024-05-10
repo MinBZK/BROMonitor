@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 class SourceTypeModel(BaseModel):
     type: str
-    updated: Optional[datetime]
+    updated: Optional[datetime] = None
 
 
 class SourceModel(BaseModel):

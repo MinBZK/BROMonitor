@@ -1,5 +1,5 @@
-from typing import List, Optional, Tuple
-from pydantic import BaseModel
+from typing import List, Optional, Tuple, Union ## ADDED UNION FOR CountAggregate to accept both ints and strings
+from pydantic import BaseModel, ValidationError
 
 from backend.models.source import SourceModel
 
@@ -20,23 +20,28 @@ class BromonitorModelRecent(BromonitorModel):
 
 
 class CountAggregate(BaseModel):
-    key: str
-    # key: int
+    key: Union[str,int]
     count: int
 
 
 class QualityRegimeAggregate(BaseModel):
     bronhouder: str
-    identifier: Optional[str]
+    identifier: Optional[str] = None
     quality_regimes: List[CountAggregate]
 
 
 class BronhouderAndType(BaseModel):
     kvk: str
-    naam: Optional[str]
-    identifier: Optional[str]
-    type: Optional[str]
-    status: Optional[str] = None
+    naam: Optional[str] = None
+    identifier: Optional[str] = None
+    type: Optional[str] = None
+    status: Optional[str] = None #EDITED - ORIGINAL = status : optional[str]
+
+# try:
+#     BronhouderAndType()
+# except ValidationError as exc:
+#     print(repr(exc.errors()[0]['type']))
+    
 
 
 class PerBronhouderCountAggregate(BaseModel):
