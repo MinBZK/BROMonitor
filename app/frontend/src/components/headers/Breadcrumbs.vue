@@ -36,10 +36,10 @@ export default {
       pathArray.forEach((p) => {
         fullPath += "/" + p;
         if (p.toLowerCase() !== "") {
-          crumbText =
-            this.$i18n.t(
-              this.$router.resolve({ path: fullPath }).route.meta?.breadCrumb,
-            ) || this.sanitizePath(p);
+          const route = this.$router.resolve({ path: fullPath }).route;
+          if (route && route.meta) {
+            crumbText = this.$i18n.t(route.meta.breadCrumb) || this.sanitizePath(p);
+          }
           if (p.includes("datum=")) {
             crumbText = p.split("=").at(1);
           }
