@@ -8,7 +8,7 @@
         <h3>
           <button
             class="button-text-only"
-            :aria-expanded="expanded.toString()"
+            :aria-expanded="expanded"
             aria-role="button"
             :id="id"
             @keyup.enter="(e) => e.preventDefault()"
@@ -26,11 +26,14 @@
       <q-card-section>
         <div
           v-for="(cS, index) in contentSelectors"
-          :key="cS"
+          :key="cS as string"
           style="padding: 0; margin: 0"
         >
-          <br v-if="index > 0" :key="cS" />
-          <div v-html="model.static[cS]"></div>
+          <br v-if="index > 0" :key="typeof cS === 'string' ? cS : undefined" />
+          <div
+            v-if="model && 'static' in model"
+            v-html="model.static[cS as string]"
+          ></div>
         </div>
         <bro-monitor-item-map
           v-if="mapContent"
@@ -48,13 +51,14 @@
     </q-card>
   </q-expansion-item>
 </template>
-  
-  <script lang="ts">
+
+<script lang="ts">
 import BroMonitorItemMap from "@/views/BroMonitorItemMap.vue";
 import BaseMapSvg from "@/views/reports/bronhoudermaps/BaseMapSvg.vue";
 
-import Vue from "vue";
-export default Vue.extend({
+import { defineComponent, onMounted, ref, nextTick } from "vue";
+
+export default defineComponent({
   name: "BroMonitorItem",
   components: {
     BroMonitorItemMap,
@@ -70,26 +74,31 @@ export default Vue.extend({
     tabIndex: Number,
     mapContent: Object,
   },
-  data() {
-    return {
-      expanded: false,
-    };
-  },
-  mounted() {
-    // q-expansion-item introduces nested divs with a tabindex.
-    // For accessability, the tab should be directly on the element that has an interaction, in this case <button>.
-    // Therefore, the tabindex on nested divs should be removed.
-    const expansionItem: any = this.$refs.expansion;
-    expansionItem.$children.map((c) => {
-      if (c.$el.tabIndex == 0) {
-        c.$el.setAttribute("tabIndex", -1);
+  setup() {
+    const expanded = ref(false);
+    const expansion = ref(null);
+
+    onMounted(async () => {
+      await nextTick();
+      if (expansion.value) {
+        const expansionElement = expansion.value as HTMLElement;
+        const nestedDivs =
+          expansionElement.querySelectorAll('div[tabindex="0"]');
+        nestedDivs.forEach((div) => {
+          div.setAttribute("tabIndex", "-1");
+        });
       }
     });
+
+    return {
+      expanded,
+      expansion,
+    };
   },
 });
 </script>
-  
-  <style scoped>
+
+<style scoped>
 .button-text-only {
   background: none !important;
   border: none;

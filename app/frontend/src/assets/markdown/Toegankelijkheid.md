@@ -1,15 +1,16 @@
 # Toegankelijkheid
 
-Het is belangrijk dat iedereen BRO Monitor.nl kan gebruiken, vanaf iedere mobiele telefoon, tablet of computer. De informatie op deze website voldoet aan alle toegankelijkheidsnormen (WCAG versie 2.1, niveau A en AA).
+Het is belangrijk dat iedereen BRO Monitor.nl kan gebruiken, vanaf iedere mobiele telefoon, tablet of computer. De informatie op deze website is ingewikkeld en gaat over de basisregistratie ondergrond. We doen ons best om de website zo toegankelijk mogelijk te maken.
 
-<img src="/waarmerk_wcag.svg" alt="Certificaat digitale toegankelijkheid WCAG" style="width: 200px;">
+Wij hebben nu een tijdelijke toegankelijkheidsverklaring waarin staat dat we de eerste maatregelen hebben genomen. We zijn ermee bezig om een volledige toegankelijkheidsverklaring te krijgen.
+
 [Toegankelijkheidsverklaring BRO Monitor.nl <i class="material-icons" aria-label="Opent in nieuw venster">
 open_in_new
 </i>](https://www.toegankelijkheidsverklaring.nl/register/4744)
 
 ## Wat is een toegankelijke website?
 
-Een toegankelijke website is voor alle doelgroepen beter te gebruiken. Daarom is in het Tijdelijk besluit digitale toegankelijkheid overheid bepaald dat overheidssites moeten voldoen aan toegankelijkheidseisen zoals vastgelegd in EN 301 549/WCAG 2.1.
+Een toegankelijke website is voor alle doelgroepen beter te gebruiken. Daarom is in het Tijdelijk besluit digitale toegankelijkheid overheid bepaald dat overheidssites moeten voldoen aan toegankelijkheidseisen zoals vastgelegd in EN 301 549/WCAG 2.1. Op dit moment is deze website nog in ontwikkeling en wordt de toegankelijkheid nog verbeterd. Binnenkort is op deze pagina een toegankelijkheidsverklaring van de BRO Monitor te vinden.
 
 ## Hoe verbeteren wij de toegankelijkheid van BRO Monitor.nl?
 

@@ -4,7 +4,7 @@
       <div class="wrapper">
         <img
           alt="Rijksoverheid Logo"
-          :src="require(`@/assets/${logoSize()}`).default"
+          :src="require(`@/assets/${logoSize()}`)"
         />
       </div>
     </div>
@@ -12,14 +12,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   methods: {
     logoSize() {
       return this.$q.screen.lt.md ? "logo-fallback-ro.svg" : "logo-ro.svg";
-    }
-  }
+    },
+  },
 });
 </script>
 

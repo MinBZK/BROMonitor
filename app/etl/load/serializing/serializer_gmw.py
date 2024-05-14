@@ -6,51 +6,21 @@ from etl.load.serializing.base_schemas.common_schema import Common_Schema
 
 
 def serializer_gmw(classes):
-    class GMW_Registration_History_Schema(CamelCaseSchema):
-        class Meta:
-            model = classes["registration_history"]
-            load_instance = True
-            include_relationships = False
-
-    class GMW_Electrode_Schema(CamelCaseSchema):
-        class Meta:
-            print(classes.keys())
-            model = classes["electrode"]
-            include_fk = True
-            load_instance = True
-
-    class GMW_Geo_Ohm_Cable_Schema(CamelCaseSchema):
-        class Meta:
-            model = classes["geo_ohm_cable"]
-            include_relationships = True
-            include_fk = True
-            load_instance = True
-        # Overwrite the generated electrodes to a nested one-to-many list
-        # of GMW_Electrode objects
-        electrode_collection = Nested(GMW_Electrode_Schema, many=True)
 
     class GMW_Tube_Schema(CamelCaseSchema):
         class Meta:
-            model = classes["monitoring_tube"]
-            include_relationships = True
-            include_fk = True
+            model = classes["gm_gmw_monitoringtube"]
             load_instance = True
-        # Overwrite the generated geo ohm cables to a nested one-to-many list
-        # of GMW_Geo_Ohm_Cable objects
-        geo_ohm_cable_collection = Nested(
-            GMW_Geo_Ohm_Cable_Schema, many=True)
+            exclude = ["gm_gmw_monitoringtube_pk"]
 
     class GMW_Schema(CamelCaseSchema):
         class Meta:
-            model = classes["groundwater_monitoring_well"]
-            include_relationships = True
+            model = classes["gm_gmw"]
             load_instance = True
-            exclude = ["standardized_location"]
+            exclude = ["gm_gmw_pk"]
         # Overwrite the generated monitoring tubes to a nested one-to-many
         # list of GMW_Tube objects
-        monitoring_tube_collection = Nested(
+        gm_gmw_monitoringtube_collection = Nested(
             GMW_Tube_Schema, many=True)
-        registration_history_collection = Nested(
-            GMW_Registration_History_Schema, many=True)
 
     return GMW_Schema()

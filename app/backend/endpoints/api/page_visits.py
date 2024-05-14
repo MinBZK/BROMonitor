@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from motor.motor_asyncio import AsyncIOMotorClient
 from common.mongodb_utils import get_database
-from queries.page_visits import log_page_visit, get_page_visits
+from backend.queries.page_visits import log_page_visit, get_page_visits
 from typing import List
 from backend.models.aggregate import CountAggregate
 

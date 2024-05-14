@@ -13,7 +13,7 @@ export default store;
 
 export function getTypesWithLocations() {
   return (store.documentTypes as DocumentType[]).filter(
-    (t) => t.typeHasLocation
+    (t) => t.typeHasLocation,
   );
 }
 
@@ -27,7 +27,7 @@ export function getTypeByLongName(longName) {
 
 export function getTypeByShortName(shortName) {
   return store.documentTypes.find(
-    (x: DocumentType) => x.shortName == shortName
+    (x: DocumentType) => x.shortName == shortName,
   );
 }
 

@@ -90,7 +90,7 @@ async def get_documents_over_time(conn: AsyncIOMotorClient, object_type: str):
     ]
 
     async for row in conn.bro.common.aggregate(pipeline):
-        data.append(CountAggregate(key=row["_id"], count=row["count"]))
+        data.append(CountAggregate(key=str(row["_id"]), count=row["count"]))
 
     source: SourceModel = await get_source_model_by_types(
         conn, "pdok", [document_type_registry.get_short_by_dbname(object_type)]
