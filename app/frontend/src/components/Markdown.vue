@@ -3,59 +3,28 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref, watch } from "vue";
 import showdown from "showdown";
 
 export default defineComponent({
   props: {
-    data: String,
+    data: [String, Object],
   },
-  setup() {
-    showdown.setFlavor("github");
-    // Custom showdown extension, adding target="_blank" to all converted links/anchors.
-    showdown.extension("targetLink", function () {
-      return [
-        {
-          type: "lang",
-          regex:
-            /[!]{0,1}\[((?:\[[^\]]*]|[^[\]])*)]\([ \t]*<?(.*?(?:\(.*?\).*?)?)>?[ \t]*((['"])(.*?)\4[ \t]*)?\)/g,
-          replace: function (wholematch, linkText, url, a, b, title) {
-            // We matched an image and should do nothing with it
-            if (wholematch.charAt(0) == "!") return wholematch;
+  setup(props) {
+    const fileContent = ref("");
+    const converter = new showdown.Converter();
 
-            let result = '<a href="' + url + '"';
-            if (typeof title != "undefined" && title !== "" && title !== null) {
-              title = title.replace(/"/g, "&quot;");
-              title = showdown.helper.escapeCharacters(title, "*_", false);
-              result += ' title="' + title + '"';
-            }
-
-            // Do not add target blank for local reference links
-            if (url.charAt(0) != "#") result += ' target="_blank"';
-
-            result += ">" + linkText + "</a>";
-
-            return result;
-          },
-        },
-      ];
-    });
-  },
-  data() {
-    const fileContent = "";
-    const converter = new showdown.Converter({ extensions: ["targetLink"] });
-    return {
-      fileContent,
-      converter,
+    const updateContent = () => {
+      let data = props.data;
+      if (typeof data === 'object' && data.__esModule) {
+        data = data.default;
+      }
+      fileContent.value = converter.makeHtml(data);
     };
-  },
-  created: function () {
-    this.fileContent = this.converter.makeHtml(this.$props.data);
-  },
-  watch: {
-    data: function (newVal) {
-      this.fileContent = this.converter.makeHtml(newVal);
-    },
+
+    watch(() => props.data, updateContent, { immediate: true });
+
+    return { fileContent };
   },
 });
 </script>

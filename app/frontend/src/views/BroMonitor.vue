@@ -319,13 +319,10 @@
               </select>
             </div>
 
-            <div v-html="model.static['bhrp-per-jaar-lijn']"></div>
-            <div v-html="model.static['cpt-per-jaar-lijn']"></div>
-            <div v-html="model.static['gmw-per-jaar-lijn']"></div>
-            <div v-html="model.static['sfr-per-jaar-lijn']"></div>
-            <div v-html="model.static['bhrgt-per-jaar-lijn']"></div>
-            <div v-html="model.static['gmn-per-jaar-lijn']"></div>
-            <div v-html="model.static['gld-per-jaar-lijn']"></div>
+            <div
+              v-if="model && 'static' in model && model.static[optionSelected]"
+              v-html="model.static[optionSelected]"
+            ></div>
           </q-card-section>
           <hr role="presentation" />
         </q-card>
