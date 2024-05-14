@@ -31,7 +31,7 @@ def document_type_table_data():
     table_data = list(
         map(
             lambda x: {
-                "fullname": short_to_dutch_fullname.get(x["type"]),
+                "fullname": short_to_dutch_fullname[x["type"]], #potentially .get(x["type"])
                 "abbreviation": "BHR-P" if x["type"] == "BHR" else x["type"],
                 "date": pretty_print_type_date(x["updated"]),
             },
