@@ -22,10 +22,13 @@ def index_bronhouders():
     db = client.bro
     csv_path = os.path.join(os.path.dirname(__file__), '../configuration/bronhouders.csv')
     with open(csv_path) as csv_file:
-        df = pd.read_csv(csv_path, encoding='ISO-8859-1', delimiter=';', dtype={'KVK': str})
-
-        df['KVK'] = df['KVK'].astype(str)
-        df['KVK'] = df['KVK'].apply(lambda x: '0' + x if len(x) == 7 and x != '2442829' else x)
+        df = pd.read_csv(csv_path, encoding='utf-8', delimiter=';', dtype={'KVK': str})
+        csv_reader = csv.reader(csv_file, delimiter=';')
+        line_count = 0
+        for row in csv_reader:
+            if line_count == 0:
+                log.info(f'Column names are {",".join(row)}')
+                line_count += 1
         
         log.info(f'Column names are {",".join(df.columns)}')
         for index, row in df.iterrows(): 
