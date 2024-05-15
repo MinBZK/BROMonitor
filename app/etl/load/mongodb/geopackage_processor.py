@@ -63,10 +63,7 @@ class GeopackageProcessor:
             metadata.reflect(engine)
             
             if type_name in ["gmn", "gmw", "gld"]:
-                adjust_geopackage(engine)
-
-            metadata.clear()
-            metadata.reflect(engine)
+                adjust_geopackage(metadata, engine)
 
             Base = automap_base(metadata=metadata)
             Base.prepare()
