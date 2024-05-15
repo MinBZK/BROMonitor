@@ -1,5 +1,5 @@
 import "quasar/dist/quasar.css";
-import { lang } from "./quasar-lang-nl";
+import lang from "./quasar-lang-nl";
 import "@quasar/extras/material-icons/material-icons.css";
 import {
   QBanner,
