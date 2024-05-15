@@ -1,7 +1,7 @@
 
 from sqlalchemy import text
 
-def adjust_geopackage(engine):
+def adjust_geopackage(metadata, engine):
     # drop column
     with engine.begin() as connection:
         # get all trigger names
@@ -20,21 +20,33 @@ def adjust_geopackage(engine):
             result = connection.execute(f"PRAGMA table_info({layer});")
             columns = [(column[1], column[2]) for column in result.fetchall()]
 
+            primary_keys_dict = {"gm_gmn":"gm_gmn_pk", "gm_gmw":"gm_gmw_pk", "gm_gld":"gm_gld_pk", 
+                            "gm_gmn_measuringpoint":"gm_gmn_measuringpoint_pk", 
+                            "gm_gmw_monitoringtube": "gm_gmw_monitoringtube_pk"}
+            
+            foreign_keys_dict = {
+                "gm_gmn":[], 
+                "gm_gmw":[], 
+                "gm_gld":["gm_gmw_monitoringtube_fk"], 
+                "gm_gmn_measuringpoint":["gm_gmn_fk", "gm_gmw_monitoringtube_fk"], 
+                "gm_gmw_monitoringtube": ["gm_gmw_fk"]
+                }
+
             if 'standardized_location' in [column[0] for column in columns]:
                 # Create new table without the 'standardized_location' column
                 columns = [(name, type) for name, type in columns if name != 'standardized_location']
 
-                result = connection.execute(f"PRAGMA table_info({layer});")
-                primary_keys = [row[1] for row in result.fetchall() if row[5]]
-
-                result = connection.execute(f"PRAGMA foreign_key_list({layer});")
-                foreign_keys = result.fetchall()
+                primary_key = [primary_keys_dict[layer]]
+                foreign_keys = foreign_keys_dict[layer]
 
                 # Create the foreign key SQL for the new table
-                foreign_key_sql = ', '.join([f"FOREIGN KEY ({fk[3]}) REFERENCES {fk[2]}({fk[4]})" for fk in foreign_keys])
+                if len(foreign_keys) > 0:
+                    foreign_key_sql = ', '.join([f"FOREIGN KEY ({fk}) REFERENCES {fk[:-3]}({fk[:-2]+"pk"})" for fk in foreign_keys])
+                else:
+                    foreign_key_sql = ','.join(foreign_keys)
 
                 # Create the primary key SQL for the new table
-                primary_key_sql = ', '.join(primary_keys)
+                primary_key_sql = ', '.join(primary_key)
 
                 # Create the column SQL for the new table
                 column_sql = ', '.join([f"{name} {type}" for name, type in columns])
@@ -60,3 +72,6 @@ def adjust_geopackage(engine):
                 connection.execute(f"INSERT INTO {layer}_new SELECT {', '.join(name for name, type in columns)} FROM {layer};")
                 connection.execute(f"DROP TABLE {layer};")
                 connection.execute(f"ALTER TABLE {layer}_new RENAME TO {layer};")
+    
+    metadata.clear()
+    metadata.reflect(engine)
