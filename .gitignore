@@ -41,3 +41,8 @@ reports
 .coverage
 PAD/
 app/etl/extract/bronhouders.pickle
+backvenv
+monitorvenv
+etlvenv
+dump
+backendvenv
