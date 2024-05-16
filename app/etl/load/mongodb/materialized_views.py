@@ -94,7 +94,13 @@ def gld_counts_by_bronhouder(db):
                 "_id": {
                     "kvk": "$deliveryAccountableParty",
                     "type": "Grondwaterstandonderzoek",
-                    "status": "$registrationHistory.registrationStatus"
+                    "status": {
+                        "$cond": {
+                            "if": {"$eq": ["$numberOfObservations", 0]},
+                            "then": "geregistreerd",
+                            "else": "aangevuld"
+                        }
+                    }
                 },
                 "count": {"$sum": 1}
             }
