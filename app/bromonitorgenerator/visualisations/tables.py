@@ -27,7 +27,6 @@ log = logging.getLogger(__name__)
 def document_type_table_data():
     response = requests.get(API_BASE + "/bromonitor/bromonitor-timestamp")
     data = json.loads(response.content)["types"]
-    data.pop(6)  # Remove gld
     table_data = list(
         map(
             lambda x: {
