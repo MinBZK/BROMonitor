@@ -1,666 +1,617 @@
-id;kvk;naam
-1;71979972;Lankelma Ingenieursbureau voor Geo Milieu en Funderingstechniek B.V.
-2;1042375;BV Ingenieursbureau Ir. K. Boorsma.
-3;1059718;IJB Geotechniek B.V.
-4;1064412;Bouwconsults Nadema
-5;1070163;FrieslandCampina Nederland B.V.
-6;1085113;Enviso B.V.
-7;1088169;De Boer Advies & Uitvoering
-8;1108276;Timmermans Landmeetkunde B.V.
-9;1140749;Gemeente Aa en Hunze
-10;1160183;Gemeente De Wolden
-11;1169292;Gemeente Tynaarlo
-12;1169424;Gemeente Stadskanaal
-13;1169679;Gemeente Tytsjerksteradiel
-14;1172164;Gemeente Smallingerland
-15;1172480;Gemeente Westerveld
-16;1173197;Gemeente Coevorden
-17;1173230;Waterschap Hunze en Aa's
-18;1173331;Gemeente Schiermonnikoog
-19;1173391;Gemeente Noordenveld
-20;1173414;Gemeente Bedum
-21;1173706;Gemeente Appingedam
-22;1174741;Wetterskip Frysln
-23;1175380;Gemeente Opsterland
-24;1175828;Gemeente Hoogeveen
-25;1175851;Gemeente Delfzijl
-26;1176290;Gemeente Oldambt
-27;1176356;Gemeente Achtkarspelen
-28;1177508;Gemeente Terschelling
-29;1178692;Gemeente Meppel
-30;1178978;Provincie Frysln
-31;1179514;Provincie Drenthe
-32;1180264;Gemeente Ameland
-33;1180311;Gemeente Ooststellingwerf
-34;1180449;Gemeente Loppersum
-35;1181122;Gemeente Vlieland
-36;1181973;Gemeente Emmen
-37;1182023;Provincie Groningen
-38;1182779;Gemeente Zuidhorn
-39;1182848;Gemeente Midden-Drenthe
-40;2008621;N.V. Waterbedrijf Groningen
-41;2029700;N.V. Nederlandse Gasunie
-42;2037102;AbtWassenaar.
-43;2040355;MUG Ingenieursbureau B.V.
-44;2044410;Bioclear earth B.V.
-45;2062603;Terra Bodemonderzoek B.V.
-46;2095434;Raadgevend Ingenieursbureau Wiertsema & Partners B.V.
-47;2313313;Smart Packaging Solutions B.V.
-48;5029571;Tebezo Waterbouw & Nautische Dienstverlening B.V.
-49;5033468;Grondbooronderneming J. Hormann B.V.
-50;5051184;Mateboer Milieu Techniek B.V.
-51;5052093;Luinstra Watermanagement
-52;5062469;KWS Infra B.V.
-53;5069581;Vitens N.V.
-54;5084212;4Infra B.V.
-55;5086972;Poelsema Veldwerk B.V.
-56;6056452;Geofox-Lexmond b.v.
-57;6068751;Kruse Milieu B.V.
-58;6070130;Koop Bronbemaling B.V.
-59;8011909;Salverda Bouw B.V.
-60;8022082;Aannemingsmaatschappij Van Gelder B.V.
-61;8043827;Inter Act B.V.
-62;8081725;The Three Engineers B.V.
-63;8103567;Inter Act industrial automation B.V.
-64;8109078;IMD B.V.
-65;8128785;BZ Ingenieurs en Managers B.V.
-66;8145500;Hoogveld Sonderingen B.V.
-67;8213234;Gemeente Heerde
-68;8214418;Gemeente Deventer
-69;8214858;Gemeente Almelo
-70;8215191;Gemeente Raalte
-71;8215192;Gemeente Lochem
-72;8215195;Gemeente Enschede
-73;8215207;Gemeente Twenterand
-74;8215304;Gemeente Hof van Twente
-75;8215340;Gemeente Dalfsen
-76;8215565;Gemeente Tubbergen
-77;8216768;Gemeente Kampen
-78;8216960;Gemeente Putten
-79;8217014;Gemeente Ermelo
-80;8217553;Gemeente Hattem
-81;8218146;Gemeente Hengelo
-82;8218153;Gemeente Voorst
-83;8218173;Gemeente Zwolle
-84;8218414;Gemeente Elburg
-85;8221859;Gemeente Hellendoorn
-86;8222726;Gemeente Olst-Wijhe
-87;8223460;Gemeente Oldebroek
-88;8223882;Gemeente Apeldoorn
-89;8224234;Gemeente Oldenzaal
-90;8226314;Gemeente Dinkelland
-91;9036504;Arcadis Nederland B.V.
-92;9043479;Eijkelkamp Soil & Water B.V.
-93;9073590;BAM Infra / Van den Herik Twentekanalen V.O.F.
-94;9073590;Bam Infraconsult B.V.
-95;9083617;Verbelco B.V.
-96;9091785;Stichting Hogeschool van Arnhem en Nijmegen
-97;9098104;Stichting Wageningen Research
-98;9110804;ABT B.V.
-99;9122512;Ingenieursbureau Land B.V.
-100;9128573;VCMI N.V.
-101;9131961;Aequator Groen & Ruimte B.V.
-102;9132872;Coperatie Bosgroep Midden Nederland U.A.
-103;9148203;Buro Ontwerp en Omgeving
-104;9149482;BouwRisk Inventarisatie & Management B.V.
-105;9182897;I-Real B.V.
-106;9212462;Gemeente Berkelland
-107;9212509;Gemeente Westervoort
-108;9212525;Gemeente Oost Gelre
-109;9212548;Waterschap Rijn en Ijssel
-110;9212602;Gemeente Wijchen
-111;9214908;Gemeente Arnhem
-112;9214922;Gemeente Rozendaal
-113;9215631;Gemeente Aalten
-114;9215646;Gemeente Ede
-115;9215649;Gemeente Renkum
-116;9215668;Gemeente Doetinchem
-117;9215819;Gemeente Mook en Middelaar
-118;9216322;Gemeente Wageningen
-119;9217727;Gemeente Duiven
-120;9217772;Gemeente Montferland
-121;9218559;Gemeente Bronckhorst
-122;9219446;Gemeente Winterswijk
-123;9220932;Gemeente Nijmegen
-124;9220971;Gemeente Oude-IJsselstreek
-125;9222121;Gemeente Doesburg
-126;10039086;BoutenGeotron BV
-127;11028756;Verhoeven Milieutechniek B.V.
-128;11032897;Megaborn Traffic Development BV
-129;12002662;Oc-Technologies B.V.
-130;13017175;Mourik Limburg B.V.
-131;13021491;Kragten
-132;13038100;Milieutechnisch Adviesbureau Heel BV
-133;13038286;Econsultancy B.V.
-134;14048216;Aelmans Eco B.V.
-135;14048726;Geonius Geotechniek B.V.
-136;14117104;Gemeente Roermond
-137;14128451;Gemeente Heerlen
-138;14129999;Gemeente Brunssum
-139;14130475;Gemeente Sittard-Geleen
-140;14130612;Gemeente Horst aan de Maas
-141;14130743;Gemeente Beesel
-142;14131481;Gemeente Gennep
-143;14131528;Gemeente Landgraaf
-144;14131668;Gemeente Venlo
-145;14131921;Gemeente Valkenburg aan de Geul
-146;14131922;Gemeente Vaals
-147;14132389;Gemeente Venray
-148;14602038;N.V. Waterleiding Maatschappij Limburg
-149;14622978;BLM Wegenbouw B.V
-150;14635629;SPIE Nederland B.V.
-151;16005077;Brabant Water N.V.
-152;16039823;Van den Heuvel Aannemingsbedrijf B.V.
-153;16055402;Vissers-Ploegmakers B.V.
-154;16061078;Dura Vermeer Bouw Zuid B.V.
-155;16066179;MILON B.V.
-156;16077486;Nipa Milieutechniek B.V.
-157;16078612;Miltop B.V.
-158;16078612;Miltop B.V.
-159;17052457;Ingenieursbureau Inpijn-Blokpoel Son B.V.
-160;17068712;SOCOTEC Geotechnics B.V.
-161;17076128;Ingenieursbureau Krimpenerwaard
-162;17076128;Ingenieursbureau Inpijn-Blokpoel West B.V.
-163;17104126;Heijmans Infra B.V.
-164;17108024;Tritium Advies B.V.
-165;17131641;Lankelma Geotechniek Zuid B.V.
-166;17159750;Archimil B.V.
-167;17185598;LWRO
-168;17200060;DataScore Software B.V.
-169;17237480;Jong Fruit B.V.
-170;17237737;Gemeente Sint-Michielsgestel
-171;17242249;Gemeente Sint Anthonis
-172;17249280;Vervoort juridisch advies
-173;17251019;Waterschap Aa en Maas
-174;17268742;Gemeente Hilvarenbeek
-175;17269410;Gemeente Waalre
-176;17272342;Gemeente Valkenswaard
-177;17272483;Gemeente Veldhoven
-178;17272521;Gemeente Reusel-De Mierden
-179;17272524;Gemeente Geldrop-Mierlo
-180;17272566;Gemeente Bladel
-181;17272669;Gemeente Helmond
-182;17272690;Gemeente Goirle
-183;17272738;Gemeente Eindhoven
-184;17272741;Gemeente Gilze en Rijen
-185;17272760;Gemeente Oisterwijk
-186;17273055;Gemeente Best
-187;17273152;Gemeente Someren
-188;17273202;Gemeente Bergeijk
-189;17273265;Gemeente Eersel
-190;17274037;Gemeente Heeze-Leende
-191;17274669;Gemeente Dongen
-192;17275949;Gemeente Landerd
-193;17277734;Waterschap De Dommel
-194;17278006;Gemeente Waalwijk
-195;17278466;Gemeente Grave
-196;17278565;Gemeente Heusden
-197;17278580;Gemeente Boxtel
-198;17278665;Gemeente Cuijk
-199;17278704;Gemeente 's-Hertogenbosch
-200;17278718;Provincie Noord-Brabant
-201;17278721;Gemeente Boekel
-202;17279334;Gemeente Uden
-203;17279582;Gemeente Laarbeek
-204;17280777;Gemeente Loon op Zand
-205;17280818;Gemeente Son en Breugel
-206;17281808;Gemeente Tilburg
-207;17281823;Gemeente Deurne
-208;17282376;Gemeente Cranendonck
-209;17283654;Gemeente Nuenen c.a.
-210;17285344;Gemeente Oirschot
-211;18031929;F.L. Liebregts B.V.
-212;18076018;DVA Engineering BV
-213;18106742;Van Oord Nederland
-214;18109879;B.V. Aannemingsbedrijf De Klerk
-215;18114401;Hakkers B.V.
-216;18125438;Aannemersbedrijf van Wijlen B.V.
-217;20015504;Van der Straaten Geotechniek
-218;20018251;Grondboorbedrijf gebrs. Konings B.V.
-219;20032947;Rasenberg Infra B.V.
-220;20044878;Geo Infra B.V.
-221;20045963;WSP Nederland B.V.
-222;20050564;Martens en Van Oord Aannemingsbedrijf B.V.
-223;20051141;AGEL adviseurs B.V.
-224;20059540;RPS Analyse B.V.
-225;20075240;Bouwservice Management Nederland B.V.
-226;20094279;De Vries Constructiebureau B.V.
-227;20122075;Quattro-Expertise B.V.
-228;20151657;Gemeente Moerdijk
-229;20164138;Gemeente Borsele
-230;20164313;Gemeente Sluis
-231;20164410;Gemeente Drimmelen
-232;20164480;Gemeente Halderberge
-233;20164548;Gemeente Vlissingen
-234;20164585;Gemeente Goes
-235;20164788;Gemeente Roosendaal
-236;20164797;Gemeente Woensdrecht
-237;20164929;Gemeente Terneuzen
-238;20164935;Gemeente Noord-Beveland
-239;20164965;Gemeente Oosterhout
-240;20164997;Gemeente Rucphen
-241;20165025;Gemeente Steenbergen
-242;20165080;Gemeente Hulst
-243;20165117;Gemeente Baarle-Nassau
-244;20165936;Gemeente Veere
-245;20166109;Gemeente Tholen
-246;20168636;Provincie Zeeland
-247;20169091;Gemeente Bergen Op Zoom
-248;20169706;Gemeente Breda
-249;20170062;Gemeente Schouwen-Duiveland
-250;22038560;Sagro Milieu Advies Zeeland B.V.
-251;22063981;NU-adviesbureau
-252;23039023;Kuipers Electronic Engineering B.V.
-253;23041923;Gebroeders De Koning B.V.
-254;23045407;Fa. Gebr. van der Lee
-255;23048358;Van den Herik Kust- en Oeverwerken B.V.
-256;23087854;Ingenieursbureau BT Geoconsult B.V.
-257;23089813;LV Infra
-258;24143025;Boskalis Nederland B.V.
-259;24158873;Buro Antares B.V.
-260;24161143;RPS Advies- en Ingenieursbureau B.V.
-261;24170650;Evides N.V.
-262;24257098;Mos Grondmechanica B.V.
-263;24277837;DEME Infra Marine Contractors B.V.
-264;24289439;Mobilis B.V.
-265;24304498;N.V. IRADO
-266;24304985;GKB Realisatie B.V
-267;24316426;Adviesbureau C.G.M. Schrijvers B.V.
-268;24318211;Artesia B.V.
-269;24347782;BAM Infra B.V.
-270;24354561;Havenbedrijf Rotterdam N.V.
-271;2442829;Acacia Water B.V.
-272;24429486;Meeuwisse Nederland B.V.| 27146962 MH Poly Consultants & Engineers B.V.
-273;24431723;InventerraComonServices B.V.
-274;24450933;De Vries & Van de Wiel Kust- en Oeverwerken B.V
-275;24482458;Gemeente Waddinxveen
-276;24483298;Gemeente Rotterdam
-277;24483621;Gemeente Papendrecht
-278;24484110;Gemeente Maassluis
-279;24485270;Gemeente Vlaardingen
-280;24487063;Gemeente Gouda
-281;24488714;Gemeente Hendrik-Ido-Ambacht
-282;24488726;Gemeente Sliedrecht
-283;24490491;Gemeente Zwijndrecht
-284;24493197;Gemeente Ridderkerk
-285;24494374;Gemeente Barendrecht
-286;27114147;Fugro NL Land B.V.
-287;27122974;Dunea N.V.
-288;27177140;ATKB B.V.
-289;27184323;Stantec
-290;27184822;Geosonda B.V.
-291;27198742;Stichting ICTU
-292;27227624;Van Essen Instruments B.V.
-293;27233428;VanderHelm Milieubeheer B.V.
-294;27239531;TerraIndex B.V.
-295;27240966;BMA Milieu B.V.
-296;27261712;BIJ12
-297;27263029;Daallin B.V.
-298;27279653;KWR Water B.V.
-299;27313745;MuniSense B.V.
-300;27363529;Gemeente Zoeterwoude
-301;27363838;Gemeente Hillegom
-302;27364127;Gemeente Leiderdorp
-303;27364167;Gemeente Teylingen
-304;27364178;Rijkswaterstaat
-305;27364192;Gemeente Leiden
-306;27364328;Gemeente Nieuwkoop
-307;27365912;Gemeente Pijnacker-Nootdorp
-308;27366643;Gemeente Lansingerland
-309;27367348;Rijksdienst voor het Cultureel Erfgoed
-310;27369098;Gemeente Kaag en Braassem
-311;27370601;Gemeente Midden-Delfland
-312;27370927;Gemeente Den Haag
-313;27370940;Gemeente Leidschendam-Voorburg
-314;27370956;Gemeente Katwijk
-315;27370966;Gemeente Lisse
-316;27371717;Gemeente Westland
-317;27374588;Gemeente Delft
-318;27375169;Provincie Zuid-Holland
-319;27375186;Gemeente Alphen aan den Rijn
-320;27376002;Gemeente Zoetermeer
-321;27376655;TNO
-322;27378529;Rijksdienst voor Ondernemend Nederland
-323;27380612;Gemeente Wassenaar
-324;27381083;Gemeente Voorschoten
-325;28025419;Aw Infrabouw Bv
-326;28047921;IDDS B.V.
-327;28049751;Haasnoot Bruggen B.V.
-328;29010639;Oasen N.V.
-329;29021830;Antea Nederland B.V.
-330;29032656;Ifco Funderingsexpertise B.V.
-331;30101055;Grondslag B.V.
-332;30114487;Sialtech B.V.
-333;30124359;ProRail B.V.
-334;30124367;Movares Nederland B.V.
-335;30128364;Van Dijk Geo- en Milieutechniek B.V.
-336;30129769;Sweco Nederland B.V.
-337;30152124;LievenseCSO Milieu B.V.
-338;30152280;Nelen & Schuurmans B.V.
-339;30159072;BOOT organiserend ingenieursburo B.V.
-340;30169759;Aveco de Bondt
-341;30171797;GOconnectIT B.V.
-342;30184349;Kosterman milieutechniek B.V.
-343;30192532;Energeo B.V.
-344;30203750;Koenders & Partners adviseurs en procesmanagers B.V.
-345;30272405;Gemeente Maasdriel
-346;30276311;Gemeente Neder-Betuwe
-347;30276683;Rijksinstituut voor Volksgezondheid en Milieu
-348;30276781;Gemeente Zaltbommel
-349;30276831;Hoogheemraadschap De Stichtse Rijnlanden
-350;30276854;Gemeente West Maas en Waal
-351;30277029;Gemeente Nieuwegein
-352;30277172;Provincie Utrecht
-353;30277195;Gemeente Montfoort
-354;30278157;Gemeente Buren
-355;30278213;Gemeente Bunnik
-356;30278756;Gemeente Culemborg
-357;30279480;Gemeente Druten
-358;30279619;Gemeente Houten
-359;30279625;Gemeente IJsselstein
-360;30279669;Gemeente Wijk bij Duurstede
-361;30280353;Gemeente Utrecht
-362;30280479;Gemeente Gorinchem
-363;30280563;Gemeente Neerijnen
-364;30281419;Waterschap Rivierenland
-365;30282147;Gemeente Tiel
-366;30282562;Gemeente De Ronde Venen
-367;30283218;Gemeente Rhenen
-368;30286795;Gemeente De Bilt
-369;31034180;Milieutechniek ZVS Eemnes B.V.
-370;32068654;PJ Milieu B.V.
-371;32071273;OBV C.V.
-372;32160938;Gemeente Amersfoort
-373;32163726;Gemeente Renswoude
-374;32163787;Gemeente Soest
-375;32164084;Waterschap Zuiderzeeland
-376;32164140;Provincie Flevoland
-377;32164515;Gemeente Zeewolde
-378;32164984;Gemeente Almere
-379;32165063;Gemeente Wijdemeren
-380;32165156;Gemeente Nijkerk
-381;32165160;Gemeente Bunschoten
-382;32165235;Gemeente Weesp
-383;32165460;Gemeente Dronten
-384;32166112;Gemeente Huizen
-385;32166227;Gemeente Urk
-386;32167607;Gemeente Baarn
-387;32167695;Gemeente Leusden
-388;32168248;Gemeente Scherpenzeel
-389;32168837;Gemeente Blaricum
-390;32169164;Gemeente Laren
-391;32170038;Gemeente Eemnes
-392;32170205;Gemeente Noordoostpolder
-393;32170443;Gemeente Hilversum
-394;33056888;Strukton Civiel Noord & Oost B.V.
-395;33154028;Ballast Nedam Infra B.V.
-396;33223543;Wareco Ingenieurs
-397;34048179;Fugro Innovation & Technology B.V.
-398;34057287;Tjaden B.V.
-399;34064993;Bouwontwerpburo Splatch B.V.
-400;34072007;N.V. PWN Waterleidingbedrijf Noord-Holland
-401;34082755;BK Ingenieurs B.V.
-402;34088102;HB Milieukundig en Civieltechnisch Adviesbureau B.V.
-403;34104282;Terrascan B.V.
-404;34171248;CRUX Engineering B.V.
-405;34182597;Van Harlingen Grondwater Management B.V.
-406;34196257;Dura Vermeer Infra Regionale Projecten B.V.
-407;34359304;Gemeente Bloemendaal
-408;34359313;Gemeente Ouder-Amstel
-409;34360267;Waterschap Amstel, Gooi en Vecht
-410;34362237;Gemeente Aalsmeer
-411;34362354;Provincie Noord-Holland
-412;34363827;Gemeente Landsmeer
-413;34363838;Gemeente Uitgeest
-414;34363858;Gemeente Zandvoort
-415;34365024;Gemeente Amstelveen
-416;34366966;Gemeente Amsterdam
-417;34367942;Gemeente Zaanstad
-418;34368749;Gemeente Heemskerk
-419;34369366;Gemeente Haarlem
-420;34371004;Gemeente Wormerland
-421;34371033;Gemeente Oostzaan
-422;34371711;Gemeente Uithoorn
-423;34374815;Gemeente Diemen
-424;34379987;Gemeente Beverwijk
-425;34381346;Gemeente Heemstede
-426;36043614;P. Tilma
-427;37061883;Aannemingsmaatschappij De Vries & Van de Wiel B.V.
-428;37078689;Bodem Belang B.V.
-429;37104311;Duwabo B.V.
-430;37118604;Geomechanica B.V.
-431;37158345;Gemeente Waterland
-432;37158509;Gemeente Castricum
-433;37159077;Gemeente Enkhuizen
-434;37159084;Gemeente Hoorn
-435;37159104;Gemeente Texel
-436;37159195;Gemeente Opmeer
-437;37159392;Gemeente Bergen (NH.)
-438;37159550;Gemeente Stede Broec
-439;37159666;Gemeente Heiloo
-440;37159672;Gemeente Medemblik
-441;37159718;Gemeente Drechterland
-442;37160006;Gemeente Beemster
-443;37160613;Gemeente Den Helder
-444;37161516;Hoogheemraadschap Hollands Noorderkwartier
-445;37162503;Gemeente Purmerend
-446;38014985;Tauw B.V.
-447;38020751;Witteveen+Bos Raadgevende ingenieurs B.V.
-448;39064472;Koenders Instruments B.V.
-449;39066679;Bedrijfsmilieudienst Flevoland B.V.
-450;40516730;Vereniging tot Behoud van Natuurmonumenten in Nederland
-451;41146461;Stichting Deltares
-452;41216593;Stichting Waternet
-453;50000438;Gemeenschappelijke regeling DCMR Milieudienst Rijnmond
-454;50000578;Gemeente Lelystad
-455;50025929;Gemeente Oegstgeest
-456;50029886;Gemeente Lopik
-457;50035452;Gemeente Roerdalen
-458;50052969;Provincie Limburg
-459;50070525;Gemeente Dordrecht
-460;50092812;Gemeente Utrechtse Heuvelrug
-461;50099604;Gemeente Zutphen
-462;50115634;Gemeente Velsen
-463;50130994;Waterschap Noorderzijlvest
-464;50166727;Gemeente Alphen-Chaam
-465;50177214;Gemeente Woerden
-466;50182544;Gemeente Veenendaal
-467;50197576;Gemeente Harderwijk
-468;50200097;Ministerie van Binnenlandse Zaken en Koninkrijksrelaties
-469;50210254;Gemeente Asten
-470;50232274;Gemeente Haaksbergen
-471;50277324;Gemeente Leudal
-472;50296140;Gemeente Staphorst
-473;50313851;Gemeente Barneveld
-474;50320408;Gemeente Weert
-475;50358944;Gemeente Westvoorne
-476;50371746;Gemeente Gemert-Bakel
-477;50397052;Gemeente Peel en Maas
-478;50413872;Gemeente Gulpen-Wittem
-479;50443089;Gemeente Meerssen
-480;50450948;Gemeente Borne
-481;50466208;Gemeente Mill en Sint Hubert
-482;50475266;Gemeente Bernheze
-483;50483714;Gemeente Epe
-484;50530003;Gemeente Brummen
-485;50539728;Gemeente Beek
-486;50556649;veldapps.com
-487;50582445;Gemeente Koggenland
-488;50595644;Gemeente Zuidplas
-489;50601628;Gemeente Etten-Leur
-490;50616641;Gemeente Oss
-491;50638874;Badus Bodem en Water
-492;50650068;Gemeente Boxmeer
-493;50651072;Gemeente Borger-Odoorn
-494;50653466;Gemeente Vught
-495;50654993;Gemeente Pekela
-496;50676725;Gemeente Woudenberg
-497;50677969;Hoogheemraadschap van Delfland
-498;50681044;Gemeente Rijswijk
-499;50684442;Compass Infrastructuur Nederland (CIN) B.V.
-500;50738631;Gemeente Weststellingwerf
-501;50771752;Gemeente Geertruidenberg
-502;50778692;Gemeente Kerkrade
-503;50788590;Gemeente Assen
-504;50820753;Gemeente Dantumadiel
-505;50839519;Gemeente Rijssen-Holten
-506;50852736;Gemeente Veendam
-507;50869744;Gemeente Losser
-508;50875825;Gemeente Albrandswaard
-509;50916769;Gemeente Heumen
-510;50945149;Gemeente Harlingen
-511;50986767;Gemeente Lingewaard
-512;50987496;North Sea Port Netherlands N.V.
-513;50991663;Gemeente Schiedam
-514;51041510;Gemeente Middelburg
-515;51048329;Provincie Overijssel
-516;51102757;Gemeente Ommen
-517;51137747;Hoogheemraadschap van Rijnland
-518;51143313;Gemeente Reimerswaal
-519;51178567;Gemeente Overbetuwe
-520;51181584;Waterschap Brabantse Delta
-521;51200570;Gemeente Hardinxveld-Giessendam
-522;51291010;Omgevingsdienst Zuid-Holland Zuid
-523;51309971;Gemeente Kapelle
-524;51332493;Gemeente Capelle aan den Ijssel
-525;51350696;Gemeente Bergen (L.)
-526;51365901;Omgevingsdienst IJmond
-527;51378469;Gemeente Alblasserdam
-528;51392380;Gemeente Brielle
-529;51468751;Provincie Gelderland
-530;51486075;Gemeente Simpelveld
-531;51487659;Gemeente Beuningen
-532;51488744;Gemeente Maastricht
-533;51626268;Gemeente Zeist
-534;51640813;Waterschap Scheldestromen
-535;51643324;Gemeente Eijsden-Margraten
-536;51651866;Gemeente Echt-Susteren
-537;51681897;Gemeente Stichtse Vecht
-538;51713942;Real 4 U B.V.
-539;51791811;Gemeente Sdwest-Frysln
-540;51853876;Gemeente Zundert
-541;51860015;Gemeente Hellevoetsluis
-542;51896125;Gemeente Voerendaal
-543;51984997;Gemeente Stein
-544;52047202;Wiha Grondmechanica
-545;52066169;Gemeente Rheden
-546;52213463;Hoogheemraadschap van Schieland en de Krimpenerwaard
-547;52395413;Gemeente Nederweert
-548;52505545;Gemeente Bodegraven-Reeuwijk
-549;52584372;Gemeente Nunspeet
-550;52605825;Waterschap Hollandse Delta
-551;52766179;Ministerie van Infrastructuur en Milieu
-552;52813150;Ministerie van Economische Zaken
-553;52849058;GEO2 Engineering B.V.
-554;52861724;Avallo Advies
-555;52925811;Gemeente Maasgouw
-556;53009886;Gemeente Hardenberg
-557;53309561;Gemeente Wierden
-558;53606507;V.O.F Op de Akker
-559;53878388;Gemeente Oudewater
-560;54137756;Gemeente Steenwijkerland
-561;54294959;Tjaden Adviesbureau voor Grondmechanica B.V.
-562;54477506;Gemeente Hollands Kroon
-563;54521610;Lankelma Adviesbureau B.V.
-564;54552907;Gemeente Zwartewaterland
-565;54596114;Gemeente Krimpen aan den IJssel
-566;54628490;Diseo B.V.
-567;55366643;Omgevingsdienst Midden-Holland
-568;55480209;APcon Adviesbureau B.V.
-569;55641857;Omgevingsdienst Flevoland en Gooi en Vechtstreek
-570;56093926;Omgevingsdienst Haaglanden
-571;56515154;HaskoningDHV Nederland B.V.
-572;56679750;Gemeenschappelijke Regeling Omgevingsdienst Midden- en West-Brabant
-573;56710240;Gemeente Goeree-Overflakkee
-574;56804636;Waterschap Vallei en Veluwe
-575;56838328;Gemeente Schagen
-576;57159815;Omgevingsdi
-577;57304769;Syntrophos
-578;57995656;Kooistra Agro Advies Bodem, Water en Bemesting
-579;58545042;Kisters Nederland B.V.
-580;58972676;Waterschap Vechtstromen
-581;59317833;IntellinQ B.V.
-582;59327626;KYL B.V.
-583;59459352;DAGnl B.V.
-584;59603925;Gemeente De Fryske Marren
-585;59707720;Gemeente Heerenveen
-586;59734817;Gemeente Leeuwarden
-587;60211695;BVMS B.V.
-588;60325674;Meerinzicht
-589;60832134;GWS-Data B.V.
-590;61094803;Combinatie Dijkverbetering HOP
-591;61469696;IXAS Gaasperdammerweg B.V.
-592;61574031;Koops Grondmechanica B.V.
-593;61948888;GSNED B.V.
-594;62092758;VWB Bodem B.V.
-595;62251686;Gemeente Krimpenerwaard
-596;62252046;Gemeente Nissewaard
-597;62254944;Gemeente Berg en Dal
-598;62255398;Gemeente Alkmaar
-599;62696696;RB Geo B.V.
-600;63720787;Het gegevenshuis.
-601;64199053;Combinatie A1
-602;64208338;Waterschap Drents Overijsselse Delta
-603;64931935;Xaxis Technologies B.V.
-604;64935345;Gemeente Gooise Meren
-605;64973395;Gemeente Edam-Volendam
-606;65031954;Terra Practicus
-607;65067096;Sas van Vreeswijk VOF
-608;65133382;Wiertsema-Inpijn-Blokpoel V.O.F.
-609;65890604;Rijksvastgoedbedrijf
-610;66272688;VRM LevelLog B.V.
-611;66346460;Ingenieursbureau Maters en De Koning B.V.
-612;66382971;Ortageo Nederland B.V.
-613;66670861;RailTD B.V.
-614;66723019;Gemeente Meierijstad
-615;67103375;CWG Ingenieurs b.v.
-616;67288340;BUHA B.V.
-617;67574009;GeoRisQ
-618;67682065;Waterschap Limburg
-619;67731910;WMD Drinkwater B.V.
-620;67965431;Waterlabs B.V.
-621;70281335;SassevaartV.O.F.
-622;70288623;Ballast Nedam Road Specialties B.V.
-623;70476047;Gemeente Midden-Groningen
-624;70485836;Gemeente Westerwolde
-625;70528586;Gemeente Waadhoeke
-626;70686149;Eijkelkamp GeoPoint SoilSolutions B.V.
-627;71221875;Fellinga Bouw en Installatie
-628;71235426;Gemeente Zevenaar
-629;71583440;Combinatie SaVe v.o.f.
-630;71651128;De Groene Boog Construction V.O.F.
-631;71730230;Blik Sensing B.V.
-632;71752544;Sondeer Techniek Nederland
-633;71987894;C2engineers B.V.
-634;72163399;Combinatie MGZ v.o.f.
-635;73538469;Gemeente Noordwijk
-636;73540374;Gemeente Haarlemmermeer
-637;73541532;Gemeente Beekdaelen
-638;73544086;Gemeente Hoeksche Waard
-639;73547026;Gemeente Vijfheerenlanden
-640;73549207;Gemeente West Betuwe
-641;73550728;Gemeente Het Hogeland
-642;73552208;Gemeente Westerkwartier
-643;73552496;Gemeente Noardeast-Frysln
-644;73552739;Gemeente Molenlanden
-645;73558907;Gemeente Groningen
-646;73578886;Gemeente Altena
-647;73790370;Prommenz Milieu B.V.
-648;73874817;Milieu Advies Noord-Nederland
-649;74503812;Trefoil Hydrology
-650;76263851;Combinatie STIPT V.O.F.
-651;76504972;FCC Construccion S.A..
-652;77312961;NH ingenieurs
-653;77546504;GelreGroen Construction V.O.F.
-654;80495249;Realworld Systems B.V.
-655;81425570;Gemeente Eemsdelta
-656;81989261;RHDHV Mijnbouw Delft B.V.
-657;82359598;Hutton Geo B.V.
-658;82361185;Avallo Advies BV
-659;82955123;Aardwarmte Techniek Nederland B.V.
-660;83867341;SPAT water
-661;85008869;Strukton Infrastructure Specialties B.V.
-662;85028827;Gemeente Dijk en Waard
-663;85031186;Gemeente Maashorst
-664;88364321;Dawaco BV
-665;88738388;Gemeente Voorne aan Zee
+Naam;BRO organisatie rol;Bedrijfstak;OIN;KVK;Identifier
+Gemeente Aa en Hunze;Bronhouder;Gemeenten;1,81E+12;01140749;GM1680
+Gemeente Aalsmeer;Bronhouder;Gemeenten;1,00E+12;34362237;GM0358
+Gemeente Aalten;Bronhouder;Gemeenten;1,81E+12;09215631;GM0197
+Gemeente Achtkarspelen;Bronhouder;Gemeenten;1,00E+12;01176356;GM0059
+Gemeente Alblasserdam;Bronhouder;Gemeenten;1,00E+12;51378469;GM0482
+Gemeente Albrandswaard;Bronhouder;Gemeenten;1,01E+12;50875825;GM0613
+Gemeente Alkmaar;Bronhouder;Gemeenten;1,00E+12;62255398;GM0361
+Gemeente Almelo;Bronhouder;Gemeenten;1,00E+12;08214858;GM0034
+Gemeente Almere;Bronhouder;Gemeenten;1,01E+12;32164984;GM0034
+Gemeente Alphen aan den Rijn;Bronhouder;Gemeenten;1,00E+12;27375186;GM0484
+Gemeente Alphen-Chaam;Bronhouder;Gemeenten;1,81E+12;50166727;GM1723
+Gemeente Altena;Bronhouder;Gemeenten;1,83E+12;73578886;GM1959
+Gemeente Ameland;Bronhouder;Gemeenten;1,00E+12;01180264;GM0060
+Gemeente Amersfoort;Bronhouder;Gemeenten;1,00E+12;32160938;GM0307
+Gemeente Amstelveen;Bronhouder;Gemeenten;1,00E+12;34365024;GM0362
+Gemeente Amsterdam;Bronhouder;Gemeenten;1,00E+12;34366966;GM0363
+Gemeente Apeldoorn;Bronhouder;Gemeenten;1,00E+12;08223882;GM0200
+Gemeente Arnhem;Bronhouder;Gemeenten;1,00E+12;09214908;GM0202
+Gemeente Assen;Bronhouder;Gemeenten;1,00E+12;50788590;GM0106
+Gemeente Asten;Bronhouder;Gemeenten;1,00E+12;50210254;GM0743
+Gemeente Baarle-Nassau;Bronhouder;Gemeenten;1,00E+12;20165117;GM0744
+Gemeente Baarn;Bronhouder;Gemeenten;1,00E+12;32167607;GM0308
+Gemeente Barendrecht;Bronhouder;Gemeenten;1,00E+12;24494374;GM0489
+Gemeente Barneveld;Bronhouder;Gemeenten;1,00E+12;50313851;GM0203
+Gemeente Beek;Bronhouder;Gemeenten;1,00E+12;50539728;GM0888
+Gemeente Beekdaelen;Bronhouder;Gemeenten;4,19E+12;73541532;GM1954
+Gemeente Beesel;Bronhouder;Gemeenten;1,00E+12;14130743;GM0889
+Gemeente Berg en Dal;Bronhouder;Gemeenten;1,00E+12;62254944;GM1945
+Gemeente Bergeijk;Bronhouder;Gemeenten;1,00E+12;17273202;GM1724
+Gemeente Bergen (L.);Bronhouder;Gemeenten;1,00E+12;51350696;GM0893
+Gemeente Bergen (NH.);Bronhouder;Gemeenten;1,81E+12;37159392;GM0373
+Gemeente Bergen op Zoom;Bronhouder;Gemeenten;1,00E+12;20169091;GM0748
+Gemeente Berkelland;Bronhouder;Gemeenten;1,81E+12;09212462;GM1859
+Gemeente Bernheze;Bronhouder;Gemeenten;1,00E+12;50475266;GM1721
+Gemeente Best;Bronhouder;Gemeenten;1,00E+12;17273055;GM0753
+Gemeente Beuningen;Bronhouder;Gemeenten;1,00E+12;51487659;GM0209
+Gemeente Beverwijk;Bronhouder;Gemeenten;1,00E+12;34379987;GM0375
+Gemeente Bladel;Bronhouder;Gemeenten;1,00E+12;17272566;GM1728
+Gemeente Blaricum;Bronhouder;Gemeenten;1,00E+12;32168837;GM0376
+Gemeente Bloemendaal;Bronhouder;Gemeenten;1,00E+12;34359304;GM0377
+Gemeente Bodegraven-Reeuwijk;Bronhouder;Gemeenten;1,82E+12;52505545;GM1901
+Gemeente Boekel;Bronhouder;Gemeenten;1,00E+12;17278721;GM0755
+Gemeente Borger-Odoorn;Bronhouder;Gemeenten;1,00E+12;50651072;GM1681
+Gemeente Borne;Bronhouder;Gemeenten;1,00E+12;50450948;GM0147
+Gemeente Borsele;Bronhouder;Gemeenten;1,00E+12;20164138;GM0654
+Gemeente Boxmeer;Bronhouder;Gemeenten;1,81E+12;50650068;GM0756
+Gemeente Boxtel;Bronhouder;Gemeenten;1,00E+12;17278580;GM0757
+Gemeente Breda;Bronhouder;Gemeenten;1,00E+12;20169706;GM0758
+Gemeente Brielle;Bronhouder;Gemeenten;1,00E+12;51392380;GM0501
+Gemeente Bronckhorst;Bronhouder;Gemeenten;1,81E+12;09218559;GM1876
+Gemeente Brummen;Bronhouder;Gemeenten;1,00E+12;50530003;GM0213
+Gemeente Brunssum;Bronhouder;Gemeenten;1,00E+12;14129999;GM0899
+Gemeente Bunnik;Bronhouder;Gemeenten;1,00E+12;30278213;GM0312
+Gemeente Bunschoten;Bronhouder;Gemeenten;1,00E+12;32165160;GM0313
+Gemeente Buren;Bronhouder;Gemeenten;1,81E+12;30278157;GM0214
+Gemeente Capelle aan den IJssel;Bronhouder;Gemeenten;1,00E+12;51332493;GM0502
+Gemeente Castricum;Bronhouder;Gemeenten;1,81E+12;37158509;GM0383
+Gemeente Coevorden;Bronhouder;Gemeenten;1,81E+12;01173197;GM0109
+Gemeente Cranendonck;Bronhouder;Gemeenten;1,00E+12;17282376;GM1706
+Gemeente Culemborg;Bronhouder;Gemeenten;1,00E+12;30278756;GM0216
+Gemeente Dalfsen;Bronhouder;Gemeenten;1,81E+12;08215340;GM0148
+Gemeente Dantumadiel;Bronhouder;Gemeenten;1,00E+12;50820753;GM1891
+Gemeente De Bilt;Bronhouder;Gemeenten;1,00E+12;30286795;GM0310
+Gemeente De Fryske Marren;Bronhouder;Gemeenten;1,82E+12;59603925;GM1940
+Gemeente De Ronde Venen;Bronhouder;Gemeenten;1,82E+12;30282562;GM0736
+Gemeente De Wolden;Bronhouder;Gemeenten;1,81E+12;01160183;GM1690
+Gemeente Delft;Bronhouder;Gemeenten;1,00E+12;27374588;GM0503
+Gemeente Den Haag;Bronhouder;Gemeenten;1,00E+12;27370927;GM0518
+Gemeente Den Helder;Bronhouder;Gemeenten;1,00E+12;37160613;GM0400
+Gemeente Deurne;Bronhouder;Gemeenten;1,00E+12;17281823;GM0762
+Gemeente Deventer;Bronhouder;Gemeenten;1,00E+12;08214418;GM0150
+Gemeente Diemen;Bronhouder;Gemeenten;1,00E+12;34374815;GM0384
+Gemeente Dijk en Waard;Bronhouder;Gemeenten;1,83E+12;85028827;GM1980
+Gemeente Dinkelland;Bronhouder;Gemeenten;1,81E+12;08226314;GM1774
+Gemeente Doesburg;Bronhouder;Gemeenten;1,00E+12;09222121;GM0221
+Gemeente Doetinchem;Bronhouder;Gemeenten;1,00E+12;09215668;GM0222
+Gemeente Dongen;Bronhouder;Gemeenten;1,00E+12;17274669;GM0766
+Gemeente Dordrecht;Bronhouder;Gemeenten;1,00E+12;50070525;GM0505
+Gemeente Drechterland;Bronhouder;Gemeenten;1,82E+12;37159718;GM0498
+Gemeente Drimmelen;Bronhouder;Gemeenten;1,81E+12;20164410;GM1719
+Gemeente Dronten;Bronhouder;Gemeenten;1,00E+12;32165460;GM0303
+Gemeente Druten;Bronhouder;Gemeenten;1,00E+12;30279480;GM0225
+Gemeente Duiven;Bronhouder;Gemeenten;1,00E+12;09217727;GM0226
+Gemeente Echt-Susteren;Bronhouder;Gemeenten;1,00E+12;51651866;GM1711
+Gemeente Edam-Volendam;Bronhouder;Gemeenten;1,00E+12;64973395;GM0385
+Gemeente Ede;Bronhouder;Gemeenten;1,00E+12;09215646;GM0228
+Gemeente Eemnes;Bronhouder;Gemeenten;1,00E+12;32170038;GM0317
+Gemeente Eemsdelta;Bronhouder;Gemeentelijk samenwerkingverband;1,83E+12;81425570;GM1979
+Gemeente Eersel;Bronhouder;Gemeenten;1,00E+12;17273265;GM0770
+Gemeente Eijsden-Margraten;Bronhouder;Gemeenten;1,82E+12;51643324;GM1903
+Gemeente Eindhoven;Bronhouder;Gemeenten;1,00E+12;17272738;GM0772
+Gemeente Elburg;Bronhouder;Gemeenten;1,00E+12;08218414;GM0230
+Gemeente Emmen;Bronhouder;Gemeenten;1,00E+12;01181973;GM0114
+Gemeente Enkhuizen;Bronhouder;Gemeenten;1,00E+12;37159077;GM0388
+Gemeente Enschede;Bronhouder;Gemeenten;1,00E+12;08215195;GM0153
+Gemeente Epe;Bronhouder;Gemeenten;1,00E+12;50483714;GM0232
+Gemeente Ermelo;Bronhouder;Gemeenten;1,00E+12;08217014;GM0233
+Gemeente Etten-Leur;Bronhouder;Gemeenten;1,00E+12;50601628;GM0777
+Gemeente Geertruidenberg;Bronhouder;Gemeenten;1,81E+12;50771752;GM0779
+Gemeente Geldrop-Mierlo;Bronhouder;Gemeenten;1,81E+12;17272524;GM1771
+Gemeente Gemert-Bakel;Bronhouder;Gemeenten;1,81E+12;50371746;GM1652
+Gemeente Gennep;Bronhouder;Gemeenten;1,00E+12;14131481;GM0907
+Gemeente Gilze en Rijen;Bronhouder;Gemeenten;1,00E+12;17272741;GM0784
+Gemeente Goeree-Overflakkee;Bronhouder;Gemeenten;1,82E+12;56710240;GM1924
+Gemeente Goes;Bronhouder;Gemeenten;1,00E+12;20164585;GM0664
+Gemeente Goirle;Bronhouder;Gemeenten;1,00E+12;17272690;GM0785
+Gemeente Gooise Meren;Bronhouder;Gemeenten;1,82E+12;64935345;GM1942
+Gemeente Gorinchem;Bronhouder;Gemeenten;1,00E+12;30280479;GM0512
+Gemeente Gouda;Bronhouder;Gemeenten;1,00E+12;24487063;GM0513
+Gemeente Groningen;Bronhouder;Gemeenten;1,83E+12;73558907;GM0014
+Gemeente Gulpen-Wittem;Bronhouder;Gemeenten;1,81E+12;50413872;GM1729
+Gemeente Haaksbergen;Bronhouder;Gemeenten;1,00E+12;50232274;GM0158
+Gemeente Haarlem;Bronhouder;Gemeenten;1,00E+12;34369366;GM0392
+Gemeente Haarlemmermeer;Bronhouder;Gemeenten;1,83E+12;73540374;GM0394
+Gemeente Halderberge;Bronhouder;Gemeenten;1,81E+12;20164480;GM1655
+Gemeente Hardenberg;Bronhouder;Gemeenten;1,00E+12;53009886;GM0160
+Gemeente Harderwijk;Bronhouder;Gemeenten;1,00E+12;50197576;GM0243
+Gemeente Hardinxveld-Giessendam;Bronhouder;Gemeenten;1,00E+12;51200570;GM0523
+Gemeente Harlingen;Bronhouder;Gemeenten;1,00E+12;50945149;GM0072
+Gemeente Hattem;Bronhouder;Gemeenten;1,00E+12;08217553;GM0244
+Gemeente Heemskerk;Bronhouder;Gemeenten;1,00E+12;34368749;GM0396
+Gemeente Heemstede;Bronhouder;Gemeenten;1,00E+12;34381346;GM0397
+Gemeente Heerde;Bronhouder;Gemeenten;1,00E+12;08213234;GM0246
+Gemeente Heerenveen;Bronhouder;Gemeenten;1,00E+12;59707720;GM0074
+Gemeente Heerlen;Bronhouder;Gemeenten;1,00E+12;14128451;GM0917
+Gemeente Heeze-Leende;Bronhouder;Gemeenten;1,00E+12;17274037;GM1658
+Gemeente Heiloo;Bronhouder;Gemeenten;1,00E+12;37159666;GM0399
+Gemeente Hellendoorn;Bronhouder;Gemeenten;1,00E+12;08221859;GM0163
+Gemeente Helmond;Bronhouder;Gemeenten;1,00E+12;17272669;GM0794
+Gemeente Hendrik-Ido-Ambacht;Bronhouder;Gemeenten;1,00E+12;24488714;GM0531
+Gemeente Hengelo;Bronhouder;Gemeenten;1,00E+12;08218146;GM0164
+Gemeente Het Hogeland;Bronhouder;Gemeenten;1,83E+12;73550728;GM1966
+Gemeente Heumen;Bronhouder;Gemeenten;1,00E+12;50916769;GM0252
+Gemeente Heusden;Bronhouder;Gemeenten;1,00E+12;17278565;GM0797
+Gemeente Hillegom;Bronhouder;Gemeenten;1,00E+12;27363838;GM0534
+Gemeente Hilvarenbeek;Bronhouder;Gemeenten;1,00E+12;17268742;GM0798
+Gemeente Hilversum;Bronhouder;Gemeenten;1,00E+12;32170443;GM0402
+Gemeente Hoeksche Waard;Bronhouder;Gemeenten;1,83E+12;73544086;GM1963
+Gemeente Hof van Twente;Bronhouder;Gemeenten;1,81E+12;08215304;GM1735
+Gemeente Hollands Kroon;Bronhouder;Gemeenten;1,82E+12;54477506;GM1911
+Gemeente Hoogeveen;Bronhouder;Gemeenten;1,00E+12;01175828;GM0118
+Gemeente Hoorn;Bronhouder;Gemeenten;1,00E+12;37159084;GM0405
+Gemeente Horst aan de Maas;Bronhouder;Gemeenten;1,81E+12;14130612;GM1507
+Gemeente Houten;Bronhouder;Gemeenten;1,00E+12;30279619;GM0321
+Gemeente Huizen;Bronhouder;Gemeenten;1,00E+12;32166112;GM0406
+Gemeente Hulst;Bronhouder;Gemeenten;1,81E+12;20165080;GM0677
+Gemeente IJsselstein;Bronhouder;Gemeenten;1,00E+12;30279625;GM0353
+Gemeente Kaag en Braassem;Bronhouder;Gemeenten;1,82E+12;27369098;GM1884
+Gemeente Kampen;Bronhouder;Gemeenten;1,81E+12;08216768;GM0166
+Gemeente Kapelle;Bronhouder;Gemeenten;1,00E+12;51309971;GM0678
+Gemeente Katwijk;Bronhouder;Gemeenten;1,00E+12;27370956;GM0537
+Gemeente Kerkrade;Bronhouder;Gemeenten;1,00E+12;50778692;GM0928
+Gemeente Koggenland;Bronhouder;Gemeenten;1,00E+12;50582445;GM1598
+Gemeente Krimpen aan den IJssel;Bronhouder;Gemeenten;1,00E+12;54596114;GM0542
+Gemeente Krimpenerwaard;Bronhouder;Gemeenten;1,82E+12;62251686;GM1931
+Gemeente Laarbeek;Bronhouder;Gemeenten;1,81E+12;17279582;GM1659
+Gemeente Cuijk;Bronhouder;Gemeenten;1,83E+12;85028037;GM1684
+Gemeente Landgraaf;Bronhouder;Gemeenten;1,01E+12;14131528;GM0882
+Gemeente Landsmeer;Bronhouder;Gemeenten;1,00E+12;34363827;GM0415
+Gemeente Lansingerland;Bronhouder;Gemeenten;1,82E+12;27366643;GM1621
+Gemeente Laren;Bronhouder;Gemeenten;1,00E+12;32169164;GM0417
+Gemeente Leeuwarden;Bronhouder;Gemeenten;1,00E+12;59734817;GM0080
+Gemeente Leiden;Bronhouder;Gemeenten;1,00E+12;27364192;GM0546
+Gemeente Leiderdorp;Bronhouder;Gemeenten;1,00E+12;27364127;GM0547
+Gemeente Leidschendam-Voorburg;Bronhouder;Gemeenten;1,81E+12;27370940;GM1916
+Gemeente Lelystad;Bronhouder;Gemeenten;1,01E+12;50000578;GM0995
+Gemeente Leudal;Bronhouder;Gemeenten;1,82E+12;50277324;GM1640
+Gemeente Leusden;Bronhouder;Gemeenten;1,00E+12;32167695;GM0327
+Gemeente Lingewaard;Bronhouder;Gemeenten;1,81E+12;50986767;GM1705
+Gemeente Lisse;Bronhouder;Gemeenten;1,00E+12;27370966;GM0553
+Gemeente Lochem;Bronhouder;Gemeenten;1,81E+12;08215192;GM0262
+Gemeente Loon op Zand;Bronhouder;Gemeenten;1,00E+12;17280777;GM0809
+Gemeente Lopik;Bronhouder;Gemeenten;1,00E+12;50029886;GM0331
+Gemeente Losser;Bronhouder;Gemeenten;1,00E+12;50869744;GM0168
+Gemeente Maasdriel;Bronhouder;Gemeenten;1,81E+12;30272405;GM0263
+Gemeente Maasgouw;Bronhouder;Gemeenten;1,82E+12;52925811;GM1641
+Gemeente Maashorst;Bronhouder;Gemeenten;1,83E+12;85031186;GM1991
+Gemeente Maassluis;Bronhouder;Gemeenten;1,00E+12;24484110;GM0556
+Gemeente Maastricht;Bronhouder;Gemeenten;1,00E+12;51488744;GM0935
+Gemeente Medemblik;Bronhouder;Gemeenten;1,00E+12;37159672;GM0420
+Gemeente Meerssen;Bronhouder;Gemeenten;1,00E+12;50443089;GM0938
+Gemeente Meierijstad;Bronhouder;Gemeenten;1,86E+12;66723019;GM1948
+Gemeente Meppel;Bronhouder;Gemeenten;1,81E+12;01178692;GM0119
+Gemeente Middelburg;Bronhouder;Gemeenten;1,00E+12;51041510;GM0687
+Gemeente Midden-Delfland;Bronhouder;Gemeenten;1,81E+12;27370601;GM1842
+Gemeente Midden-Drenthe;Bronhouder;Gemeenten;1,81E+12;01182848;GM1731
+Gemeente Midden-Groningen;Bronhouder;Gemeenten;1,83E+12;70476047;GM1952
+Gemeente Moerdijk;Bronhouder;Gemeenten;1,81E+12;20151657;GM1709
+Gemeente Molenlanden;Bronhouder;Gemeenten;1,83E+12;73552739;GM1978
+Gemeente Montferland;Bronhouder;Gemeenten;1,81E+12;09217772;GM1955
+Gemeente Montfoort;Bronhouder;Gemeenten;1,00E+12;30277195;GM0335
+Gemeente Mook en Middelaar;Bronhouder;Gemeenten;1,00E+12;09215819;GM0944
+Gemeente Neder-Betuwe;Bronhouder;Gemeenten;1,81E+12;30276311;GM1740
+Gemeente Nederweert;Bronhouder;Gemeenten;1,00E+12;52395413;GM0946
+Gemeente Nieuwegein;Bronhouder;Gemeenten;1,00E+12;30277029;GM0356
+Gemeente Nieuwkoop;Bronhouder;Gemeenten;1,82E+12;27364328;GM0569
+Gemeente Nijkerk;Bronhouder;Gemeenten;1,00E+12;32165156;GM0267
+Gemeente Nijmegen;Bronhouder;Gemeenten;1,00E+12;09220932;GM0268
+Gemeente Nissewaard;Bronhouder;Gemeenten;1,82E+12;62252046;GM1930
+Gemeente Noardeast-Fryslân;Bronhouder;Gemeenten;1,83E+12;73552496;GM1970
+Gemeente Noord-Beveland;Bronhouder;Gemeenten;1,80E+12;20164935;GM1695
+Gemeente Noordenveld;Bronhouder;Gemeenten;1,81E+12;01173391;GM1699
+Gemeente Noordoostpolder;Bronhouder;Gemeenten;1,00E+12;32170205;GM0171
+Gemeente Noordwijk;Bronhouder;Gemeenten;1,83E+12;73538469;GM0575
+Gemeente Nuenen c.a.;Bronhouder;Gemeenten;1,00E+12;17283654;GM0820
+Gemeente Nunspeet;Bronhouder;Gemeenten;1,00E+12;52584372;GM0302
+Gemeente Oegstgeest;Bronhouder;Gemeenten;1,00E+12;50025929;GM0579
+Gemeente Oirschot;Bronhouder;Gemeenten;1,00E+12;17285344;GM0823
+Gemeente Oisterwijk;Bronhouder;Gemeenten;1,00E+12;17272760;GM0824
+Gemeente Oldambt;Bronhouder;Gemeenten;1,82E+12;01176290;GM1895
+Gemeente Oldebroek;Bronhouder;Gemeenten;1,00E+12;08223460;GM0269
+Gemeente Oldenzaal;Bronhouder;Gemeenten;1,00E+12;08224234;GM0173
+Gemeente Olst-Wijhe;Bronhouder;Gemeenten;1,00E+12;08222726;GM1773
+Gemeente Ommen;Bronhouder;Gemeenten;1,00E+12;51102757;GM0175
+Gemeente Oost Gelre;Bronhouder;Gemeenten;1,81E+12;09212525;GM1586
+Gemeente Oosterhout;Bronhouder;Gemeenten;1,00E+12;20164965;GM0826
+Gemeente Ooststellingwerf;Bronhouder;Gemeenten;1,00E+12;01180311;GM0085
+Gemeente Oostzaan;Bronhouder;Gemeenten;1,00E+12;34371033;GM0431
+Gemeente Opmeer;Bronhouder;Gemeenten;1,00E+12;37159195;GM0432
+Gemeente Opsterland;Bronhouder;Gemeenten;1,00E+12;01175380;GM0086
+Gemeente Oss;Bronhouder;Gemeenten;1,00E+12;50616641;GM0828
+Gemeente Oude IJsselstreek;Bronhouder;Gemeenten;1,81E+12;09220971;GM1509
+Gemeente Oudewater;Bronhouder;Gemeenten;1,00E+12;53878388;GM0589
+Gemeente Overbetuwe;Bronhouder;Gemeenten;1,81E+12;51178567;GM1734
+Gemeente Papendrecht;Bronhouder;Gemeenten;1,00E+12;24483621;GM0590
+Gemeente Peel en Maas;Bronhouder;Gemeenten;1,82E+12;50397052;GM1894
+Gemeente Pekela;Bronhouder;Gemeenten;1,80E+12;50654993;GM0765
+Gemeente Pijnacker-Nootdorp;Bronhouder;Gemeenten;1,81E+12;27365912;GM1926
+Gemeente Purmerend;Bronhouder;Gemeenten;1,00E+12;37162503;GM0439
+Gemeente Putten;Bronhouder;Gemeenten;1,00E+12;08216960;GM0273
+Gemeente Raalte;Bronhouder;Gemeenten;1,81E+12;08215191;GM0177
+Gemeente Reimerswaal;Bronhouder;Gemeenten;1,00E+12;51143313;GM0703
+Gemeente Renkum;Bronhouder;Gemeenten;1,00E+12;09215649;GM0274
+Gemeente Renswoude;Bronhouder;Gemeenten;1,00E+12;32163726;GM0339
+Gemeente Reusel-De Mierden;Bronhouder;Gemeenten;1,00E+12;17272521;GM1667
+Gemeente Rheden;Bronhouder;Gemeenten;1,00E+12;52066169;GM0275
+Gemeente Rhenen;Bronhouder;Gemeenten;1,00E+12;30283218;GM0340
+Gemeente Ridderkerk;Bronhouder;Gemeenten;1,00E+12;24493197;GM0597
+Gemeente Rijssen-Holten;Bronhouder;Gemeenten;1,00E+12;50839519;GM1742
+Gemeente Rijswijk;Bronhouder;Gemeenten;1,00E+12;50681044;GM0603
+Gemeente Roerdalen;Bronhouder;Gemeenten;1,82E+12;50035452;GM1669
+Gemeente Roermond;Bronhouder;Gemeenten;1,82E+12;14117104;GM0957
+Gemeente Roosendaal;Bronhouder;Gemeenten;1,00E+12;20164788;GM1674
+Gemeente Rotterdam;Bronhouder;Gemeenten;1,00E+12;24483298;GM0599
+Gemeente Rozendaal;Bronhouder;Gemeenten;1,00E+12;09214922;GM0277
+Gemeente Rucphen;Bronhouder;Gemeenten;1,00E+12;20164997;GM0840
+Gemeente Schagen;Bronhouder;Gemeenten;1,00E+12;56838328;GM0441
+Gemeente Scherpenzeel;Bronhouder;Gemeenten;1,00E+12;32168248;GM0279
+Gemeente Schiedam;Bronhouder;Gemeenten;1,00E+12;50991663;GM0606
+Gemeente Schiermonnikoog;Bronhouder;Gemeenten;1,00E+12;01173331;GM0088
+Gemeente Schouwen-Duiveland;Bronhouder;Gemeenten;1,81E+12;20170062;GM1676
+Gemeente 's-Hertogenbosch;Bronhouder;Gemeenten;1,00E+12;17278704;GM0796
+Gemeente Simpelveld;Bronhouder;Gemeenten;1,00E+12;51486075;GM0965
+Gemeente Sint-Michielsgestel;Bronhouder;Gemeenten;1,00E+12;17237737;GM0845
+Gemeente Sittard-Geleen;Bronhouder;Gemeenten;1,00E+12;14130475;GM1883
+Gemeente Sliedrecht;Bronhouder;Gemeenten;1,00E+12;24488726;GM0610
+Gemeente Sluis;Bronhouder;Gemeenten;1,81E+12;20164313;GM1714
+Gemeente Smallingerland;Bronhouder;Gemeenten;1,00E+12;01172164;GM0090
+Gemeente Soest;Bronhouder;Gemeenten;1,00E+12;32163787;GM0342
+Gemeente Someren;Bronhouder;Gemeenten;1,00E+12;17273152;GM0847
+Gemeente Son en Breugel;Bronhouder;Gemeenten;1,00E+12;17280818;GM0848
+Gemeente Stadskanaal;Bronhouder;Gemeenten;1,00E+12;01169424;GM0037
+Gemeente Staphorst;Bronhouder;Gemeenten;1,00E+12;50296140;GM0180
+Gemeente Stede Broec;Bronhouder;Gemeenten;1,00E+12;37159550;GM0532
+Gemeente Steenbergen;Bronhouder;Gemeenten;1,81E+12;20165025;GM0851
+Gemeente Steenwijkerland;Bronhouder;Gemeenten;1,81E+12;54137756;GM1708
+Gemeente Stein;Bronhouder;Gemeenten;1,00E+12;51984997;GM0971
+Gemeente Stichtse Vecht;Bronhouder;Gemeenten;1,82E+12;51681897;GM1904
+Gemeente Súdwest-Fryslân;Bronhouder;Gemeenten;1,82E+12;51791811;GM1900
+Gemeente Terneuzen;Bronhouder;Gemeenten;1,81E+12;20164929;GM0715
+Gemeente Terschelling;Bronhouder;Gemeenten;1,00E+12;01177508;GM0093
+Gemeente Texel;Bronhouder;Gemeenten;1,00E+12;37159104;GM0448
+Gemeente Teylingen;Bronhouder;Gemeenten;1,81E+12;27364167;GM1525
+Gemeente Tholen;Bronhouder;Gemeenten;1,00E+12;20166109;GM0716
+Gemeente Tiel;Bronhouder;Gemeenten;1,00E+12;30282147;GM0281
+Gemeente Tilburg;Bronhouder;Gemeenten;1,00E+12;17281808;GM0855
+Gemeente Tubbergen;Bronhouder;Gemeenten;1,00E+12;08215565;GM0183
+Gemeente Twenterand;Bronhouder;Gemeenten;1,00E+12;08215207;GM1700
+Gemeente Tynaarlo;Bronhouder;Gemeenten;1,81E+12;01169292;GM1730
+Gemeente Tytsjerksteradiel;Bronhouder;Gemeenten;1,00E+12;01169679;GM0737
+Gemeente Uitgeest;Bronhouder;Gemeenten;1,00E+12;34363838;GM0450
+Gemeente Uithoorn;Bronhouder;Gemeenten;1,00E+12;34371711;GM0451
+Gemeente Urk;Bronhouder;Gemeenten;1,00E+12;32166227;GM0184
+Gemeente Utrecht;Bronhouder;Gemeenten;1,00E+12;30280353;GM0344
+Gemeente Utrechtse Heuvelrug;Bronhouder;Gemeenten;1,81E+12;50092812;GM1581
+Gemeente Vaals;Bronhouder;Gemeenten;1,00E+12;14131922;GM0981
+Gemeente Valkenburg aan de Geul;Bronhouder;Gemeenten;1,00E+12;14131921;GM0994
+Gemeente Valkenswaard;Bronhouder;Gemeenten;1,00E+12;17272342;GM0858
+Gemeente Veendam;Bronhouder;Gemeenten;1,00E+12;50852736;GM0047
+Gemeente Veenendaal;Bronhouder;Gemeenten;1,00E+12;50182544;GM0345
+Gemeente Veere;Bronhouder;Gemeenten;1,81E+12;20165936;GM0717
+Gemeente Veldhoven;Bronhouder;Gemeenten;1,00E+12;17272483;GM0861
+Gemeente Velsen;Bronhouder;Gemeenten;1,00E+12;50115634;GM0453
+Gemeente Venlo;Bronhouder;Gemeenten;1,00E+12;14131668;GM0983
+Gemeente Venray;Bronhouder;Gemeenten;1,00E+12;14132389;GM0984
+Gemeente Vijfheerenlanden;Bronhouder;Gemeenten;1,83E+12;73547026;GM1961
+Gemeente Vlaardingen;Bronhouder;Gemeenten;1,00E+12;24485270;GM0622
+Gemeente Vlieland;Bronhouder;Gemeenten;1,00E+12;01181122;GM0096
+Gemeente Vlissingen;Bronhouder;Gemeenten;1,00E+12;20164548;GM0718
+Gemeente Voerendaal;Bronhouder;Gemeenten;1,00E+12;51896125;GM0986
+Gemeente Voorne aan Zee;Bronhouder;Gemeenten;1,83E+12;88738388;GM1992
+Gemeente Voorschoten;Bronhouder;Gemeenten;1,00E+12;27381083;GM0626
+Gemeente Voorst;Bronhouder;Gemeenten;1,00E+12;08218153;GM0285
+Gemeente Vught;Bronhouder;Gemeenten;1,00E+12;50653466;GM0865
+Gemeente Waadhoeke;Bronhouder;Gemeenten;1,83E+12;70528586;GM1949
+Gemeente Waalre;Bronhouder;Gemeenten;1,00E+12;17269410;GM0866
+Gemeente Waalwijk;Bronhouder;Gemeenten;1,00E+12;17278006;GM0867
+Gemeente Waddinxveen;Bronhouder;Gemeenten;1,00E+12;24482458;GM0627
+Gemeente Wageningen;Bronhouder;Gemeenten;1,00E+12;09216322;GM0289
+Gemeente Waterland;Bronhouder;Gemeenten;1,01E+12;37158345;GM0852
+Gemeente Weert;Bronhouder;Gemeenten;1,00E+12;50320408;GM0988
+Gemeente Weesp;Bronhouder;Gemeenten;1,00E+12;32165235;GM0457
+Gemeente West Betuwe;Bronhouder;Gemeenten;1,83E+12;73549207;GM1960
+Gemeente West Maas en Waal;Bronhouder;Gemeenten;1,00E+12;30276854;GM0668
+Gemeente Westerkwartier;Bronhouder;Gemeenten;1,83E+12;73552208;GM1969
+Gemeente Westerveld;Bronhouder;Gemeenten;1,81E+12;01172480;GM1701
+Gemeente Westervoort;Bronhouder;Gemeenten;1,00E+12;09212509;GM0293
+Gemeente Westerwolde;Bronhouder;Gemeenten;1,83E+12;70485836;GM1950
+Gemeente Westland;Bronhouder;Gemeenten;1,81E+12;27371717;GM1783
+Gemeente Weststellingwerf;Bronhouder;Gemeenten;1,00E+12;50738631;GM0098
+Gemeente Wierden;Bronhouder;Gemeenten;1,00E+12;53309561;GM0189
+Gemeente Wijchen;Bronhouder;Gemeenten;1,00E+12;09212602;GM0296
+Gemeente Wijdemeren;Bronhouder;Gemeenten;1,81E+12;32165063;GM1696
+Gemeente Wijk bij Duurstede;Bronhouder;Gemeenten;1,00E+12;30279669;GM0352
+Gemeente Winterswijk;Bronhouder;Gemeenten;1,00E+12;09219446;GM0294
+Gemeente Woensdrecht;Bronhouder;Gemeenten;1,81E+12;20164797;GM0873
+Gemeente Woerden;Bronhouder;Gemeenten;1,00E+12;50177214;GM0632
+Gemeente Wormerland;Bronhouder;Gemeenten;1,01E+12;34371004;GM0880
+Gemeente Woudenberg;Bronhouder;Gemeenten;1,00E+12;50676725;GM0351
+Gemeente Zaanstad;Bronhouder;Gemeenten;1,00E+12;34367942;GM0479
+Gemeente Zaltbommel;Bronhouder;Gemeenten;1,81E+12;30276781;GM0297
+Gemeente Zandvoort;Bronhouder;Gemeenten;1,00E+12;34363858;GM0473
+Gemeente Zeewolde;Bronhouder;Gemeenten;1,01E+12;32164515;GM0050
+Gemeente Zeist;Bronhouder;Gemeenten;1,00E+12;51626268;GM0355
+Gemeente Zevenaar;Bronhouder;Gemeenten;1,00E+12;71235426;GM0299
+Gemeente Zoetermeer;Bronhouder;Gemeenten;1,00E+12;27376002;GM0637
+Gemeente Zoeterwoude;Bronhouder;Gemeenten;1,00E+12;27363529;GM0638
+Gemeente Zuidplas;Bronhouder;Gemeenten;1,82E+12;50595644;GM1892
+Gemeente Zundert;Bronhouder;Gemeenten;1,81E+12;51853876;GM0879
+Gemeente Zutphen;Bronhouder;Gemeenten;1,81E+12;50099604;GM0301
+Gemeente Zwartewaterland;Bronhouder;Gemeenten;1,81E+12;54552907;GM1896
+Gemeente Zwijndrecht;Bronhouder;Gemeenten;1,00E+12;24490491;GM0642
+Gemeente Zwolle;Bronhouder;Gemeenten;1,00E+12;08218173;GM0193
+Hoogheemraadschap De Stichtse Rijnlanden;Bronhouder;Water-/hoogheemraadschappen;1,80E+12;30276831;WS14
+Hoogheemraadschap Hollands Noorderkwartier;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;37161516;WS12
+Hoogheemraadschap van Delfland;Bronhouder;Water-/hoogheemraadschappen;1,00E+12;50677969;WS15
+Hoogheemraadschap van Rijnland;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;51137747;WS13
+Hoogheemraadschap van Schieland en de Krimpenerwaard;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;52213463;WS39
+Meerinzicht;Bronhouder;Gemeentelijk samenwerkingverband;1,85E+12;60325674;GM0233
+Ministerie van Binnenlandse Zaken en Koninkrijksrelaties;Bronhouder;Ministeries;1,00E+12;50200097;
+Ministerie van Economische Zaken;Bronhouder;Ministeries;1,00E+12;52813150;
+Ministerie van Infrastructuur en Milieu;Bronhouder;Ministeries;1,00E+12;52766179;
+Ministerie van Landbouw, Natuur en Voedselkwaliteit;Bronhouder;Ministeries;1,86E+12;70338574;
+ProRail B.V.;Bronhouder;Vervoersbedrijf;3,30E+12;30124359;
+Provincie Drenthe;Bronhouder;Provincies;1,00E+12;01179514;PV22
+Provincie Flevoland;Bronhouder;Provincies;1,01E+12;32164140;PV24
+Provincie Fryslân;Bronhouder;Provincies;1,00E+12;01178978;PV21
+Provincie Gelderland;Bronhouder;Provincies;1,00E+12;51468751;PV25
+Provincie Groningen;Bronhouder;Provincies;1,00E+12;01182023;PV20
+Provincie Limburg;Bronhouder;Provincies;1,00E+12;50052969;PV31
+Provincie Noord-Brabant;Bronhouder;Provincies;1,01E+12;17278718;PV30
+Provincie Noord-Holland;Bronhouder;Provincies;1,00E+12;34362354;PV27
+Provincie Overijssel;Bronhouder;Provincies;1,00E+12;51048329;PV23
+Provincie Utrecht;Bronhouder;Provincies;1,00E+12;30277172;PV26
+Provincie Zeeland;Bronhouder;Provincies;1,00E+12;20168636;PV29
+Provincie Zuid-Holland;Bronhouder;Provincies;1,00E+12;27375169;PV28
+Rijksdienst voor het Cultureel Erfgoed;Bronhouder;Ministeries;4,00E+12;27367348;
+Rijksdienst voor Ondernemend Nederland;Bronhouder;Agentschappen Rijksoverheid;4,00E+12;27378529;
+Rijksinstituut voor Volksgezondheid en Milieu;Bronhouder;Zelfstandig Bestuurs Organen;4,00E+12;30276683;
+Rijksvastgoedbedrijf;Bronhouder;Agentschappen Rijksoverheid;1,86E+12;65890604;
+Rijkswaterstaat;Bronhouder;Agentschappen Rijksoverheid;1,82E+12;27364178;
+Staatsbosbeheer;Bronhouder;Terreinbeheerders;1,81E+12;30263544;
+TNO;Bronhouder;Zelfstandig Bestuurs Organen;1,00E+12;27376655;
+Waterschap Aa en Maas;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;17251019;WS38
+Waterschap Amstel, Gooi en Vecht;Bronhouder;Water-/hoogheemraadschappen;3,34E+12;34360267;WS31
+Waterschap Brabantse Delta;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;51181584;WS25
+Waterschap De Dommel;Bronhouder;Water-/hoogheemraadschappen;1,00E+12;17277734;WS27
+Waterschap Drents Overijsselse Delta;Bronhouder;Water-/hoogheemraadschappen;1,86E+12;64208338;WS59
+Waterschap Hollandse Delta;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;52605825;WS40
+Waterschap Hunze en Aa's;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;01173230;WS33
+Waterschap Limburg;Bronhouder;Water-/hoogheemraadschappen;1,86E+12;67682065;WS60
+Waterschap Noorderzijlvest;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;50130994;WS34
+Waterschap Rijn en IJssel;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;09212548;WS07
+Waterschap Rivierenland;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;30281419;WS09
+Waterschap Scheldestromen;Bronhouder;Water-/hoogheemraadschappen;1,85E+12;51640813;WS42
+Waterschap Vallei en Veluwe;Bronhouder;Water-/hoogheemraadschappen;1,85E+12;56804636;WS08
+Waterschap Vechtstromen;Bronhouder;Water-/hoogheemraadschappen;1,85E+12;58972676;WS44
+Waterschap Zuiderzeeland;Bronhouder;Water-/hoogheemraadschappen;3,32E+12;32164084;WS37
+Wetterskip Fryslân;Bronhouder;Water-/hoogheemraadschappen;1,81E+12;01174741;WS02
+IJB Geotechniek B.V.;;Overig;;01059718;
+Bouwconsults Nadema;;Overig;;01064412;
+De Boer advies & Uitvoering;;Overig;;01088169;
+Timmermans Landmeetkunde B.V.;;Overig;;01108276;
+Gemeente Franekeradeel;;Overig;;01168951;
+Gemeente Winsum;;Overig;;01170341;
+Gemeente Groningen (tot 2020);;Overig;;01171824;
+Gemeente De Marne;;Overig;;01172406;
+Gemeente Littenseradiel;;Overig;;01172425;
+Gemeente Dongeradeel;;Overig;;01173214;
+Gemeente Vlagtwedde;;Overig;;01173377;
+Gemeente Bedum;;Overig;;01173414;
+Gemeente Appingedam;;Overig;;01173706;
+Gemeente Leeuwarderadeel;;Overig;;01173925;
+Gemeente Delfzijl;;Overig;;01175851;
+Gemeente Marum;;Overig;;01176243;
+Gemeente Eemsmond;;Overig;;01176410;
+Gemeente Hoogezand-Sappemeer;;Overig;;01176459;
+Gemeente Leek;;Overig;;01177267;
+Gemeente Loppersum;;Overig;;01180449;
+Gemeente Ferwerderadiel;;Overig;;01180913;
+Gemeente Kollumerland en Nieuwkruisland;;Overig;;01181378;
+Gemeente Zuidhorn;;Overig;;01182779;
+Gemeente Ten Boer;;Overig;;01183249;
+N.V. Waterbedrijf Groningen;;Overig;;02008621;
+N.V. Nederlandse Gasunie;;Overig;;02029700;
+MUG Ingenieursbureau B.V.;;Overig;;02040355;
+Bioclear earth B.V.;;Overig;;02044410;
+Gasunie Transport Services B.V.;;Overig;;02084889;
+Raadgevend Ingenieursbureau Wiertsema & Partners B.V.;;Overig;;02095434;
+Tebezo Waterbouw & Nautische Dienstverlening B.V.;;Overig;;05029571;
+Grondbooronderneming J. Hormann B.V.;;Overig;;05033468;
+Mateboer Milieu Techniek B.V.;;Overig;;05051184;
+KWS Infra B.V.;;Overig;;05062469;
+Vitens N.V.;;Overig;;05069581;
+Geofox-Lexmond b.v.;;Overig;;06056452;
+Kruse Milieu BV;;Overig;;06068751;
+Koop Bronbemaling B.V.;;Overig;;06070130;
+Salverda Bouw B.V.;;Overig;;08011909;
+Inter Act B.V.;;Overig;;08043827;
+The Three Engineers B.V.;;Overig;;08081725;
+Inter Act industrial automation B.V.;;Overig;;08103567;
+IMD B.V.;;Overig;;08109078;
+BZ Ingenieurs en Managers BV;;Overig;;08128785;
+Hoogveld Sonderingen B.V.;;Overig;;08145500;
+Arcadis Nederland B.V.;;Overig;;09036504;
+Eijkelkamp Soil & Water;;Overig;;09043479;
+Bam Infraconsult B.V.;;Overig;;09073590;
+Verbelco BV;;Overig;;09083617;
+Stichting Wageningen Research;;Overig;;09098104;
+Ingenieursbureau Land B.V.;;Overig;;09122512;
+VCMI NV;;Overig;;09128573;
+Aequator Groen & Ruimte bv;;Overig;;09131961;
+Coöperatie Bosgroep Midden Nederland U.A.;;Overig;;09132872;
+I-Real B.V.;;Overig;;09182897;
+Gemeente Rijnwaarden;;Overig;;09215639;
+Van de Beek kabels-Leidingen B.V.;;Overig;;11020958;
+Gemeente Zederik;;Overig;;11067758;
+Mourik Limburg B.V.;;Overig;;13017175;
+Kragten;;Overig;;13021491;
+Econsultancy B.V.;;Overig;;13038286;
+Geonius Geotechniek B.V.;;Overig;;14048726;
+N.V. Waterleiding Maatschappij Limburg;;Overig;;14602038;
+SPIE Nederland B.V.;;Overig;;14635629;
+Brabant Water;;Overig;;16005077;
+Vissers-Ploegmakers B.V.;;Overig;;16055402;
+Ingenieursbureau Inpijn-Blokpoel Son B.V.;;Overig;;17052457;
+Ingenieursbureau Inpijn-Blokpoel west B.V.;;Overig;;17076128;
+Heijmans Infra B.V.;;Overig;;17104126;
+Lankelma Geotechniek Zuid B.V.;;Overig;;17131641;
+LWRO;;Overig;;17185598;
+DataScore Software B.V.;;Overig;;17200060;
+Gemeente Sint Anthonis;;Gemeente;;17242249;GM1702
+Gemeente Woudrichem;;Overig;;17272622;
+Gemeente Aalburg;;Overig;;17274242;
+Gemeente Landerd;;Gemeente;;17275949;GM1685
+Gemeente Grave;;Gemeente;;17278466;GM0786
+Gemeente Cuijk;;Gemeente;;17278665;GM1684
+Gemeente Uden;;Gemeente;;17279334;GM0856
+F.L. Liebregts B.V.;;Overig;;18031929;
+Van Oord Nederland;;Overig;;18106742;
+Hakkers B.V.;;Overig;;18114401;
+Van der Straaten Geotechniek B.V.;;Overig;;20015504;
+Grondboorbedrijf gebrs. Konings B.V.;;Overig;;20018251;
+Strukton Civiel Zuid B.V.;;Overig;;20032947;
+Geo Infra B.V.;;Overig;;20044878;
+Martens en Van Oord Aannemingsbedrijf B.V.;;Overig;;20050564;
+AGEL adviseurs B.V.;;Overig;;20051141;
+Bouwservice Management Nederland B.V.;;Overig;;20075240;
+NU-adviesbureau;;Overig;;22063981;
+Kuipers Electronic Engineering B.V.;;Overig;;23039023;
+Van den Herik Kust- en Oeverwerken B.V.;;Overig;;23048358;
+bouwtechnisch adviesbuerau Ir T Stam;;Overig;;23058363;
+Ingenieursbureau BT Geoconsult B.V.;;Overig;;23087854;
+Boskalis Nederland B.V.;;Overig;;24143025;
+RPS Advies- en Ingenieursbureau B.V.;;Overig;;24161143;
+Mos Grondmechanica B.V.;;Overig;;24257098;
+DEME Infra Marine Contractors B.V.;;Overig;;24277837;
+Mobilis B.V.;;Overig;;24289439;
+Adviesbureau C.G.M. Schrijvers B.V.;;Overig;;24316426;
+BAM Infra B.V.;;Overig;;24347782;
+Acacia Water B.V.;;Overig;;24428291;
+Inventerra;;Overig;;24431723;
+De Vries & Van de Wiel Kust- en Oeverwerken B.V.;;Overig;;24450933;
+Gemeente Korendijk;;Overig;;24483056;
+Gemeente Oud-Beijerland;;Overig;;24483633;
+Gemeente Strijen;;Overig;;24485569;
+Gemeente Binnenmaas;;Overig;;24485644;
+Gemeente Cromstrijen;;Overig;;24494625;
+Fugro NL Land B.V;;Overig;;27114147;
+Dunea N.V.;;Overig;;27122974;
+ATKB B.V.;;Overig;;27177140;
+Stantec;;Overig;;27184323;
+Geosonda BV;;Overig;;27184822;
+Stichting ICTU;;Overig;;27198742;
+Van Essen Instruments B.V.;;Overig;;27227624;
+TerraIndex B.V.;;Overig;;27239531;
+KWR Water B.V.;;Overig;;27279653;
+Munisense BV;;Overig;;27313745;
+Gemeente Wassenaar;;Gemeente;;27380612;GM0629
+IDDS B.V.;;Overig;;28047921;
+Oasen N.V.;;Overig;;29010639;
+Antea Nederland B.V.;;Overig;;29021830;
+Ifco Funderingsexpertise B.V.;;Overig;;29032656;
+Grondslag B.V.;;Overig;;30101055;
+Sialtech B.V.;;Overig;;30114487;
+Van Dijk Geo- en Milieutechniek;;Overig;;30128364;
+Sweco Nederland B.V.;;Overig;;30129769;
+LievenseCSO Milieu B.V.;;Overig;;30152124;
+Aveco de Bondt;;Overig;;30169759;
+GOconnectIT B.V.;;Overig;;30171797;
+Energeo B.V.;;Overig;;30192532;
+Koenders & Partners adviseurs en procesmanagers B.V.;;Overig;;30203750;
+Gemeente Leerdam;;Overig;;30276892;
+Gemeente Neerijnen;;Overig;;30280563;
+Gemeente Giessenlanden;;Overig;;30280709;
+Gemeente Lingewaal;;Overig;;30286180;
+PJ Milieu B.V.;;Overig;;32068654;
+Strukton Civiel Noord & Oost B.V.;;Overig;;33056888;
+Ballast Nedam Infra B.V.;;Overig;;33154028;
+Wareco Amsterdam B.V.;;Overig;;33223543;
+Tjaden B.V.;;Overig;;34057287;
+N.V. PWN Waterleidingbedrijf Noord-Holland;;Overig;;34072007;
+BK Ingenieurs B.V.;;Overig;;34082755;
+CRUX Engineering B.V.;;Overig;;34171248;
+Van Harlingen Grondwater Management B.V.;;Overig;;34182597;
+Gemeente Haarlemmerliede en Spaarnwoude;;Overig;;34359301;
+Gemeente Ouder-Amstel;;Gemeente;;34359313;GM0437
+Unihorn B.V.;;Overig;;36039833;
+Aannemingsmaatschappij De Vries & Van de Wiel B.V.;;Overig;;37061883;
+Duwabo B.V.;;Overig;;37104311;
+Gemeente Heerhugowaard;;Gemeente;;37159339;GM0398
+Gemeente Langedijk;;Gemeente;;37159352;GM0416
+Gemeente Beemster;;Gemeente;;37160006;GM0370
+Tauw b.v.;;Overig;;38014985;
+Witteveen+Bos Raadgevende ingenieurs B.V.;;Overig;;38020751;
+Bedrijfsmilieudienst Flevoland B.V.;;Overig;;39066679;
+Vereniging tot Behoud van Natuurmonumenten in Nederland;;Overig;;40516730;
+Stichting Deltares;;Overig;;41146461;
+Stichting Waternet;;Overig;;41216593;
+Gemeente Geldermalsen;;Overig;;50047876;
+Gemeente Haaren;;Overig;;50106236;
+Gemeente Nuth;;Overig;;50132768;
+Gemeente Westvoorne;;Gemeente;;50358944;GM0614
+Gemeente Mill en Sint Hubert;;Gemeente;;50466208;GM0815
+Gemeente Noordwijkerhout;;Overig;;50486349;
+Gemeente Haren;;Overig;;50537806;
+veldapps.com;;Overig;;50556649;
+Badus Bodem en Water;;Overig;;50638874;
+Gemeente Grootegast;;Overig;;50656082;
+Gemeente Slochteren;;Overig;;50656813;
+Compass Infrastructuur Nederland (CIN) B.V.;;Overig;;50684442;
+Gemeente Menameradiel;;Overig;;50706969;
+Gemeente Menterwolde;;Overig;;50810863;
+Gemeente Werkendam;;Overig;;50920154;
+North Sea Port Netherlands N.V.;;Overig;;50987496;
+Gemeente het Bildt;;Overig;;51302861;
+Gemeente Schinnen;;Overig;;51332736;
+Real 4 U B.V.;;Overig;;51713942;
+Gemeente Hellevoetsluis;;Gemeente;;51860015;GM0530
+Wiha Grondmechanica;;Overig;;52047202;
+Gemeente Onderbanken;;Overig;;52188663;
+Avallo advies;;Overig;;52861724;
+Gemeente Vianen;;Overig;;53096096;
+Gemeente Bellingwedde;;Overig;;53418387;
+Tjaden Adviesbureau voor Grondmechanica B.V.;;Overig;;54294959;
+Lankelma Adviesbureau;;Overig;;54521610;
+Omgevingsdienst Midden-Holland;;Overig;;55366643;
+Omgevingsdienst Haaglanden;;Overig;;56093926;
+HaskoningDHV Nederland B.V.;;Overig;;56515154;
+Omgevingsdienst Midden- en West-Brabant;;Overig;;56679750;
+Gemeente Molenwaard;;Overig;;57030707;
+Syntrophos;;Overig;;57304769;
+Kisters Nederland B.V.;;Overig;;58545042;
+IntellinQ BV;;Overig;;59317833;
+KYL B.V.;;Overig;;59327626;
+Combinatie Dijkverbetering HOP;;Overig;;61094803;
+IXAS Gaasperdammerweg B.V.;;Overig;;61469696;
+Koops Grondmechanica B.V.;;Overig;;61574031;
+GSNED B.V.;;Overig;;61948888;
+VWB Bodem B.V.;;Overig;;62092758;
+RB Geo B.V.;;Overig;;62696696;
+DDFK Gemeenten;;Overig;;63669102;
+Combinatie A1|A28 VOF;;Overig;;64199053;
+4RISK B.V.;;Overig;;64429571;
+Xaxis Technologies B.V.;;Overig;;64931935;
+Terra Practicus;;Overig;;65031954;
+Sas van Vreeswijk VOF;;Overig;;65067096;
+Wiertsema-Inpijn-Blokpoel V.O.F.;;Overig;;65133382;
+VRM LevelLog B.V.;;Overig;;66272688;
+Ingenieursbureau Maters en De Koning B.V.;;Overig;;66346460;
+Ortageo Nederland B.V.;;Overig;;66382971;
+CWG Ingenieurs b.v.;;Overig;;67103375;
+BUHA B.V.;;Overig;;67288340;
+GeoRisQ;;Overig;;67574009;
+Waterlabs B.V.;;Overig;;67965431;
+Bureau Schmidt B.V.;;Overig;;68445326;
+Sassevaart V.O.F.;;Overig;;70281335;
+Ballast Nedam Road Specialties B.V.;;Overig;;70288623;
+Eijkelkamp GeoPoint SoilSolutions BV;;Overig;;70686149;
+Fellinga Bouw & Installatie;;Overig;;71221875;
+Combinatie SaVe v.o.f.;;Overig;;71583440;
+Lankelma Ingenieursbureau voor Geo Milieu en Funderingstechniek B.V.;;Overig;;71979972;
+Prommenz Milieu B.V.;;Overig;;73790370;
+Milieu Advies Noord-Nederland;;Overig;;73874817;
+Trefoil Hydrology;;Overig;;74503812;
+Combinatie STIPT V.O.F.;;Overig;;76263851;

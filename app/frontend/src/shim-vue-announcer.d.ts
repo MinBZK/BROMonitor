@@ -1,1 +1,1 @@
-declare module "@vue-a11y/announcer";
+import VueAnnouncer from "@vue-a11y/announcer";

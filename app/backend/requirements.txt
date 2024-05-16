@@ -15,4 +15,4 @@ websockets==12.0
 gunicorn==22.0.0
 beautifulsoup4==4.12.3
 uvicorn==0.29.0
-uvloop==0.15.2; platform_system == "Windows" ## Check with someone who has a macbook if this package requires update.
+uvloop==0.15.2; platform_system != "Windows" ## Check with someone who has a macbook if this package requires update.

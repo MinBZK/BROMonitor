@@ -1,5 +1,5 @@
 import { exportFile } from "quasar";
-import * as stringify from "csv-stringify";
+import Papa from "papaparse";
 
 // Some fields have a formatting function before being shown to the user
 // This helper method applies the formatting function to the output data.
@@ -40,31 +40,34 @@ export function downloadTable(
   data,
   columns,
   fileName = "table-export",
-  delimiter = ";"
+  delimiter = ";",
 ) {
   const outputData = applyFieldFunctions(data, columns);
-  stringify(
-    outputData,
+  const csvColumns = columns
+    .filter((c) => c.field)
+    .map((c) => {
+      if (typeof c.field == "function") {
+        return { key: c.name, header: c.label };
+      } else {
+        return { key: c.field, header: c.label };
+      }
+    });
+
+  const csv = Papa.unparse(
     {
-      columns: columns
-        .filter((c) => c.field)
-        .map((c) => {
-          if (typeof c.field == "function") {
-            return { key: c.name, header: c.label };
-          } else {
-            return { key: c.field, header: c.label };
-          }
-        }),
+      fields: csvColumns.map((c) => c.header),
+      data: outputData.map((row) => csvColumns.map((c) => row[c.key])),
+    },
+    {
       delimiter: delimiter,
       header: true,
-      quoted: true,
+      quotes: true,
     },
-    function(err, output) {
-      if (err) {
-        alert("Er is iets fout gegaan bij het downloaden van de CSV!");
-        return;
-      }
-      exportFile(`${fileName}.csv`, output, "text/csv");
-    }
   );
+
+  if (!csv) {
+    alert("Er is iets fout gegaan bij het downloaden van de CSV!");
+    return;
+  }
+  exportFile(`${fileName}.csv`, csv, "text/csv");
 }

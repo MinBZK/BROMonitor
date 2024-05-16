@@ -17,15 +17,15 @@
 <script lang="ts">
 import BroHeader from "@/components/headers/Header.vue";
 import BroFooter from "@/components/Footer.vue";
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   components: {
     BroHeader,
-    BroFooter
+    BroFooter,
   },
   setup() {
     return {};
-  }
+  },
 });
 </script>

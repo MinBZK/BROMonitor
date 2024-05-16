@@ -1,15 +1,15 @@
 <template>
-  <q-header class="text-white" height-hint="198">
+  <q-header class="text-white bg-secondary" height-hint="198">
     <!-- <skip-link /> -->
     <rijksoverheid-logo />
-    <div class="nav row bg-secondary nav-text q-px-xs-xs q-px-lg-lg">
+    <div class="nav row nav-text q-px-xs-xs q-px-lg-lg">
       <breadcrumbs :class="cssOverride" />
     </div>
   </q-header>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent } from "vue";
 import Breadcrumbs from "@/components/headers/Breadcrumbs.vue";
 import RijksoverheidLogo from "@/components/headers/RijksoverheidLogo.vue";
 import SkipLink from "@/components/headers/SkipLink.vue";

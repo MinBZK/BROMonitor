@@ -27,10 +27,11 @@ log = logging.getLogger(__name__)
 def document_type_table_data():
     response = requests.get(API_BASE + "/bromonitor/bromonitor-timestamp")
     data = json.loads(response.content)["types"]
+    data.pop(6)  # Remove gld
     table_data = list(
         map(
             lambda x: {
-                "fullname": short_to_dutch_fullname[x["type"]],
+                "fullname": short_to_dutch_fullname.get(x["type"]),
                 "abbreviation": "BHR-P" if x["type"] == "BHR" else x["type"],
                 "date": pretty_print_type_date(x["updated"]),
             },

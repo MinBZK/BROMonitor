@@ -16,12 +16,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   props: {
     data: {
-      type: Array,
+      type: Array as () => { title: string; colour: string }[],
       default() {
         return [];
       },
