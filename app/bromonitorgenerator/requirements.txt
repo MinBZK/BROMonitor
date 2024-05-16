@@ -12,3 +12,4 @@ lxml==4.6.5
 Pillow==9.0.1
 markupsafe==2.0.1
 beautifulsoup4==4.9.1
+pandas==2.2.2
