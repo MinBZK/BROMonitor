@@ -12,7 +12,7 @@ export default defineComponent({
   },
   setup(props) {
     const fileContent = ref("");
-    const converter = new showdown.Converter();
+    const converter = new showdown.Converter({ literalMidWordUnderscores: true });
 
     const updateContent = () => {
       let data = props.data;
