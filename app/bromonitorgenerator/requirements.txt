@@ -3,7 +3,7 @@ python-dateutil==2.9.0.post0
 numpy==1.26.4
 pandas==2.2.2
 plotly==5.22.0
-requests==2.31.1
+requests==2.31.0
 pymongo==4.7.2
 motor==3.4.0
 Jinja2==3.1.4

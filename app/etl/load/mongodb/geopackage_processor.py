@@ -191,7 +191,7 @@ class GeopackageProcessor:
     def __overwrite_common(self):
         common_type = self.doc_type.full_name
         self.log.info(f"Overwriting common documents for {common_type}")
-        self.db.common.remove({"common.type": common_type})
+        self.db.common.delete_one({"common.type": common_type})
         self.db.tempCommon.aggregate(
             [
                 {
