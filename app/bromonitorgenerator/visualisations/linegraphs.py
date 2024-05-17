@@ -37,7 +37,7 @@ def generate_line_graph(object_type):
         ),
         autosize=True,
         separators=',.',
-        yaxis_tickformat=',f',
+        yaxis_tickformat='.0f',
         plot_bgcolor='rgba(0,0,0,0)',
         margin=dict(l=40, r=20, t=20, b=20),
         width=900,

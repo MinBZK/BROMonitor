@@ -31,7 +31,7 @@ def __single_bar_trace(quality_regime, bar_data, object_types):
     ys = list(map(lambda t: bar_data[t].get(quality_regime, 0), object_types))
     return go.Bar(name=quality_regime,
                   marker_color=colours_dict[quality_regime][:-2],
-                  texttemplate="%{value:,f}",
+                  texttemplate="%{value:.0f}",
                   x=xs,
                   y=ys)
 
@@ -66,7 +66,7 @@ def generate_deltas_figure():
 
     fig.update_layout(
         separators=',.',
-        yaxis_tickformat=',f',
+        yaxis_tickformat='.0f',
         autosize=True,
         plot_bgcolor='rgba(0,0,0,0)',
         margin=dict(l=20, r=20, t=20, b=20),
