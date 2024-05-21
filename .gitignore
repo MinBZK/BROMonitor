@@ -37,7 +37,6 @@ statepickle
 .idea
 env/
 app/frontend/package-lock.json
-reports
 .coverage
 PAD/
 app/etl/extract/bronhouders.pickle
