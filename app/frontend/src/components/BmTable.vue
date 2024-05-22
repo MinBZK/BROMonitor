@@ -1,9 +1,9 @@
 <template>
   <q-table
     class="col-12"
-    :data="tableData"
+    :rows="tableData"
     :columns="tableColumns"
-    :row-key="rowKey ? rowKey : rowKeyLambda ? rowKeyLambda : {}"
+    :row-key="computedRowKey"
     separator="horizontal"
     :filter="filter"
     :filter-method="filterMethod"
@@ -59,14 +59,14 @@
         {{
           Math.min(
             scope.pagination.page * scope.pagination.rowsPerPage,
-            filter ? filteredRowCount : tableData.length,
+            filter ? filteredRowCount : (tableData ? tableData.length : 0),
           ).toLocaleString("nl-NL")
         }}
         van
         {{
           filter
             ? filteredRowCount.toLocaleString("nl-NL")
-            : tableData.length.toLocaleString("nl-NL")
+            : (tableData ? tableData.length : 0).toLocaleString("nl-NL")
         }}
       </span>
       <q-btn
@@ -114,7 +114,7 @@
         aria-label="Ga naar laatste pagina"
       ></q-btn>
     </template>
-    <template v-for="(_, slot) of $scopedSlots" v-slot:[slot]="scope">
+    <template v-for="(_, slot) of $slots" v-slot:[slot]="scope">
       <slot :name="slot" v-bind="scope" />
     </template>
   </q-table>
@@ -136,15 +136,56 @@ export default defineComponent({
     return { filter, pagination, filteredRowCount };
   },
   props: {
-    tableData: Array,
-    tableColumns: Array,
+    tableData: {
+      type: Array as () => Array<{
+        kvk: string;
+        naam: string;
+        identifiers: string;
+        cpt: number;
+        gmw: number;
+        gld: number;
+        gldAangevuld: number;
+        gmn: number;
+        sfr: number;
+        bhrgt: number;
+        bhrp: number;
+      }>,
+      default: () => [],
+    },
+    tableColumns: {
+      type: Array as () => Array<{
+        name: string;
+        label: string;
+        field: string;
+        align: "left" | "right" | "center";
+        sortable: boolean;
+      }>,
+      default: () => [],
+    },
     tableFilter: String,
-    rowKey: String,
-    rowKeyLambda: Function,
+    rowKey: {
+      type: [String, Function],
+      default: undefined,
+    },
+    rowKeyLambda: {
+      type: Function,
+      default: undefined,
+    },
     downloadable: { default: true, type: Boolean },
     downloadFileName: { default: "table-export", type: String },
     searchable: { default: true, type: Boolean },
     rowClickHandler: Function,
+  },
+  computed: {
+    computedRowKey() {
+      if (typeof this.rowKey === 'function') {
+        return (row: Record<string, unknown>) => (this.rowKey as (row: Record<string, unknown>) => unknown)(row);
+      } else if (typeof this.rowKeyLambda === 'function') {
+        return (row: Record<string, unknown>) => (this.rowKeyLambda as (row: Record<string, unknown>) => unknown)(row);
+      } else {
+        return this.rowKey;
+      }
+    },
   },
   watch: {
     tableFilter: function () {
