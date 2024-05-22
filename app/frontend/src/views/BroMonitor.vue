@@ -400,8 +400,8 @@
       v-if="
         loaded &&
         model &&
-        'static_data' in model &&
-        (urlContainsDate() || Object.keys(model.static_data).length === 0)
+        'html' in model &&
+        (urlContainsDate() || Object.keys(model.html).length === 0)
       "
       class="bromonitor row"
     >
@@ -578,15 +578,18 @@ export default defineComponent({
       });
     },
     loadBroMonitor() {
-      const queryDate = this.$props.date;
-      const queryDateTime = queryDate + "T00:00:00";
+      const queryDate = this.$props.date as string;
+      const queryDateTime = queryDate + "T00:00:00.000Z";
 
       const fetchData = async (): Promise<void> => {
-        this.$data.dates = (await getBromonitorDates()).dates.map((date) =>
-          new Date(date).toISOString(),
-        );
-        let fetchMonitor;
-        const index = this.$data.dates.indexOf(queryDateTime);
+        this.$data.dates = (await getBromonitorDates()).dates.map((date) => {
+          const d = new Date(date);
+          return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        });
+
+        let fetchMonitor = async (): Promise<void> => {};
+        const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+        const index = datesWithoutTime.indexOf(queryDate);
 
         // Date is found in the list, fetch that date
         if (queryDate && index != -1) {
