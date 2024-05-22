@@ -548,18 +548,21 @@ export default defineComponent({
       return window.location.href.includes(this.$data.selectedDate || "");
     },
     isOldestMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       return currentIndex == this.$data.dates.length - 1;
     },
     isMostRecentMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       return currentIndex == 0;
     },
     previousMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       const previousMonitorIndex = currentIndex + 1;
       const nextDate = this.$data.dates[previousMonitorIndex].split("T")[0];
       this.$router.push({
@@ -568,8 +571,9 @@ export default defineComponent({
       });
     },
     nextMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       const nextMonitorIndex = currentIndex - 1;
       const nextDate = this.$data.dates[nextMonitorIndex].split("T")[0];
       this.$router.push({
