@@ -7,7 +7,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
 
 from common.config import date_format, logging_format
 from etl.configuration.config import init_registration_types, registration_types
-from etl.load.mongodb.gld_loader import GLDLoader
 from etl.load.mongodb.mongo_helpers import create_indexes
 from etl.load.mongodb.materialized_views import update_materialized_views
 from etl.load.mongodb.geopackage_processor import GeopackageProcessor
@@ -27,18 +26,6 @@ db = client.bro
 try:
     # Init registration types
     init_registration_types()
-
-    # Load GLDS
-    # try:
-    #     gld_loader = GLDLoader()
-    #     gld_loader.load()
-    # except Exception as e:
-    #     log.error(
-    #         f"Exception occured during the processing of XMLS for GLD. Error message: {str(e)}"
-    #     )
-    #     db.source.update_one(
-    #         {"type": "gld"}, {"$set": {"status": "Failed loading"}}, upsert=True
-    #     )
 
     # Process geopackages
     for doc_type in registration_types:
