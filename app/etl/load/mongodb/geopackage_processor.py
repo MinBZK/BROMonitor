@@ -91,11 +91,9 @@ class GeopackageProcessor:
 
             while True:
                 # Construct iterator step-wise using the reflected classes and collections
-                iterator = session.query(c).filter(pk > lastPK).limit(1000) #old version
-                # iterator = select(c).where(pk > lastPK).limit(1000)
+                iterator = session.query(c).filter(pk > lastPK).limit(1000)
                 for load in self.doc_type.join_tables:
                     opts = joinedload(getattr(c, load.table_name))
-                    # opts = joinedload(load.table_name)
                     parent_type = classes[load.table_name[:-11]]
                     children = load.inner_joins
                     while True:
@@ -109,9 +107,7 @@ class GeopackageProcessor:
                             children = child.inner_joins
                             parent_type = classes[child.table_name[:-11]]
                     iterator = iterator.options(opts)
-                # result = session.execute(iterator)
-                elems = iterator.all() #old version
-                # elems = result.scalars().all()
+                elems = iterator.all()
 
                 if len(elems) == 0:
                     break
