@@ -400,8 +400,8 @@
       v-if="
         loaded &&
         model &&
-        'html' in model && 
-        urlContainsDate()
+        'html' in model &&
+        (urlContainsDate() || Object.keys(model.html).length === 0)
       "
       class="bromonitor row"
     >
