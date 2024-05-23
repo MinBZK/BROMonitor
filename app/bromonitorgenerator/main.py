@@ -4,9 +4,6 @@ import os
 from pymongo import MongoClient
 from bs4 import BeautifulSoup
 
-import sys 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from bromonitorgenerator.templates.figure_mapping import figure_mapping, data
 from bromonitorgenerator.utils.start_date import set_start_date
 from bromonitorgenerator.utils.utils import today

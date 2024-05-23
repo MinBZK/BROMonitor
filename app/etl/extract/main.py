@@ -2,9 +2,6 @@ import os
 import logging
 from pymongo import MongoClient
 
-import sys 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-
 from etl.extract.source_processor import process_geopackage
 from common.config import date_format, logging_format
 from etl.configuration.config import init_registration_types, registration_types
