@@ -102,10 +102,10 @@ figure_mapping = {
         "Grondwaterstandonderzoek", "GLD's"
     ),
     "wekelijkse_top20": generate_top20_since_date_as_html(),
-    # "gld_delta": generate_gld_since_date_as_html(),
+    "gld_delta": generate_gld_since_date_as_html(),
     "startdatum": pretty_print_datetime(get_start_date()),
     "startdatum_nieuw": pretty_print_datetime(get_new_start_date()),
-    # "gld_top_20": gld_registrations_and_supplements(),
+    "gld_top_20": gld_registrations_and_supplements(),
     "maandlijkse_bronhouder_table": generate_table_bronhouder_permaand(),
     "bewegend_bronhouders": generate_linechart_bronhouder_permaand(),
     "base_url": os.environ.get("baseUrl", "http://localhost:8080"),
