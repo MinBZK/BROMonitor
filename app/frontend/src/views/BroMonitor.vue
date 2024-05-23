@@ -401,7 +401,7 @@
         loaded &&
         model &&
         'html' in model &&
-        (urlContainsDate() || Object.keys(model.html).length === 0)
+        (urlContainsDate() || is_empty(model.html))
       "
       class="bromonitor row"
     >
@@ -530,6 +530,11 @@ export default defineComponent({
     date: String,
   },
   methods: {
+     is_empty(obj){
+      return JSON.stringify(obj) === ""
+      },
+    
+
     foo(value) {
       console.log(value);
     },
