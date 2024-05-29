@@ -530,13 +530,8 @@ export default defineComponent({
     date: String,
   },
   methods: {
-     is_empty(obj){
+    is_empty(obj){
       return JSON.stringify(obj) === ""
-      },
-    
-
-    foo(value) {
-      console.log(value);
     },
     toTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });

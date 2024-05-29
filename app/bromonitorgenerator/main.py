@@ -10,7 +10,7 @@ from bromonitorgenerator.utils.utils import today
 from common.config import MONGODB_URL
 
 # Load the bromonitor_template html from filesystem
-file_loader = FileSystemLoader(r"app\bromonitorgenerator\templates")
+file_loader = FileSystemLoader("templates")
 env = Environment(loader=file_loader)
 template = env.get_template("bromonitor_template.html")
 

@@ -63,7 +63,8 @@ def process_geopackage(reg_type):
                     unzip_filename = "brobhrgtvolledigeset.gpkg"
                 unzip_location = os.environ.get('unzipLocation', '/mnt/brodata/')                
                 if reg_type.sourceKey == "source_GMW_GMN_GLD":
-                    shutil.copy2(path, unzip_location)
+                    shutil.copy2(path, unzip_location) # run locally
+                    pass
                 else:
                     unzip(path, unzip_location, unzip_filename)
 

@@ -14,3 +14,4 @@ beautifulsoup4==4.12.3
 pytz==2024.1
 xmltodict==0.13.0
 python-dotenv==1.0.1
+pandas==2.2.2

@@ -17,7 +17,7 @@ def adjust_geopackage(metadata, engine):
 
         for layer in layers:
             # Get the list of columns with their data types
-            result = connection.execute(f"PRAGMA table_info({layer});")
+            result = connection.execute(text(f"PRAGMA table_info({layer});"))
             columns = [(column[1], column[2]) for column in result.fetchall()]
 
             primary_keys_dict = {"gm_gmn":"gm_gmn_pk", "gm_gmw":"gm_gmw_pk", "gm_gld":"gm_gld_pk", 
@@ -41,7 +41,7 @@ def adjust_geopackage(metadata, engine):
 
                 # Create the foreign key SQL for the new table
                 if len(foreign_keys) > 0:
-                    foreign_key_sql = ', '.join([f"FOREIGN KEY ({fk}) REFERENCES {fk[:-3]}({fk[:-2]+"pk"})" for fk in foreign_keys])
+                    foreign_key_sql = ', '.join([f"FOREIGN KEY ({fk}) REFERENCES {fk[:-3]}({fk[:-2]}pk)" for fk in foreign_keys])
                 else:
                     foreign_key_sql = ','.join(foreign_keys)
 
@@ -53,25 +53,25 @@ def adjust_geopackage(metadata, engine):
 
                 # Create the new table with the foreign keys
                 if foreign_key_sql:
-                    connection.execute(f"""
+                    connection.execute(text(f"""
                         CREATE TABLE {layer}_new (
                             {column_sql},
                             PRIMARY KEY ({primary_key_sql}),
                             {foreign_key_sql}
                         );
-                    """)
+                    """))
                 # Create the new table without the foreign keys (if there are none)
                 else:
-                    connection.execute(f"""
+                    connection.execute(text(f"""
                         CREATE TABLE {layer}_new (
                             {column_sql},
                             PRIMARY KEY ({primary_key_sql})
                         );
-                    """)
+                    """))
 
-                connection.execute(f"INSERT INTO {layer}_new SELECT {', '.join(name for name, type in columns)} FROM {layer};")
-                connection.execute(f"DROP TABLE {layer};")
-                connection.execute(f"ALTER TABLE {layer}_new RENAME TO {layer};")
+                connection.execute(text(f"INSERT INTO {layer}_new SELECT {', '.join(name for name, type in columns)} FROM {layer};"))
+                connection.execute(text(f"DROP TABLE {layer};"))
+                connection.execute(text(f"ALTER TABLE {layer}_new RENAME TO {layer};"))
     
     metadata.clear()
     metadata.reflect(engine)
