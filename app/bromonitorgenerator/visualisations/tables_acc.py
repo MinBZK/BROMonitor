@@ -30,6 +30,9 @@ def full_to_short(name: str):
         "Grondwatermonitoringput": "GMW",
         "GeotechnischSondeeronderzoek": "CPT",
         "BodemkundigBooronderzoek": "BHR-P",
+        "Grondwatersamenstellingsonderzoek": "GAR",
+        "Grondwatergebruiksysteem": "GUF",
+        "Grondwaterproductiedossier": "GPD",
     }
     if name in d.keys():
         return d[name]
@@ -185,6 +188,9 @@ def table_object_type_map(bronhouder):
                 "GeotechnischBooronderzoek": 0,
                 "Grondwaterstandonderzoek": 0,
                 "Grondwaterstandonderzoek_aangevuld": 0,
+                "Grondwatersamenstellingsonderzoek": 0,
+                "Grondwatergebruiksysteem": 0,
+                "Grondwaterproductiedossier": 0,
             }
             values[i["key"]["type"]] = format_dutch_number(i["count"])
             table_data[i["key"]["naam"]] = values
@@ -204,6 +210,9 @@ def table_object_type_map(bronhouder):
         "GeotechnischBooronderzoek",
         "Grondwaterstandonderzoek",
         "Grondwaterstandonderzoek_aangevuld",
+        "Grondwatersamenstellingsonderzoek",
+        "Grondwatergebruiksysteem",
+        "Grondwaterproductiedossier",
     ]
     df = (
         pd.DataFrame(table_data)
@@ -217,6 +226,9 @@ def table_object_type_map(bronhouder):
                 "GeotechnischBooronderzoek": "BHR-GT",
                 "Grondwaterstandonderzoek": "GLD",
                 "Grondwaterstandonderzoek_aangevuld": "GLD met meting",
+                "Grondwatersamenstellingsonderzoek": "GAR",
+                "Grondwatergebruiksysteem": "GUF",
+                "Grondwaterproductiedossier": "GPD",
             }
         )
     )

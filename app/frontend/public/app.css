@@ -43,7 +43,7 @@ body {
 }
 
 h1 {
-  color: #01689b;
+  color: #01689b !important;
   font-size: 2.02729rem !important;
   line-height: 1.23318 !important;
   margin-bottom: 0 !important;
@@ -432,13 +432,6 @@ table th,
   background: #eef7fb80; /* light shade */
   border: 3px solid white;
   padding: 5px 10px;
-}
-
-.dataframe td {
-  -webkit-hyphens: manual;
-  -moz-hyphens: manual;
-  -ms-hyphens: manual;
-  hyphens: manual;
 }
 
 table th,

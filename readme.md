@@ -2,9 +2,9 @@
 De app is een dashboard/webapplicatie om inzicht te verkrijgen in de data uit de BRO. Dit is een handleiding om de code lokaal werkend te krijgen op Windows en Linux
 
 ## Benodigdheden
-- Python 3.8
+- Python 3.12.2
 - Docker of MongoDb (min 4.2.12) + eventueel mongoDb compass 
-- Node.js
+- Node.js 20.12.0
 
 ## Python virtual environment aanmaken
 - Maak een virtual environment aan voor het project met `python3 -m venv PAD`

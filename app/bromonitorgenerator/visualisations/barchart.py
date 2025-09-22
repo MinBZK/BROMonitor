@@ -24,12 +24,12 @@ def generate_barchart():
         map(lambda x: document_type_dict[x["key"]], data)),
         y=list(
         map(lambda x: x["count"], data)),
-        texttemplate="%{value:,f}",
+        texttemplate="%{value:.0f}",
         textposition='auto'
     )])
     fig.update_layout(
         separators=',.',
-        yaxis_tickformat=',f',
+        yaxis_tickformat='.0f',
         autosize=True,
         plot_bgcolor='rgba(0,0,0,0)',
         margin=dict(l=20, r=20, t=20, b=20),

@@ -92,9 +92,18 @@ def __object_type_dataframe(data_docs):
             d.append((k, "GLD"))
         elif "Grondwatermonitoringput" in v or "GeotechnischSondeeronderzoek" in v:
             d.append((k, "CPT+GMW"))
+        elif "Grondwatersamenstellingsonderzoek" in v:
+            d.append((k, "GAR"))
+        elif "Grondwatergebruiksysteem" in v:
+            d.append((k, "GUF"))
+        elif "Grondwaterproductiedossier" in v:
+            d.append((k, "GPD"))
+        elif "GeotechnischBooronderzoek" in v:
+            d.append((k, "BHR-GT"))
         else:
             d.append((k, "Geen"))
     return pd.DataFrame(d, columns=["statcode", "types"])
+
 
 
 def __object_type_map(geojson, bronhouder):

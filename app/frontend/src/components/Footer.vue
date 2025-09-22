@@ -4,7 +4,7 @@
       <div :class="cssOverride">
         <nav id="footer-menu">
           <div>
-            <h2 style="color: white !important;">{{ $t("footer.over") }}</h2>
+            <h2 style="color: white !important">{{ $t("footer.over") }}</h2>
           </div>
           <ul>
             <li>
@@ -45,7 +45,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   props: {

@@ -1,9 +1,9 @@
 <template>
   <q-table
     class="col-12"
-    :data="tableData"
+    :rows="tableData"
     :columns="tableColumns"
-    :row-key="rowKey ? rowKey : rowKeyLambda ? rowKeyLambda : {}"
+    :row-key="computedRowKey"
     separator="horizontal"
     :filter="filter"
     :filter-method="filterMethod"
@@ -46,7 +46,7 @@
         options-dense
         :aria-label="`records per pagina: ${scope.pagination.rowsPerPage}`"
         :options="[5, 10, 15, 20, 25, 50, 0]"
-        :option-label="item => (item === 0 ? 'Alle' : item)"
+        :option-label="(item) => (item === 0 ? 'Alle' : item)"
       />
       <span>
         {{
@@ -59,14 +59,14 @@
         {{
           Math.min(
             scope.pagination.page * scope.pagination.rowsPerPage,
-            filter ? filteredRowCount : tableData.length
+            filter ? filteredRowCount : (tableData ? tableData.length : 0),
           ).toLocaleString("nl-NL")
         }}
         van
         {{
           filter
             ? filteredRowCount.toLocaleString("nl-NL")
-            : tableData.length.toLocaleString("nl-NL")
+            : (tableData ? tableData.length : 0).toLocaleString("nl-NL")
         }}
       </span>
       <q-btn
@@ -114,17 +114,21 @@
         aria-label="Ga naar laatste pagina"
       ></q-btn>
     </template>
-    <template v-for="(_, slot) of $scopedSlots" v-slot:[slot]="scope">
+    <template v-for="(_, slot) of $slots" v-slot:[slot]="scope">
       <slot :name="slot" v-bind="scope" />
     </template>
   </q-table>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import { downloadTable } from "@/services/downloadService";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+interface BmTableRef {
+  filteredSortedRows: unknown[];
+}
+
+export default defineComponent({
   data() {
     const filter = "";
     const pagination = {};
@@ -132,47 +136,92 @@ export default Vue.extend({
     return { filter, pagination, filteredRowCount };
   },
   props: {
-    tableData: Array,
-    tableColumns: Array,
+    tableData: {
+      type: Array as () => Array<{
+        kvk: string;
+        naam: string;
+        identifiers: string;
+        cpt: number;
+        gmw: number;
+        gld: number;
+        gldAangevuld: number;
+        gmn: number;
+        sfr: number;
+        bhrgt: number;
+        bhrp: number;
+      }>,
+      default: () => [],
+    },
+    tableColumns: {
+      type: Array as () => Array<{
+        name: string;
+        label: string;
+        field: string;
+        align: "left" | "right" | "center";
+        sortable: boolean;
+      }>,
+      default: () => [],
+    },
     tableFilter: String,
-    rowKey: String,
-    rowKeyLambda: Function,
+    rowKey: {
+      type: [String, Function],
+      default: undefined,
+    },
+    rowKeyLambda: {
+      type: Function,
+      default: undefined,
+    },
     downloadable: { default: true, type: Boolean },
     downloadFileName: { default: "table-export", type: String },
     searchable: { default: true, type: Boolean },
-    rowClickHandler: Function
+    rowClickHandler: Function,
+  },
+  computed: {
+    computedRowKey() {
+      if (typeof this.rowKey === 'function') {
+        return (row: Record<string, unknown>) => (this.rowKey as (row: Record<string, unknown>) => unknown)(row);
+      } else if (typeof this.rowKeyLambda === 'function') {
+        return (row: Record<string, unknown>) => (this.rowKeyLambda as (row: Record<string, unknown>) => unknown)(row);
+      } else {
+        return this.rowKey;
+      }
+    },
   },
   watch: {
-    tableFilter: function(newVal, oldVal) {
+    tableFilter: function () {
       this.initiateFilter();
-    }
+    },
   },
   methods: {
-    download(data: any, columns: any) {
+    download(data: unknown, columns: unknown) {
       downloadTable(
-        (this.$refs.bmTable as any).filteredSortedRows,
+        (this.$refs.bmTable as BmTableRef).filteredSortedRows,
         columns,
-        this.$props.downloadFileName
+        this.$props.downloadFileName,
       );
     },
     initiateFilter() {
-      this.$data.filter = this.$props.tableFilter;
+      this.$data.filter = this.$props.tableFilter || "";
     },
     filterMethod(rows, terms) {
       // Checks if any of the columns of a row contain the filtered term.
       const lowerTerms = terms ? terms.toLowerCase() : "";
-      const columns = this.$props.tableColumns.map(x => x.field);
-      const filteredRows = rows.filter(row =>
-        columns.some(col => (row[col] + "").toLowerCase().includes(lowerTerms))
+      const columns = this.$props.tableColumns
+        ? (this.$props.tableColumns as { field: string }[]).map((x) => x.field)
+        : [];
+      const filteredRows = rows.filter((row) =>
+        columns.some((col) =>
+          (row[col] + "").toLowerCase().includes(lowerTerms),
+        ),
       );
       this.$data.filteredRowCount = filteredRows.length;
       return filteredRows;
-    }
+    },
   },
   beforeMount() {
     if (this.$props.tableFilter) {
       this.initiateFilter();
     }
-  }
+  },
 });
 </script>

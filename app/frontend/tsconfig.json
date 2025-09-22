@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -14,7 +16,8 @@
     "baseUrl": ".",
     "resolveJsonModule": true,
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "vue-i18n"
     ],
     "paths": {
       "@/*": [

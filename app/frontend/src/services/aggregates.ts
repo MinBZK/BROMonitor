@@ -13,49 +13,64 @@ interface DocumentCount {
   bhrgt: number;
   gmn: number;
   gld: number;
+  gar: number;
+  guf: number;
+  gpd: number;
   gldAangevuld: number;
 }
 
 export function brondocumentCountPerBronhouder(
   data: PerBronhouderCountAggregate[]
 ): BronhouderDocumentCount[] {
-  const aggregate: { [kvk: string]: DocumentCount } = data.reduce((agg, e) => {
-    const r =
-      agg[e.key.kvk] ||
-      ({
-        cpt: 0,
-        gmw: 0,
-        bhrp: 0,
-        sfr: 0,
-        bhrgt: 0,
-        gmn: 0,
-        gld: 0,
-        gldAangevuld: 0,
-        naam: e.key.naam,
-        identifier: e.key.identifier,
-      } as DocumentCount);
+  const aggregate: { [kvk: string]: DocumentCount } = data.reduce(
+    (agg, e) => {
+      const r =
+        agg[e.key.kvk] ||
+        ({
+          cpt: 0,
+          gmw: 0,
+          bhrp: 0,
+          sfr: 0,
+          bhrgt: 0,
+          gmn: 0,
+          gld: 0,
+          gar: 0,
+          guf: 0,
+          gpd: 0,
+          gldAangevuld: 0,
+          naam: e.key.naam,
+          identifier: e.key.identifier,
+        } as DocumentCount);
 
-    if (e.key.type === "GeotechnischSondeeronderzoek") {
-      r.cpt = e.count;
-    } else if (e.key.type === "Grondwatermonitoringput") {
-      r.gmw = e.count;
-    } else if (e.key.type === "BodemkundigBooronderzoek") {
-      r.bhrp = e.count;
-    } else if (e.key.type === "BodemkundigWandonderzoek") {
-      r.sfr = e.count;
-    } else if (e.key.type === "GeotechnischBooronderzoek") {
-      r.bhrgt = e.count;
-    } else if (e.key.type === "Grondwatermonitoringnet") {
-      r.gmn = e.count;
-    } else if (e.key.type === "Grondwaterstandonderzoek") {
-      r.gld = e.count;
-    } else if (e.key.type === "Grondwaterstandonderzoek_aangevuld") {
-      r.gldAangevuld = e.count;
-    }
+      if (e.key.type === "GeotechnischSondeeronderzoek") {
+        r.cpt = e.count;
+      } else if (e.key.type === "Grondwatermonitoringput") {
+        r.gmw = e.count;
+      } else if (e.key.type === "BodemkundigBooronderzoek") {
+        r.bhrp = e.count;
+      } else if (e.key.type === "BodemkundigWandonderzoek") {
+        r.sfr = e.count;
+      } else if (e.key.type === "GeotechnischBooronderzoek") {
+        r.bhrgt = e.count;
+      } else if (e.key.type === "Grondwatermonitoringnet") {
+        r.gmn = e.count;
+      } else if (e.key.type === "Grondwaterstandonderzoek") {
+        r.gld = e.count;
+      } else if (e.key.type === "Grondwaterstandonderzoek_aangevuld") {
+        r.gldAangevuld = e.count;
+      } else if (e.key.type === "Grondwatersamenstellingsonderzoek") {
+        r.gar = e.count;
+      } else if (e.key.type === "Grondwatergebruiksysteem") {
+        r.guf = e.count;
+      } else if (e.key.type === "Grondwaterproductiedossier") {
+        r.gpd = e.count;
+      }
 
-    agg[e.key.kvk] = r;
-    return agg;
-  }, {} as { [kvk: string]: DocumentCount });
+      agg[e.key.kvk] = r;
+      return agg;
+    },
+    {} as { [kvk: string]: DocumentCount }
+  );
 
   return Object.keys(aggregate).map(
     (k) =>
@@ -71,6 +86,9 @@ export function brondocumentCountPerBronhouder(
         gmn: aggregate[k].gmn,
         gld: aggregate[k].gld,
         gldAangevuld: aggregate[k].gldAangevuld,
-      } as BronhouderDocumentCount)
+        gar: aggregate[k].gar,
+        guf: aggregate[k].guf,
+        gpd: aggregate[k].gpd,
+      }) as BronhouderDocumentCount
   );
 }

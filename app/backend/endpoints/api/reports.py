@@ -40,7 +40,6 @@ async def document_count_by_bronhouder(
         bronhoudertype, gldstatus, db, only_bronhouders=only_bronhouders
     )
 
-
 @router.get(
     "/kwaliteitsregimes-per-bronhouder",
     response_model=DataModel,

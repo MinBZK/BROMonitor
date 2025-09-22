@@ -69,8 +69,8 @@ class BronhouderScraper:
     def __process_kvk(self, kvk_element):
         name = kvk_element.split("|")[0].strip()
         kvk = kvk_element.split("|")[-1].strip().split("\n")[0]
-        if len(kvk) != 8:
-            self.logger.warning(f"Scraped invalid KVK: {kvk}")
+        # if len(kvk) != 8:
+        #     self.logger.warning(f"Scraped invalid KVK: {kvk}")
         is_bronhouder = kvk_element.find("strong")
         if is_bronhouder != -1:
             return kvk

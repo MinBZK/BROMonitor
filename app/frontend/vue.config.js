@@ -1,8 +1,10 @@
 const path = require("path");
+const webpack = require("webpack");
+
 module.exports = {
   pluginOptions: {
     quasar: {
-      importStrategy: "manual",
+      importStrategy: "combined",
       rtlSupport: false,
     },
   },
@@ -37,5 +39,22 @@ module.exports = {
         },
       })
       .end();
+  },
+  configureWebpack: {
+    plugins: [
+      new webpack.DefinePlugin({
+        __VUE_OPTIONS_API__: JSON.stringify(true),
+        __VUE_PROD_DEVTOOLS__: JSON.stringify(false),
+        __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: JSON.stringify(true),
+      }),
+    ],
+    resolve: {
+      fallback: {
+        stream: require.resolve("stream-browserify"),
+      },
+      alias: {
+        'vue-i18n': 'vue-i18n/dist/vue-i18n.runtime.esm-bundler.js'
+      }
+    },
   },
 };

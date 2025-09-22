@@ -82,6 +82,9 @@ figure_mapping = {
     "gmn_jaren": generate_line_graph("Grondwatermonitoringnet"),
     "gmw_jaren": generate_line_graph("Grondwatermonitoringput"),
     "gld_jaren": generate_line_graph("Grondwaterstandonderzoek"),
+    "guf_jaren": generate_line_graph("Grondwatergebruiksysteem"),
+    "gpd_jaren": generate_line_graph("Grondwaterproductiedossier"),
+    "gar_jaren": generate_line_graph("Grondwatersamenstellingsonderzoek"),
     "cpt_jaren_tabel": generate_line_graph_table(
         "GeotechnischSondeeronderzoek", "CPT's"
     ),
@@ -101,6 +104,12 @@ figure_mapping = {
     "gld_jaren_tabel": generate_line_graph_table(
         "Grondwaterstandonderzoek", "GLD's"
     ),
+    "gar_jaren_tabel": generate_line_graph_table(
+        "Grondwatersamenstellingsonderzoek", "GAR's"
+    ),
+    "guf_jaren_tabel": generate_line_graph_table("Grondwatergebruiksysteem", "GUF's"
+    ),
+    "gpd_jaren_tabel": generate_line_graph_table("Grondwaterproductiedossier", "GPD's"),
     "wekelijkse_top20": generate_top20_since_date_as_html(),
     "gld_delta": generate_gld_since_date_as_html(),
     "startdatum": pretty_print_datetime(get_start_date()),

@@ -10,7 +10,7 @@ from bromonitorgenerator.utils.utils import today
 from common.config import MONGODB_URL
 
 # Load the bromonitor_template html from filesystem
-file_loader = FileSystemLoader("templates")
+file_loader = FileSystemLoader(r"templates")
 env = Environment(loader=file_loader)
 template = env.get_template("bromonitor_template.html")
 
@@ -30,7 +30,8 @@ for div in soup.find_all("div", {"class": "bromonitor-link-toelichting"}):
 output_archive = {"date": today(), "html": str(soup), "most_recent": False}
 
 # Mongodb connection
-client = MongoClient(MONGODB_URL)
+mongoUrl = os.environ.get('mongodbUrl')
+client = MongoClient(mongoUrl)
 db = client.bro
 
 # Insert fully generated archive html into mongo

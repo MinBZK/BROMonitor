@@ -46,22 +46,14 @@ def init_registration_types():
     gmw = RegistrationTypeConfig(
         type_name="gmw",
         full_name="Grondwatermonitoringput",
-        main_table="gmw_monitoring_well",
-        pk_col="monitoring_well_id",
+        main_table="gm_gmw",
+        pk_col="gm_gmw_pk",
         mongo_collection="specificGMW",
-        sourceKey="sourceGMW",
+        sourceKey="source_GMW_GMN_GLD",
     )
     gmw.set_join_tables(
         [
-            JoinTableDefinition(
-                "gmw_monitoring_tube_collection",
-                [
-                    JoinTableDefinition(
-                        "gmw_geo_ohm_cable_collection",
-                        [JoinTableDefinition("gmw_electrode_collection", [])],
-                    )
-                ],
-            )
+            JoinTableDefinition("gm_gmw_monitoringtube_collection",[])
         ]
     )
     registration_types.append(gmw)
@@ -85,20 +77,75 @@ def init_registration_types():
     )
     registration_types.append(sfr)
 
+    # Init gar
+    gar = RegistrationTypeConfig(
+        type_name="gar",
+        full_name="Grondwatersamenstellingsonderzoek",
+        main_table="groundwater_analysis_report",
+        pk_col="groundwater_analysis_report_pk",
+        mongo_collection="specificGAR",
+        sourceKey="sourceGAR",
+    )
+    gar.set_registration_history_table("registrationHistoryCollection")
+    gar.set_join_tables(
+        [
+            JoinTableDefinition("registration_history_collection", []),
+        ]
+    )
+    registration_types.append(gar)
+
+
+    # Init guf
+    guf = RegistrationTypeConfig(
+        type_name="guf",
+        full_name="Grondwatergebruiksysteem",
+        main_table="groundwater_usage_facility",
+        pk_col="groundwater_usage_facility_pk",
+        mongo_collection="specificGUF",
+        sourceKey="sourceGUF",
+    )
+    guf.set_registration_history_table("registrationHistoryCollection")
+    guf.set_join_tables(
+        [
+            JoinTableDefinition("registration_history_collection", []),
+        ]
+    )
+    registration_types.append(guf)
+
+    # Init gpd
+    gpd = RegistrationTypeConfig(
+        type_name="gpd",
+        full_name="Grondwaterproductiedossier",
+        main_table="groundwater_production_dossier",
+        pk_col="groundwater_production_dossier_pk",
+        mongo_collection="specificGPD",
+        sourceKey="sourceGPD",
+    )
+    gpd.set_registration_history_table("registrationHistoryCollection")
+    gpd.set_join_tables(
+        [
+            JoinTableDefinition("registration_history_collection", []),
+        ]
+    )
+    registration_types.append(gpd)
+
+    
     # Init cpt
     cpt = RegistrationTypeConfig(
         type_name="cpt",
         full_name="GeotechnischSondeeronderzoek",
-        main_table="cpt_geotechnical_survey",
-        pk_col="geotechnical_survey_id",
+        main_table="geotechnical_cpt_survey",
+        pk_col="geotechnical_cpt_survey_pk",
         mongo_collection="specificCPT",
         sourceKey="sourceCPT",
     )
+    cpt.set_registration_history_table("registrationHistoryCollection")
     cpt.set_join_tables(
         [
+            JoinTableDefinition("registration_history_collection", []),
             JoinTableDefinition(
-                "cpt_cone_penetrometer_survey_collection",
-                [JoinTableDefinition("cpt_cone_penetration_test_collection", [])],
+                "cone_penetrometer_survey_collection",
+                [JoinTableDefinition("cone_penetration_test_collection", [])],
             )
         ]
     )
@@ -147,19 +194,27 @@ def init_registration_types():
     gmn = RegistrationTypeConfig(
         type_name="gmn",
         full_name="Grondwatermonitoringnet",
-        main_table="groundwater_monitoring_net",
-        pk_col="groundwater_monitoring_net_pk",
+        main_table="gm_gmn",
+        pk_col="gm_gmn_pk",
         mongo_collection="specificGMN",
-        sourceKey="sourceGMN",
+        sourceKey="source_GMW_GMN_GLD",
     )
-    gmn.set_registration_history_table("registrationHistoryCollection")
     gmn.set_join_tables(
         [
-            JoinTableDefinition("registration_history_collection", []),
             JoinTableDefinition(
-                "measuring_point_with_history_collection",
-                [JoinTableDefinition("groundwater_monitoring_tube_collection", [])],
+                "gm_gmn_measuringpoint_collection",[]
             ),
         ]
     )
     registration_types.append(gmn)
+
+    # Init gld
+    gld = RegistrationTypeConfig(
+        type_name="gld",
+        full_name="Grondwaterstandonderzoek",
+        main_table="gm_gld",
+        pk_col="gm_gld_pk",
+        mongo_collection="specificGLD",
+        sourceKey="source_GMW_GMN_GLD",
+    )
+    registration_types.append(gld)

@@ -23,8 +23,8 @@ dist
 *__pycache__
 *split
 *cpt
+*data
 geotop_dump.csv
-package-lock.json
 statepickle
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
@@ -36,8 +36,13 @@ statepickle
 .env
 .idea
 env/
-app/frontend/package-lock.json
-reports
 .coverage
-PAD/
-app/etl/extract/bronhouders.pickle
+brovenv/
+*.zip
+*.gpkg
+*.gpkg-shm
+*.gpkg-wal
+backendvenv
+etlvenv
+generatorvenv
+brovenv

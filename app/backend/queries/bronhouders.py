@@ -55,9 +55,9 @@ async def get_brondocumenten_count_by_bronhouder(
         bh_filter = {"type": bronhoudertype}
     else:
         bh_filter = {}
-
+    
     bronhoudersDict = await get_bronhouders_kvk_dic(conn, bh_filter, True)
-
+    
     # add the bronhouders with documents
     cursorDocumentCounts = conn.bro.documentCountsByBronhouder.find()
     async for row in cursorDocumentCounts:
@@ -73,8 +73,7 @@ async def get_brondocumenten_count_by_bronhouder(
                     ),
                     count=row["count"],
                 )
-            )
-
+            )                  
     # check if gld should be added and glds with status aangevuld
     if gldstatus:
         # add the bronhouders with glds

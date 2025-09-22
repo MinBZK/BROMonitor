@@ -1,113 +1,282 @@
 <template>
   <q-page>
     <spinner :loaded="loaded" />
-    <div
-      v-if="
-        loaded &&
-          !urlContainsDate() &&
-          Object(model).hasOwnProperty('static_data') &&
-          Object.keys(model.static_data).length > 0
-      "
-      @click="handleClick"
-    >
-      <h1 style="color: red">{{ model.static_data["datumstempel"] }}</h1>
+    <div v-if="
+      loaded &&
+      !urlContainsDate() &&
+      model &&
+      'static_data' in model &&
+      Object(model).hasOwnProperty('static_data') &&
+      Object.keys(model.static_data).length > 0
+    " @click="handleClick">
+      <h1 class="red-text">
+        {{
+          model && "static_data" in model && model.static_data["datumstempel"]
+        }}
+      </h1>
       <p>Klik op een regel voor meer informatie.</p>
-      <div v-for="sectionKey in Object.keys(monitorItems)" :key="sectionKey">
-        <q-separator class="divider" />
-        <h2 tabindex="-1">{{ sectionKey }}</h2>
-        <bro-monitor-item
-          v-for="(mI, index) in monitorItems[sectionKey]"
-          :sectionSideValue="mI['sectionSideValue']"
-          :contentSelectors="mI['contentSelectors']"
-          :title="mI['title']"
-          :id="mI['id']"
-          :model="model"
-          :tabIndex="index"
-          :iconName="mI['iconName']"
-          :key="mI.item"
-          :mapContent="mI['mapContent']"
-        />
-      </div>
-
+      <q-separator class="divider" />
+      <h2>Afgelopen week</h2>
+      <q-expansion-item id="expansion-item-actieve-bronhouders" dense v-model="actieveBronhoudersExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="actieveBronhoudersExpanded.toString()" aria-label="Open">
+            <q-icon name="timeline" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Actieve bronhouders</h3>
+          </q-item-section>
+          <q-item-section side>
+            <b>
+              {{
+                model &&
+                "static_data" in model &&
+                model.static_data["aantal_bronhouders"]
+              }}
+            </b>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <div v-if="model && 'static' in model" v-html="model.static['animatie-graph-bronhouders']"></div>
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item id="expansion-item-aantal-registraties" v-model="aantalRegistratiesExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="aantalRegistratiesExpanded.toString()" aria-label="Open">
+            <q-icon name="bar_chart" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Aantal registraties</h3>
+          </q-item-section>
+          <q-item-section side>
+            <b>
+              {{
+                model &&
+                "static_data" in model &&
+                model.static_data["aantal_registraties"]
+              }}
+            </b>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <div v-if="model && 'static' in model" v-html="model.static['registratieobjecten-afgelopenweek-staaf']">
+            </div>
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item id="expansion-item-uitgelicht" v-model="gldExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="gldExpanded.toString()" aria-label="Open">
+            <q-icon name="table_view" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Waarvan GLD</h3>
+          </q-item-section>
+          <q-item-section side>
+            <b>
+              {{
+                model &&
+                "static_data" in model &&
+                model.static_data["aantal_glds"]
+              }}
+            </b>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <div v-if="model && 'static' in model" v-html="model.static['glds-week']"></div>
+            <br />
+            <div v-if="model && 'static' in model" v-html="model.static['glds-top-20']"></div>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <q-separator class="divider" />
+      <h2 style="padding-top: 20px">Op de landkaart</h2>
+      <q-expansion-item id="expansion-item-registratieobjecten-gemeenten" v-model="gemeentenExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="gemeentenExpanded.toString()" aria-label="Open">
+            <q-icon name="map" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Gemeenten</h3>
+          </q-item-section>
+          <q-item-section side>
+            <b>
+              {{
+                model &&
+                "static_data" in model &&
+                model.static_data["aantal_gemeenten"][0]
+              }}
+            </b>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <base-map-svg bronhouderType="Gemeente" headerVariable="gemeenten" geojsonFile="gemeentegrenzen.json"
+              overlayMode="objecttypen" v-if="model && 'static' in model" :staticContent="model.static"
+              :dataTypen="model.static_data['data_gemeente_typen']"
+              :dataRegimes="model.static_data['data_gemeente_regimes']" />
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item id="expansion-item-registratieobjecten-provincies" v-model="provinciesExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="provinciesExpanded.toString()" aria-label="Open">
+            <q-icon name="map" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Provincies</h3>
+          </q-item-section>
+          <q-item-section side>
+            <b>
+              {{
+                model &&
+                "static_data" in model &&
+                model.static_data["aantal_provincies"][0]
+              }}
+            </b>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <base-map-svg class="bromonitor-element" bronhouderType="Provincie" headerVariable="provincies"
+              geojsonFile="provinciegrenzen.json" overlayMode="objecttypen" v-if="model && 'static' in model"
+              :staticContent="model.static" :dataTypen="model.static_data['data_provincie_typen']"
+              :dataRegimes="model.static_data['data_provincie_regimes']" />
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item id="expansion-item-registratieobjecten-waterschappen" v-model="waterschappenExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="waterschappenExpanded.toString()" aria-label="Open">
+            <q-icon name="map" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Waterschappen</h3>
+          </q-item-section>
+          <q-item-section side>
+            <b>
+              {{
+                model &&
+                "static_data" in model &&
+                model.static_data["aantal_waterschappen"][0]
+              }}
+            </b>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <base-map-svg bronhouderType="Waterschap" headerVariable="waterschappen"
+              geojsonFile="waterschapsgrenzen.json" overlayMode="objecttypen" v-if="model && 'static' in model"
+              :staticContent="model.static" :dataTypen="model.static_data['data_waterschap_typen']"
+              :dataRegimes="model.static_data['data_waterschap_regimes']" />
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <q-separator class="divider" />
       <h2>En verder</h2>
-
-      <bro-monitor-item
-        :contentSelectors="['top20-registratieobjecten']"
-        title="Top-20"
-        id="expansion-item-top-20"
-        :model="model"
-        iconName="table_view"
-      />
-
-      <bro-monitor-item
-        title="Trends"
-        id="expansion-item-trends"
-        :model="model"
-        iconName="timeline"
-      >
-        <template v-slot:expanded-content>
-          <p>Trends per gegevenstype in de BRO.</p>
-          <div id="select-trends-wrapper">
-            <label for="select-trends">Selecteer een ander type:</label>
-            <select
-              v-model="optionSelected"
-              name="select-trends"
-              class="select-trends"
-              @change="changedObjecttype"
-            >
-              <option
-                v-for="opt in trendOptions"
-                :key="opt.value"
-                :value="opt.value"
-              >
-                {{ opt.label }}
-              </option>
-            </select>
-          </div>
-
-          <div v-html="model.static['bhrp-per-jaar-lijn']"></div>
-          <div v-html="model.static['cpt-per-jaar-lijn']"></div>
-          <div v-html="model.static['gmw-per-jaar-lijn']"></div>
-          <div v-html="model.static['sfr-per-jaar-lijn']"></div>
-          <div v-html="model.static['bhrgt-per-jaar-lijn']"></div>
-          <div v-html="model.static['gmn-per-jaar-lijn']"></div>
-          <div v-html="model.static['gld-per-jaar-lijn']"></div>
+      <q-expansion-item id="expansion-item-top-20" v-model="top20Expanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="top20Expanded.toString()" aria-label="Open">
+            <q-icon name="table_view" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Top-20</h3>
+          </q-item-section>
         </template>
-      </bro-monitor-item>
+        <q-card>
+          <q-card-section>
+            <div v-if="model && 'static' in model" v-html="model.static['top20-registratieobjecten']"></div>
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item id="expansion-item-trends" v-model="trendsExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="trendsExpanded.toString()" aria-label="Open">
+            <q-icon name="timeline" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Trends</h3>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <p>Trends per gegevenstype in de BRO.</p>
+            <div id="select-trends-wrapper">
+              <label for="select-trends">Selecteer een ander type:</label>
+              <select v-model="optionSelected" name="select-trends" class="select-trends" @change="changedObjecttype">
+                <option v-for="opt in trendOptions" :key="opt.value" :value="opt.value">
+                  {{ opt.label }}
+                </option>
+              </select>
+            </div>
 
-      <bro-monitor-item
-        :contentSelectors="['registratieobjecten-staaf']"
-        title="Stand"
-        id="expansion-item-stand"
-        :model="model"
-        iconName="bar_chart"
-        :sectionSideValue="model.static_data['totaal_aantal_objecten']"
-      />
-
-      <bro-monitor-item
-        :contentSelectors="['actualiteit']"
-        title="Actualiteit van de gegevens"
-        id="expansion-item-actualiteit"
-        :model="model"
-        iconName="source"
-      />
-
+            <div v-if="model && 'static' in model && model.static[optionSelected]"
+              v-html="model.static[optionSelected]">
+            </div>
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item id="expansion-item-stand" v-model="standExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="standExpanded.toString()" aria-label="Open">
+            <q-icon name="bar_chart" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Stand</h3>
+          </q-item-section>
+          <q-item-section side>
+            <b>
+              {{
+                model &&
+                "static_data" in model &&
+                model.static_data["totaal_aantal_objecten"]
+              }}
+            </b>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <div v-if="model && 'static' in model" v-html="model.static['registratieobjecten-staaf']"></div>
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item id="expansion-item-trends" v-model="actualiteitExpanded">
+        <template v-slot:header>
+          <q-item-section avatar role="button" :aria-expanded="actualiteitExpanded.toString()" aria-label="Open">
+            <q-icon name="source" color="primary" size="24px" />
+          </q-item-section>
+          <q-item-section>
+            <h3>Actualiteit van de gegevens</h3>
+          </q-item-section>
+        </template>
+        <q-card>
+          <q-card-section>
+            <div v-if="model && 'static' in model" v-html="model.static['actualiteit']"></div>
+            <br />
+          </q-card-section>
+          <hr role="presentation" />
+        </q-card>
+      </q-expansion-item>
       <div class="row justify-center">
-        <img
-          style="width: 48px !important"
-          alt="BRO Logo"
-          :src="require('@/assets/bro_logo.png').default"
-        />
+        <img style="width: 48px !important" alt="BRO Logo" :src="require('@/assets/bro_logo.png')" />
       </div>
     </div>
-    <div
-      v-if="
-        loaded &&
-          (urlContainsDate() || Object.keys(model.static_data).length === 0)
-      "
-      class="bromonitor row"
-    >
+    <div v-if="
+      loaded &&
+      model &&
+      'html' in model &&
+      (urlContainsDate() || is_empty(model.html))
+    " class="bromonitor row">
       <div>
         <div class="text-primary" id="bromonitor-navigation">
           <a v-if="!isOldestMonitor()" href="#" @click="previousMonitor()">
@@ -120,30 +289,16 @@
           </router-link>
           |
           <a v-if="!isMostRecentMonitor()" href="#" @click="nextMonitor()">
-            volgende &gt;</a
-          >
+            volgende &gt;</a>
           <span class="archive-link-inactive" v-else> volgende</span>
         </div>
-        <div
-          id="archive-monitor"
-          v-html="model.html"
-          ref="monitor-html"
-          @click="handleClick"
-        ></div>
+        <div id="archive-monitor" v-if="model && 'html' in model" v-html="model.html" ref="monitor-html"
+          @click="handleClick"></div>
       </div>
     </div>
-    <q-page-sticky
-      position="bottom-right"
-      :offset="[18, 18]"
-      v-show="scY > 150"
-    >
-      <q-btn
-        @click="toTop()"
-        icon="vertical_align_top"
-        aria-label="Ga naar de bovenkant van de pagina"
-        color="primary"
-        fab
-      />
+    <q-page-sticky position="bottom-right" :offset="[18, 18]" v-show="scY > 150">
+      <q-btn @click="toTop()" icon="vertical_align_top" aria-label="Ga naar de bovenkant van de pagina" color="primary"
+        fab />
     </q-page-sticky>
   </q-page>
 </template>
@@ -153,7 +308,6 @@ import {
   getBromonitorRecent,
   getBromonitorDates,
 } from "@/api/bromonitor";
-import Vue from "vue";
 
 import {
   documentTypeLegendData,
@@ -161,18 +315,13 @@ import {
 } from "@/utils/legendData";
 import LegendTable from "@/components/LegendTable.vue";
 import BaseMapSvg from "@/views/reports/bronhoudermaps/BaseMapSvg.vue";
-import {
-  BromonitorModel,
-  BromonitorModelRecent,
-  BroMonitorItemModel,
-} from "@/models/aggregate";
-import BroMonitorItem from "@/views/BroMonitorItem.vue";
+import { BromonitorModel, BromonitorModelRecent } from "@/models/aggregate";
+import { defineComponent } from "vue";
 
-export default Vue.extend({
+export default defineComponent({
   components: {
     LegendTable,
     BaseMapSvg,
-    BroMonitorItem,
   },
   data() {
     const dateOptions = {
@@ -182,12 +331,9 @@ export default Vue.extend({
       day: "numeric",
     };
     const loaded = false;
-    const model: BromonitorModel | BromonitorModelRecent = {
-      date: "",
-      html: "",
-    };
-    const dates = [];
-    const selectedDate = null;
+    // const model: BromonitorModel | BromonitorModelRecent | null = null;
+    // const dates = [];
+    // const selectedDate = null;
     const objectLegendData = documentTypeLegendData;
     const regimeLegendData = qualityRegimeLegendData;
     const optionSelected = "cpt-per-jaar-lijn";
@@ -199,118 +345,56 @@ export default Vue.extend({
       { label: "GMW", value: "gmw-per-jaar-lijn" },
       { label: "GLD", value: "gld-per-jaar-lijn" },
       { label: "SFR", value: "sfr-per-jaar-lijn" },
+      { label: "GAR", value: "gar-per-jaar-lijn" },
+      { label: "GUF", value: "guf-per-jaar-lijn" },
+      { label: "GPD", value: "gpd-per-jaar-lijn" }
     ];
     const scTimer = 0;
     const scY = 0;
-
+    // Separate v-models for each accordeon to manage aria-expanded labelling.
+    const actieveBronhoudersExpanded = false;
+    const aantalRegistratiesExpanded = false;
+    const gldExpanded = false;
+    const gemeentenExpanded = false;
+    const provinciesExpanded = false;
+    const waterschappenExpanded = false;
+    const top20Expanded = false;
+    const trendsExpanded = false;
+    const standExpanded = false;
+    const actualiteitExpanded = false;
     return {
       dateOptions,
-      dates,
-      selectedDate,
+      dates: [] as string[],
+      selectedDate: null as string | null,
       loaded,
-      model,
+      model: null as BromonitorModel | BromonitorModelRecent | null,
       objectLegendData,
       regimeLegendData,
       optionSelected,
       trendOptions,
       scTimer,
       scY,
+      actieveBronhoudersExpanded,
+      aantalRegistratiesExpanded,
+      gldExpanded,
+      gemeentenExpanded,
+      provinciesExpanded,
+      waterschappenExpanded,
+      top20Expanded,
+      trendsExpanded,
+      standExpanded,
+      actualiteitExpanded,
     };
   },
   props: {
     date: String,
   },
-  computed: {
-    monitorItems() {
-      const getStaticData = (key) => this.model["static_data"][key];
-
-      const monitorItems: {
-        [key: string]: Array<BroMonitorItemModel>;
-      } = {
-        "Afgelopen week": [
-          {
-            id: "expansion-item-actieve-bronhouders",
-            iconName: "timeline",
-            title: "Actieve bronhouders",
-            sectionSideValue: getStaticData("aantal_bronhouders"),
-            contentSelectors: ["animatie-graph-bronhouders"],
-          },
-          {
-            id: "expansion-item-aantal-registraties",
-            iconName: "bar_chart",
-            title: "Aantal registraties",
-            sectionSideValue: getStaticData("aantal_registraties"),
-            contentSelectors: ["registratieobjecten-afgelopenweek-staaf"],
-          },
-          {
-            id: "expansion-item-uitgelicht",
-            iconName: "table_view",
-            title: "Waarvan GLD",
-            sectionSideValue: getStaticData("aantal_glds"),
-            contentSelectors: ["glds-week", "glds-top-20"],
-          },
-        ],
-        "Op de landkaart": [
-          {
-            id: "expansion-item-registratieobjecten-gemeenten",
-            iconName: "map",
-            title: "Gemeenten",
-            sectionSideValue: getStaticData("aantal_gemeenten")[0],
-            mapContent: {
-              bronhouderType: "Gemeente",
-              headerVariabele: "gemeenten",
-              geojsonFile: "gemeentegrenzen.json",
-              staticContent: this.model["static"],
-              dataTypen: getStaticData("data_gemeente_typen"),
-              dataRegimes: getStaticData("data_gemeente_regimes"),
-            },
-          },
-          {
-            id: "expansion-item-registratieobjecten-provincies",
-            iconName: "map",
-            title: "Provincies",
-            sectionSideValue: getStaticData("aantal_provincies")[0],
-            mapContent: {
-              bronhouderType: "Provincie",
-              className: "bromonitor-element",
-              headerVariabele: "provincies",
-              geojsonFile: "provinciegrenzen.json",
-              staticContent: this.model["static"],
-              dataTypen: getStaticData("data_provincie_typen"),
-              dataRegimes: getStaticData("data_provincie_regimes"),
-            },
-          },
-          {
-            id: "expansion-item-registratieobjecten-waterschappen",
-            iconName: "map",
-            title: "Waterschappen",
-            sectionSideValue: getStaticData("aantal_waterschappen")[0],
-            mapContent: {
-              bronhouderType: "Waterschap",
-              headerVariabele: "waterschappen",
-              geojsonFile: "waterschapsgrenzen.json",
-              staticContent: this.model["static"],
-              dataTypen: getStaticData("data_waterschap_typen"),
-              dataRegimes: getStaticData("data_waterschap_typen"),
-            },
-          },
-        ],
-        // "En verder": [
-        //   {
-        //     id: "expansion-item-top-20",
-        //     iconName: "table_view",
-        //     title: "Top-20",
-        //     contentSelectors: ["top20-registratieobjecten"],
-        //   },
-        // ],
-      };
-      return monitorItems;
-    },
-  },
   methods: {
-    foo(value) {
-      console.log(value);
+    is_empty(obj) {
+      return JSON.stringify(obj) === ""
     },
+
+
     toTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
@@ -323,21 +407,24 @@ export default Vue.extend({
       }, 100);
     },
     urlContainsDate() {
-      return window.location.href.includes(this.$data.selectedDate);
+      return window.location.href.includes(this.$data.selectedDate || "");
     },
     isOldestMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       return currentIndex == this.$data.dates.length - 1;
     },
     isMostRecentMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       return currentIndex == 0;
     },
     previousMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       const previousMonitorIndex = currentIndex + 1;
       const nextDate = this.$data.dates[previousMonitorIndex].split("T")[0];
       this.$router.push({
@@ -346,8 +433,9 @@ export default Vue.extend({
       });
     },
     nextMonitor() {
-      const currentDateTime = this.$data.selectedDate + "T00:00:00";
-      const currentIndex = this.$data.dates.indexOf(currentDateTime);
+      const currentDate = this.$data.selectedDate as string;
+      const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+      const currentIndex = datesWithoutTime.indexOf(currentDate);
       const nextMonitorIndex = currentIndex - 1;
       const nextDate = this.$data.dates[nextMonitorIndex].split("T")[0];
       this.$router.push({
@@ -356,13 +444,18 @@ export default Vue.extend({
       });
     },
     loadBroMonitor() {
-      const queryDate = this.$props.date;
-      const queryDateTime = queryDate + "T00:00:00";
+      const queryDate = this.$props.date as string;
+      const queryDateTime = queryDate + "T00:00:00.000Z";
 
       const fetchData = async (): Promise<void> => {
-        this.$data.dates = (await getBromonitorDates()).dates;
-        let fetchMonitor;
-        const index = this.$data.dates.indexOf(queryDateTime);
+        this.$data.dates = (await getBromonitorDates()).dates.map((date) => {
+          const d = new Date(date);
+          return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        });
+
+        let fetchMonitor = async (): Promise<void> => { };
+        const datesWithoutTime = this.$data.dates.map(date => date.split('T')[0]);
+        const index = datesWithoutTime.indexOf(queryDate);
 
         // Date is found in the list, fetch that date
         if (queryDate && index != -1) {
@@ -430,7 +523,7 @@ export default Vue.extend({
     },
   },
   watch: {
-    date: function() {
+    date: function () {
       this.loadBroMonitor();
     },
   },
@@ -446,7 +539,7 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-#archive-monitor >>> .assistive-button {
+#archive-monitor :deep(.assistive-button) {
   border-radius: 4px;
   border-color: black;
   color: black;
@@ -466,5 +559,9 @@ export default Vue.extend({
   width: 125px;
   margin-left: 4px;
   vertical-align: middle;
+}
+
+.red-text {
+  color: red !important;
 }
 </style>

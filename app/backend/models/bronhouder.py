@@ -5,4 +5,4 @@ from typing import Optional
 class Bronhouder(BaseModel):
     name: str
     kvk: str
-    identifier: Optional[str]
+    identifier: Optional[str] = None
